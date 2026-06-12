@@ -1,0 +1,8 @@
+# Copy this file to android/key.properties on the release machine only.
+# Do not commit android/key.properties or the keystore file.
+#
+# storeFile is resolved from the android/ folder.
+storeFile=../vivo-promotor-release.jks
+storePassword=CHANGE_ME
+keyAlias=vivo-promotor
+keyPassword=CHANGE_ME

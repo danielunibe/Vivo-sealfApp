@@ -1,0 +1,8 @@
+{
+  "name": "Remix: Vivo promotor",
+  "description": "A canvas workspace and advanced explorer interface with a toolbar, inspector, and activity timeline.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

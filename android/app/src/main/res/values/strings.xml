@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Vivo Promotor</string>
+    <string name="title_activity_main">Vivo Promotor</string>
+    <string name="title_activity_native_preview">Vivo Promotor Native Preview</string>
+    <string name="package_name">com.davidsanchez.vivopromotor</string>
+    <string name="custom_url_scheme">com.davidsanchez.vivopromotor</string>
+</resources>

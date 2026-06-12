@@ -1,22 +1,22 @@
-# Flutter / Dart
-.dart_tool/
-.packages
-.pub/
-.pub-cache/
-build/
-
-# IDE
+node_modules/
+.next/
+out/
+coverage/
+dist-apk/*.apk
+dist-apk/*.aab
+.gradle/
 .idea/
-.vscode/
-*.iml
-
-# Android
-android/.gradle/
-android/local.properties
-
-# iOS/macOS (safe ignore if absent)
-ios/Pods/
-macos/Pods/
-
-# Misc
+.DS_Store
 *.log
+*.tmp
+*.tsbuildinfo
+.env*
+!.env.example
+*.jks
+*.keystore
+android/key.properties
+asset-backups/
+/app vivo/
+/ChatGPT Image*.png
+/ChatGPT_Image*.jpeg
+/Logo_animation_*.mp4

@@ -1,0 +1,515 @@
+@import "tailwindcss" source(none);
+@source "../app";
+@source "../components";
+@source "../hooks";
+@source "../lib";
+
+:root {
+  --app-max-width: 430px;
+  --dock-height: 94px;
+  --dock-bottom-gap: 16px;
+  --safe-bottom: env(safe-area-inset-bottom);
+  --screen-x: 24px;
+  --neo-bg: #edf0f2;
+  --neo-surface: #edf0f2;
+  --neo-surface-soft: #f7f8f9;
+  --neo-text: #111315;
+  --neo-muted: #686f76;
+  --neo-accent: #111315;
+  --neo-accent-contrast: #ffffff;
+  --neo-success: #41b883;
+  --neo-warning: #d9a441;
+  --neo-danger: #d96b6b;
+  --neo-radius-sm: 10px;
+  --neo-radius-md: 14px;
+  --neo-radius-lg: 20px;
+  --neo-border: rgba(255, 255, 255, 0.72);
+  --neo-shadow-raised:
+    -7px -7px 15px rgba(255, 255, 255, 0.9),
+     7px  7px 16px rgba(24, 29, 34, 0.13);
+  --neo-shadow-soft:
+    -4px -4px 10px rgba(255, 255, 255, 0.85),
+     4px  4px 10px rgba(24, 29, 34, 0.1);
+  --neo-shadow-pressed:
+    inset 4px 4px 8px rgba(0, 0, 0, 0.12),
+    inset -4px -4px 8px rgba(255, 255, 255, 0.9);
+  --neo-shadow-inset:
+    inset 3px 3px 6px rgba(0, 0, 0, 0.10),
+    inset -3px -3px 6px rgba(255, 255, 255, 0.9);
+}
+
+.dark,
+[data-theme="dark"] {
+  --neo-bg: #0d0f11;
+  --neo-surface: #15181b;
+  --neo-surface-soft: #1b1f23;
+  --neo-text: #f5f6f7;
+  --neo-muted: #969da4;
+  --neo-accent: #f5f6f7;
+  --neo-accent-contrast: #111315;
+  --neo-success: #58d69d;
+  --neo-warning: #f0bd5d;
+  --neo-danger: #ff7f7f;
+  --neo-border: rgba(255, 255, 255, 0.08);
+  --neo-shadow-raised:
+    -5px -5px 12px rgba(255, 255, 255, 0.035),
+     7px  7px 16px rgba(0, 0, 0, 0.58);
+  --neo-shadow-soft:
+    -4px -4px 10px rgba(255, 255, 255, 0.04),
+     5px  5px 12px rgba(0, 0, 0, 0.52);
+  --neo-shadow-pressed:
+    inset 4px 4px 8px rgba(0, 0, 0, 0.62),
+    inset -4px -4px 8px rgba(255, 255, 255, 0.04);
+  --neo-shadow-inset:
+    inset 3px 3px 6px rgba(0, 0, 0, 0.55),
+    inset -3px -3px 6px rgba(255, 255, 255, 0.045);
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: #08090a;
+}
+
+* {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  display: none;
+}
+
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--neo-text);
+  outline-offset: 2px;
+}
+
+@layer components {
+  /* =========================================
+     SISTEMA NEUMORFICO BASE
+  ========================================= */
+
+  .neo-app {
+    background: var(--neo-bg);
+    color: var(--neo-text);
+  }
+
+  .app-viewport {
+    box-sizing: border-box;
+    padding-top: env(safe-area-inset-top);
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+
+  .neo-section {
+    color: var(--neo-text);
+  }
+
+  .neo-card {
+    border-radius: var(--neo-radius-lg);
+    background: var(--neo-surface);
+    border: 1px solid var(--neo-border);
+    box-shadow: var(--neo-shadow-soft);
+    padding: 1rem;
+  }
+
+  .neo-card-soft {
+    border-radius: var(--neo-radius-md);
+    background: var(--neo-surface-soft);
+    box-shadow: var(--neo-shadow-soft);
+  }
+
+  .neo-button {
+    border-radius: var(--neo-radius-md);
+    background: var(--neo-surface);
+    box-shadow: var(--neo-shadow-soft);
+    border: 1px solid var(--neo-border);
+    transition: transform 180ms ease, box-shadow 180ms ease, color 180ms ease;
+  }
+
+  .neo-button:active,
+  .neo-button-pressed {
+    box-shadow: var(--neo-shadow-pressed);
+    transform: translateY(1px);
+  }
+
+  .neo-button-primary {
+    background: var(--neo-accent);
+    color: var(--neo-accent-contrast);
+  }
+
+  .neo-inset {
+    background: var(--neo-surface);
+    box-shadow: var(--neo-shadow-inset);
+  }
+
+  .neo-dock {
+    background: color-mix(in srgb, var(--neo-surface) 96%, transparent);
+    border: 1px solid var(--neo-border);
+    box-shadow: var(--neo-shadow-raised);
+    backdrop-filter: blur(10px);
+  }
+
+  .neo-nav-icon {
+    position: relative;
+    display: grid;
+    height: 44px;
+    width: 44px;
+    place-items: center;
+    border-radius: 18px;
+    box-shadow: var(--neo-shadow-soft);
+    transition: transform 180ms ease, box-shadow 180ms ease, color 180ms ease, background 180ms ease;
+  }
+
+  .neo-nav-icon-dot {
+    position: absolute;
+    right: 8px;
+    bottom: 7px;
+    height: 5px;
+    width: 5px;
+    border-radius: 999px;
+    box-shadow: 0 0 10px currentColor;
+  }
+
+  .neo-input {
+    border-radius: var(--neo-radius-md);
+    background: var(--neo-surface);
+    border: 1px solid var(--neo-border);
+    box-shadow: var(--neo-shadow-inset);
+    color: var(--neo-text);
+  }
+
+  .intro-video-frame {
+    background:
+      radial-gradient(circle at 50% 35%, rgba(255,255,255,0.16), rgba(0,0,0,0) 35%),
+      linear-gradient(180deg, #000000 0%, #050507 100%);
+  }
+
+  .intro-video-frame::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    pointer-events: none;
+    background:
+      radial-gradient(circle at 50% 45%, rgba(0,0,0,0) 0%, rgba(0,0,0,0.22) 46%, rgba(0,0,0,0.82) 100%),
+      linear-gradient(180deg, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.42) 34%, rgba(0,0,0,0) 62%);
+    animation: introRevealMask 1400ms ease-out forwards;
+  }
+
+  @keyframes introRevealMask {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+
+  .neo-toggle {
+    width: 44px;
+    height: 26px;
+    border-radius: 999px;
+    padding: 3px;
+    background: var(--neo-surface);
+    box-shadow: var(--neo-shadow-inset);
+    transition: all 180ms ease;
+  }
+
+  .neo-toggle span {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 999px;
+    background: var(--neo-muted);
+    box-shadow: var(--neo-shadow-soft);
+    transition: transform 180ms ease, background 180ms ease;
+  }
+
+  .neo-toggle-on span {
+    transform: translateX(18px);
+    background: var(--neo-accent);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      scroll-behavior: auto !important;
+      animation-duration: 1ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 1ms !important;
+    }
+  }
+
+  /* =========================================
+     DEFINICIÓN DE ANIMACIONES
+  ========================================= */
+  @keyframes derivaNebula {
+    0% { transform: translate(-5%, -5%) rotate(0deg); opacity: 0.6; }
+    50% { transform: translate(5%, 5%) rotate(5deg); opacity: 0.8; }
+    100% { transform: translate(-5%, -5%) rotate(0deg); opacity: 0.6; }
+  }
+  
+  @keyframes shimmerRosa {
+    0% { background-position: -200% center; }
+    100% { background-position: 200% center; }
+  }
+
+  /* =========================================
+     CLASES DE COLORES REUTILIZABLES
+  ========================================= */
+  
+  /* --- LAVANDA CRISTAL --- */
+  .bg-lavanda-cristal {
+    background: linear-gradient(135deg, #fdfdff 0%, #e6e6fa 30%, #c4b5d6 70%, #ffffff 100%);
+    box-shadow: inset -8px -8px 20px rgba(255, 255, 255, 0.9), inset 8px 8px 20px rgba(175, 160, 190, 0.4);
+  }
+
+  /* --- NEGRO JADE --- */
+  .bg-negro-jade {
+    background: radial-gradient(circle at 30% 20%, #152b21 0%, #080a09 60%, #000000 100%);
+    box-shadow: inset 0 0 40px rgba(0, 0, 0, 0.8);
+  }
+
+  /* --- MORADO LAVANDA --- */
+  .bg-morado-lavanda {
+    background: radial-gradient(circle at 20% 10%, #7e63b8 0%, #543f82 45%, #2a1f45 100%);
+    box-shadow: inset 0 0 25px rgba(0, 0, 0, 0.4);
+  }
+
+  /* --- BLANCO NUBE --- */
+  .bg-blanco-nube {
+    background: radial-gradient(circle at 50% 0%, #ffffff 0%, #f4f4f9 40%, #e2e8f0 100%);
+    box-shadow: inset 0 20px 40px rgba(255, 255, 255, 1);
+  }
+
+  /* --- NEGRO ESPRESSO --- */
+  .bg-negro-espresso {
+    background: radial-gradient(circle at 70% 80%, #34221b 0%, #140d0a 50%, #000000 100%);
+  }
+
+  /* --- LILA FANTASÍA --- */
+  .bg-lila-fantasia {
+    background: linear-gradient(120deg, #dda0dd 0%, #f4f0ff 45%, #ffb6c1 100%);
+    position: relative;
+    overflow: hidden;
+  }
+  .bg-lila-fantasia::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle at 30% 30%, rgba(216, 191, 216, 0.4) 0%, rgba(218, 112, 214, 0.1) 50%, rgba(0,0,0,0) 100%);
+    animation: derivaNebula 25s ease-in-out infinite;
+    mix-blend-mode: color-dodge;
+  }
+  .bg-lila-fantasia::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.05) 0%, rgba(0,0,0,0) 80%);
+    opacity: 0.1;
+  }
+
+  /* --- NEGRO MÍSTICO --- */
+  .bg-negro-mistico {
+    background: linear-gradient(180deg, #130b1c 0%, #050208 50%, #000000 100%);
+    box-shadow: inset 0 20px 50px rgba(75, 0, 130, 0.2);
+  }
+
+  /* --- ROSA POP --- */
+  .bg-rosa-pop {
+    background: linear-gradient(135deg, #FDF2F5 0%, #F8E1E7 50%, #F5C6D1 100%);
+    position: relative;
+    overflow: hidden;
+  }
+  .bg-rosa-pop::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: 
+      linear-gradient(145deg, rgba(255, 182, 193, 0.1) 0%, rgba(0,0,0,0) 50%, rgba(255, 105, 180, 0.05) 100%),
+      repeating-radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.02) 0px, rgba(255, 255, 255, 0.02) 2px, rgba(0,0,0,0) 3px, rgba(0,0,0,0) 10px);
+    opacity: 0.8;
+  }
+  .bg-rosa-pop::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -200%;
+    width: 400%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.15) 50%, rgba(255,255,255,0) 100%);
+    animation: shimmerRosa 15s linear infinite;
+    mix-blend-mode: soft-light;
+  }
+
+  /* --- NEGRO URBANO --- */
+  .bg-negro-urbano {
+    background: linear-gradient(145deg, #2a2a2a 0%, #121212 50%, #000000 100%);
+  }
+
+  /* =========================================
+     PATRONES MENSUALES PARA BARRAS DE PROGRESO
+  ========================================= */
+  .pattern-lines {
+    background-image: repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 4px,
+      rgba(255, 255, 255, 0.2) 4px,
+      rgba(255, 255, 255, 0.2) 8px
+    );
+  }
+
+  .pattern-bubbles {
+    background-image: radial-gradient(rgba(255, 255, 255, 0.3) 2px, transparent 2px),
+                      radial-gradient(rgba(255, 255, 255, 0.15) 1px, transparent 1px);
+    background-size: 12px 12px, 8px 8px;
+    background-position: 0 0, 6px 6px;
+  }
+
+  .pattern-leaf {
+    background-image: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.2) 0%, transparent 60%);
+    background-size: 10px 10px;
+    background-position: 0 0;
+  }
+
+  .pattern-dots {
+    background-image: radial-gradient(circle, rgba(255, 255, 255, 0.25) 2px, transparent 2.5px);
+    background-size: 10px 10px;
+  }
+
+  .pattern-overlap {
+    background-image: repeating-linear-gradient(135deg, rgba(255,255,255,0.1) 0px, transparent 2px, transparent 10px, rgba(255,255,255,0.1) 12px),
+                      repeating-linear-gradient(45deg, rgba(255,255,255,0.1) 0px, transparent 2px, transparent 10px, rgba(255,255,255,0.1) 12px);
+  }
+
+  .pattern-circuit {
+    background-image: linear-gradient(90deg, rgba(255,255,255,0.15) 1px, transparent 1px),
+                      linear-gradient(0deg, rgba(255,255,255,0.15) 1px, transparent 1px);
+    background-size: 10px 10px;
+  }
+
+  .pattern-zigZag {
+    background-image: linear-gradient(135deg, rgba(255,255,255,0.2) 25%, transparent 25%),
+                      linear-gradient(225deg, rgba(255,255,255,0.2) 25%, transparent 25%),
+                      linear-gradient(45deg, rgba(255,255,255,0.2) 25%, transparent 25%),
+                      linear-gradient(315deg, rgba(255,255,255,0.2) 25%, transparent 25%);
+    background-position: 5px 0, 5px 0, 0 0, 0 0;
+    background-size: 10px 10px;
+    background-repeat: repeat;
+  }
+
+  .pattern-bars {
+    background-image: repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 8px,
+      rgba(255, 255, 255, 0.25) 8px,
+      rgba(255, 255, 255, 0.25) 16px
+    );
+  }
+
+  .pattern-stripes {
+    background-image: repeating-linear-gradient(
+      -45deg,
+      transparent,
+      transparent 5px,
+      rgba(255, 255, 255, 0.15) 5px,
+      rgba(255, 255, 255, 0.15) 10px
+    );
+  }
+
+  .pattern-aztec {
+    background-image: linear-gradient(45deg, rgba(255,255,255,0.1) 25%, transparent 25%, transparent 75%, rgba(255,255,255,0.1) 75%, rgba(255,255,255,0.1)),
+                      linear-gradient(45deg, rgba(255,255,255,0.1) 25%, transparent 25%, transparent 75%, rgba(255,255,255,0.1) 75%, rgba(255,255,255,0.1));
+    background-size: 10px 10px;
+    background-position: 0 0, 5px 5px;
+  }
+
+  .pattern-jupiter {
+    background-image: repeating-radial-gradient(
+      circle at 0 0,
+      transparent 0,
+      rgba(255, 255, 255, 0.1) 4px,
+      transparent 8px
+    );
+  }
+
+  .pattern-crosses {
+    background-image: radial-gradient(circle, transparent 20%, rgba(255, 255, 255, 0.2) 20%, rgba(255, 255, 255, 0.2) 80%, transparent 80%, transparent),
+                      radial-gradient(circle, transparent 20%, rgba(255, 255, 255, 0.2) 20%, rgba(255, 255, 255, 0.2) 80%, transparent 80%, transparent);
+    background-size: 14px 14px;
+    background-position: 0 0, 7px 7px;
+  }
+
+  /* =========================================
+     ESTILOS RESPONSIVE PARA DISPOSITIVOS MÓVILES
+     ========================================= */
+
+  .dock-safe-pb {
+    padding-bottom: calc(var(--dock-height) + var(--dock-bottom-gap) + var(--safe-bottom)) !important;
+  }
+
+  @media (max-height: 720px) {
+    .compact-scale-phone {
+      transform: scale(0.82) !important;
+      transform-origin: center center !important;
+    }
+
+    .compact-scale-jar {
+      width: 240px !important;
+      height: 250px !important;
+    }
+
+    .compact-calendar-cell {
+      padding: 0.15rem !important;
+    }
+  }
+
+  @media (min-height: 860px) {
+    .calendar-month-card {
+      height: min(54vh, 500px) !important;
+    }
+
+    .piggy-tall-jar-layout {
+      justify-content: flex-start !important;
+      padding-top: 0.5rem !important;
+    }
+
+    .piggy-tall-jar-scale {
+      transform: scale(0.94) translateY(-4px) !important;
+    }
+
+    .settings-profile-tall {
+      justify-content: space-between;
+    }
+  }
+}
+
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline-color: var(--neo-text) !important;
+}
+
+.neo-dock [tabindex]:focus-visible {
+  outline: 2px solid var(--neo-text) !important;
+  outline-offset: 2px;
+}
