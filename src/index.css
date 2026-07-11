@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800;900&family=Space+Grotesk:wght@500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", sans-serif;
+  --font-accent: "Space Grotesk", sans-serif;
+}
+
+@layer base {
+  :root {
+    --neo-bg: #f5f7fa;
+    --neo-surface: #ffffff;
+    --neo-surface-soft: #eff2f6;
+    --neo-text: #1a1d24;
+    --neo-muted: #858e99;
+    --neo-accent: #4A72FF;
+    --neo-success: #2DD4bf;
+    --neo-warning: #f59e0b;
+    --neo-danger: #fb7185;
+
+    --neo-radius-sm: 12px;
+    --neo-radius-md: 20px;
+    --neo-radius-lg: 24px;
+    --neo-radius-xl: 36px;
+
+    /* OriginOS Shadows - Diffuse, smooth, minimal inset */
+    --neo-shadow-raised: 0 10px 30px -4px rgba(0, 0, 0, 0.06), 0 4px 12px -2px rgba(0, 0, 0, 0.04);
+    --neo-shadow-soft: 0 4px 16px -2px rgba(0, 0, 0, 0.04);
+    --neo-shadow-pressed: inset 0 2px 10px rgba(0,0,0, 0.03);
+    --neo-shadow-inset: inset 0 2px 4px rgba(0, 0, 0, 0.02);
+    
+    --glass-bg: rgba(255, 255, 255, 0.65);
+    --glass-bg-strong: rgba(255, 255, 255, 0.85);
+    --glass-border: rgba(255, 255, 255, 0.5);
+    --glass-highlight: rgba(255, 255, 255, 0.9);
+    --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.04);
+    --glass-text: #1a1d24;
+    --glass-blur: 24px;
+
+    --app-max-width: 480px;
+    --dock-height: 80px;
+    --dock-bottom-gap: 8px;
+    --safe-bottom: env(safe-area-inset-bottom, 20px);
+    --viewport-pb: calc(var(--dock-height) + var(--dock-bottom-gap) + var(--safe-bottom) + 32px);
+  }
+
+  .dark {
+    --neo-bg: #0d0f12;
+    --neo-surface: #14171c;
+    --neo-surface-soft: #1b1e25;
+    --neo-text: #f0f2f5;
+    --neo-muted: #858e99;
+    --neo-accent: #4A72FF;
+    --neo-success: #2DD4bf;
+    --neo-warning: #f59e0b;
+    --neo-danger: #fb7185;
+
+    --neo-shadow-raised: 0 10px 30px -4px rgba(0, 0, 0, 0.4), 0 4px 12px -2px rgba(0, 0, 0, 0.3);
+    --neo-shadow-soft: 0 4px 16px -2px rgba(0, 0, 0, 0.3);
+    --neo-shadow-pressed: inset 0 2px 10px rgba(0, 0, 0, 0.3);
+    --neo-shadow-inset: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+
+    --glass-bg: rgba(20, 23, 28, 0.65);
+    --glass-bg-strong: rgba(20, 23, 28, 0.85);
+    --glass-border: rgba(255, 255, 255, 0.08);
+    --glass-highlight: rgba(255, 255, 255, 0.15);
+    --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+    --glass-text: #f0f2f5;
+    --glass-blur: 24px;
+  }
+}
+
+html,
+body {
+  min-height: 100dvh;
+}
+
+#root {
+  min-height: 100dvh;
+  background-color: transparent;
+}
+
+body {
+  background-color: var(--neo-bg);
+  color: var(--neo-text);
+  font-family: var(--font-sans);
+  margin: 0;
+  padding: 0;
+  min-height: 100dvh;
+  overflow: hidden;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.bg-diagonal-pattern {
+  background-color: #ffffff;
+  background-image: repeating-linear-gradient(
+      45deg,
+      #ffffff,
+      #ffffff 10px,
+      #f8fafc 10px,
+      #f8fafc 20px
+  );
+}
+
+.dark .bg-diagonal-pattern {
+  background-color: transparent;
+  background-image: none;
+}
+
+:root[data-premium-visual="false"] {
+  --neo-radius-md: 16px;
+  --neo-radius-lg: 18px;
+  --neo-radius-xl: 24px;
+  --neo-shadow-raised: 0 6px 18px -4px rgba(0, 0, 0, 0.05);
+  --neo-shadow-soft: 0 3px 10px -3px rgba(0, 0, 0, 0.04);
+  --glass-bg: rgba(255, 255, 255, 0.9);
+  --glass-bg-strong: rgba(255, 255, 255, 0.96);
+  --glass-border: rgba(15, 23, 42, 0.08);
+  --glass-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+  --glass-blur: 10px;
+}
+
+.dark:root[data-premium-visual="false"] {
+  --neo-shadow-raised: 0 8px 22px -6px rgba(0, 0, 0, 0.28);
+  --neo-shadow-soft: 0 4px 12px -4px rgba(0, 0, 0, 0.22);
+  --glass-bg: rgba(20, 23, 28, 0.88);
+  --glass-bg-strong: rgba(20, 23, 28, 0.94);
+  --glass-border: rgba(255, 255, 255, 0.06);
+  --glass-shadow: 0 5px 18px rgba(0, 0, 0, 0.24);
+  --glass-blur: 10px;
+}
+
+:root[data-reduced-motion="true"] *,
+:root[data-reduced-motion="true"] *::before,
+:root[data-reduced-motion="true"] *::after {
+  animation-duration: 0.01ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.01ms !important;
+  scroll-behavior: auto !important;
+}
+
+@layer components {
+  .settings-shell-bg {
+    background:
+      radial-gradient(circle at 50% 0%, rgba(255, 255, 255, 0.95), rgba(238, 240, 243, 1) 55%),
+      linear-gradient(180deg, #f7f8fa 0%, #eceef2 100%);
+  }
+
+  .dark .settings-shell-bg {
+    background:
+      radial-gradient(circle at 50% 0%, rgba(28, 32, 38, 0.95), rgba(13, 15, 18, 1) 55%),
+      linear-gradient(180deg, #14171c 0%, #0d0f12 100%);
+  }
+
+  .vivo-card {
+    background-color: var(--neo-surface);
+    border: 1px solid color-mix(in srgb, var(--neo-text) 8%, transparent);
+    box-shadow: var(--neo-shadow-soft);
+    color: var(--neo-text);
+  }
+
+  .vivo-panel {
+    border-radius: 2rem;
+    background-color: var(--neo-surface);
+    border: 1px solid color-mix(in srgb, var(--neo-text) 8%, transparent);
+    box-shadow: var(--neo-shadow-soft);
+    color: var(--neo-text);
+  }
+
+  .vivo-subtle {
+    background-color: var(--neo-surface-soft);
+    color: var(--neo-text);
+  }
+
+  .vivo-input {
+    color: var(--neo-text);
+  }
+
+  .vivo-input::placeholder {
+    color: color-mix(in srgb, var(--neo-muted) 85%, transparent);
+  }
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  /* Fotos de producto: sin filtros duros ni pixelado forzado */
+  .vivo-photo {
+    image-rendering: auto;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+
+  .vivo-photo-cover {
+    object-fit: cover;
+    object-position: center;
+  }
+}
