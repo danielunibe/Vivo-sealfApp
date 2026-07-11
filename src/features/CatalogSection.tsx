@@ -16,13 +16,13 @@ const containerVariants = {
   hidden: { opacity: 0 },
   show: {
     opacity: 1,
-    transition: { staggerChildren: 0.1 }
+    transition: { staggerChildren: 0.08, delayChildren: 0.15 }
   }
 };
 
 const itemVariants = {
-  hidden: { opacity: 0, x: 30 },
-  show: { opacity: 1, x: 0, transition: { type: 'spring', stiffness: 260, damping: 22 } }
+  hidden: { opacity: 0, y: 20 },
+  show: { opacity: 1, y: 0, transition: { type: 'spring', stiffness: 260, damping: 22 } }
 };
 
 const ensureVariants = (variants: PhoneVariant[] | undefined | null): PhoneVariant[] => {

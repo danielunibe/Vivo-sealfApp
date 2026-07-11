@@ -28,8 +28,43 @@ const isAppTab = (value: unknown): value is AppTab => {
   return typeof value === 'string' && APP_TABS.includes(value as AppTab);
 };
 
+const VISUAL_TAB_ORDER = ['calendar', 'catalog', 'register', 'piggybank', 'settings'] as const;
+
 export default function AppShell() {
   const [activeTab, setActiveTab] = useState<AppTab>('register');
+  const [previousTab, setPreviousTab] = useState<AppTab>('register');
+
+  const direction = VISUAL_TAB_ORDER.indexOf(activeTab) > VISUAL_TAB_ORDER.indexOf(previousTab) ? 1 : -1;
+
+  const handleTabChange = (newTab: AppTab) => {
+    if (newTab !== activeTab) {
+      setPreviousTab(activeTab);
+      setActiveTab(newTab);
+    }
+  };
+
+  const slideVariants = {
+    enter: (dir: number) => ({
+      x: dir > 0 ? 40 : -40,
+      opacity: 0,
+      scale: 0.96,
+      filter: 'blur(8px)',
+    }),
+    center: {
+      zIndex: 1,
+      x: 0,
+      opacity: 1,
+      scale: 1,
+      filter: 'blur(0px)',
+    },
+    exit: (dir: number) => ({
+      zIndex: 0,
+      x: dir < 0 ? 40 : -40,
+      opacity: 0,
+      scale: 0.96,
+      filter: 'blur(8px)',
+    })
+  };
 
   const [pendingSettingsSection, setPendingSettingsSection] = useState<string | null>(null);
   const [isCalendarGoalMet, setIsCalendarGoalMet] = useState(false);
@@ -263,14 +298,9 @@ function AppShellFrame({
 
   return (
     <div 
-      className={`flex flex-col h-[100dvh] w-full overflow-hidden relative z-10 transition-all duration-700`}
-      style={{
-        background: activeTab === 'register' 
-          ? 'transparent' 
-          : (activeTab === 'calendar' && isCalendarGoalMet) 
-            ? 'linear-gradient(135deg, #2B3138 0%, #1A1D21 100%)' 
-            : 'transparent'
-      }}
+      className={`flex flex-col h-[100dvh] w-full overflow-hidden relative z-10 transition-all duration-700 ${
+        activeTab === 'register' ? '' : 'bg-diagonal-pattern'
+      }`}
     >
       <LiquidGlassFilter />
 
@@ -287,12 +317,14 @@ function AppShellFrame({
       
       {/* Main Content Area */}
       <main className={`flex-1 w-full h-full max-w-[var(--app-max-width)] mx-auto overflow-hidden relative`}>
-        <AnimatePresence mode="wait">
+        <AnimatePresence mode="popLayout" custom={direction}>
           <motion.div
             key={activeTab}
-            initial={{ opacity: 0, scale: 0.98, y: 12 }}
-            animate={{ opacity: 1, scale: 1, y: 0 }}
-            exit={{ opacity: 0, scale: 0.98, y: -12 }}
+            custom={direction}
+            variants={slideVariants}
+            initial="enter"
+            animate="center"
+            exit="exit"
             transition={{ duration: 0.35, ease: [0.2, 0.8, 0.2, 1] }}
             className="h-full w-full relative z-0"
           >
@@ -321,33 +353,33 @@ function AppShellFrame({
             src="/assets/dock/calendar.png" 
             label="Registro"
             active={activeTab === 'calendar'} 
-            onClick={() => setActiveTab('calendar')} 
+            onClick={() => handleTabChange('calendar')} 
           />
           <DockApp 
             src="/assets/dock/catalog.png" 
             label="Catálogo"
             active={activeTab === 'catalog'} 
-            onClick={() => setActiveTab('catalog')} 
+            onClick={() => handleTabChange('catalog')} 
           />
           
           <DockApp 
              src="/assets/dock/register.png"
              label="Cámara"
              active={activeTab === 'register'}
-             onClick={() => setActiveTab('register')}
+             onClick={() => handleTabChange('register')}
           />
 
           <DockApp 
             src="/assets/dock/piggybank.png" 
             label="Historial"
             active={activeTab === 'piggybank'} 
-            onClick={() => setActiveTab('piggybank')} 
+            onClick={() => handleTabChange('piggybank')} 
           />
           <DockApp 
             src="/assets/dock/settings.png" 
             label="Ajustes"
             active={activeTab === 'settings'} 
-            onClick={() => setActiveTab('settings')} 
+            onClick={() => handleTabChange('settings')} 
           />
           
         </div>
@@ -364,7 +396,7 @@ function AppShellFrame({
             onViewHistory={() => {
               markReleaseNotesSeen();
               setShowVersionWelcome(false);
-              setActiveTab('settings');
+              handleTabChange('settings');
               setPendingSettingsSection('sistema');
             }}
           />
