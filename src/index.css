@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800;900&family=Space+Grotesk:wght@500;700&display=swap');
 @import "tailwindcss";
 
+/* Modo oscuro solo por clase .dark (controlado desde Ajustes), no por OS */
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
   --font-display: "Outfit", sans-serif;
@@ -92,21 +95,7 @@ body {
   -webkit-tap-highlight-color: transparent;
 }
 
-.bg-diagonal-pattern {
-  background-color: #ffffff;
-  background-image: repeating-linear-gradient(
-      45deg,
-      #ffffff,
-      #ffffff 10px,
-      #f8fafc 10px,
-      #f8fafc 20px
-  );
-}
 
-.dark .bg-diagonal-pattern {
-  background-color: transparent;
-  background-image: none;
-}
 
 :root[data-premium-visual="false"] {
   --neo-radius-md: 16px;
@@ -142,19 +131,13 @@ body {
 
 @layer components {
   .settings-shell-bg {
-    background:
-      radial-gradient(circle at 50% 0%, rgba(255, 255, 255, 0.95), rgba(238, 240, 243, 1) 55%),
-      linear-gradient(180deg, #f7f8fa 0%, #eceef2 100%);
-  }
-
-  .dark .settings-shell-bg {
-    background:
-      radial-gradient(circle at 50% 0%, rgba(28, 32, 38, 0.95), rgba(13, 15, 18, 1) 55%),
-      linear-gradient(180deg, #14171c 0%, #0d0f12 100%);
+    background-color: transparent;
   }
 
   .vivo-card {
-    background-color: var(--neo-surface);
+    background-color: color-mix(in srgb, var(--neo-surface) 62%, transparent);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     border: 1px solid color-mix(in srgb, var(--neo-text) 8%, transparent);
     box-shadow: var(--neo-shadow-soft);
     color: var(--neo-text);
@@ -162,14 +145,35 @@ body {
 
   .vivo-panel {
     border-radius: 2rem;
-    background-color: var(--neo-surface);
+    background-color: color-mix(in srgb, var(--neo-surface) 58%, transparent);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     border: 1px solid color-mix(in srgb, var(--neo-text) 8%, transparent);
     box-shadow: var(--neo-shadow-soft);
     color: var(--neo-text);
   }
 
   .vivo-subtle {
-    background-color: var(--neo-surface-soft);
+    background-color: color-mix(in srgb, var(--neo-surface-soft) 55%, transparent);
+    color: var(--neo-text);
+  }
+
+  /* Cajas grandes: dejan ver el patrón diagonal debajo */
+  .vivo-surface-on-pattern {
+    background-color: color-mix(in srgb, var(--neo-surface) 55%, transparent);
+    backdrop-filter: blur(11px);
+    -webkit-backdrop-filter: blur(11px);
+    border: 1px solid color-mix(in srgb, var(--neo-text) 8%, transparent);
+    box-shadow: var(--neo-shadow-soft);
+    color: var(--neo-text);
+  }
+
+  /* Elementos anidados encima de una caja grande */
+  .vivo-inset-on-pattern {
+    background-color: color-mix(in srgb, var(--neo-surface) 42%, transparent);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid color-mix(in srgb, var(--neo-text) 6%, transparent);
     color: var(--neo-text);
   }
 

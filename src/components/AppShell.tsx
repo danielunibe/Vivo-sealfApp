@@ -243,7 +243,9 @@ export default function AppShell() {
     <SectionHeaderProvider>
       <AppShellFrame
         activeTab={activeTab}
-        setActiveTab={setActiveTab}
+        setActiveTab={handleTabChange}
+        direction={direction}
+        slideVariants={slideVariants}
         pendingSettingsSection={pendingSettingsSection}
         setPendingSettingsSection={setPendingSettingsSection}
         isCalendarGoalMet={isCalendarGoalMet}
@@ -261,6 +263,12 @@ export default function AppShell() {
 type AppShellFrameProps = {
   activeTab: AppTab;
   setActiveTab: (tab: AppTab) => void;
+  direction: number;
+  slideVariants: {
+    enter: (dir: number) => Record<string, number | string>;
+    center: Record<string, number | string>;
+    exit: (dir: number) => Record<string, number | string>;
+  };
   pendingSettingsSection: string | null;
   setPendingSettingsSection: (value: string | null) => void;
   isCalendarGoalMet: boolean;
@@ -275,6 +283,8 @@ type AppShellFrameProps = {
 function AppShellFrame({
   activeTab,
   setActiveTab,
+  direction,
+  slideVariants,
   pendingSettingsSection,
   setPendingSettingsSection,
   isCalendarGoalMet,
@@ -299,7 +309,7 @@ function AppShellFrame({
   return (
     <div 
       className={`flex flex-col h-[100dvh] w-full overflow-hidden relative z-10 transition-all duration-700 ${
-        activeTab === 'register' ? '' : 'bg-diagonal-pattern'
+        activeTab === 'register' ? 'bg-transparent' : 'bg-[var(--neo-bg)]'
       }`}
     >
       <LiquidGlassFilter />
@@ -353,33 +363,33 @@ function AppShellFrame({
             src="/assets/dock/calendar.png" 
             label="Registro"
             active={activeTab === 'calendar'} 
-            onClick={() => handleTabChange('calendar')} 
+            onClick={() => setActiveTab('calendar')}
           />
           <DockApp 
             src="/assets/dock/catalog.png" 
             label="Catálogo"
             active={activeTab === 'catalog'} 
-            onClick={() => handleTabChange('catalog')} 
+            onClick={() => setActiveTab('catalog')}
           />
           
           <DockApp 
              src="/assets/dock/register.png"
              label="Cámara"
              active={activeTab === 'register'}
-             onClick={() => handleTabChange('register')}
+             onClick={() => setActiveTab('register')}
           />
 
           <DockApp 
             src="/assets/dock/piggybank.png" 
             label="Historial"
             active={activeTab === 'piggybank'} 
-            onClick={() => handleTabChange('piggybank')} 
+            onClick={() => setActiveTab('piggybank')}
           />
           <DockApp 
             src="/assets/dock/settings.png" 
             label="Ajustes"
             active={activeTab === 'settings'} 
-            onClick={() => handleTabChange('settings')} 
+            onClick={() => setActiveTab('settings')}
           />
           
         </div>
@@ -396,7 +406,7 @@ function AppShellFrame({
             onViewHistory={() => {
               markReleaseNotesSeen();
               setShowVersionWelcome(false);
-              handleTabChange('settings');
+              setActiveTab('settings');
               setPendingSettingsSection('sistema');
             }}
           />
