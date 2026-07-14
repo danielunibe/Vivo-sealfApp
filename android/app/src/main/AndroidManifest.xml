@@ -16,6 +16,7 @@
             android:label="@string/title_activity_main"
             android:theme="@style/AppTheme.NoActionBarLaunch"
             android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustNothing"
             android:exported="true">
 
             <intent-filter>
@@ -24,12 +25,6 @@
             </intent-filter>
 
         </activity>
-
-        <activity
-            android:name=".nativeapp.ui.NativeMigrationPreviewActivity"
-            android:exported="false"
-            android:label="@string/title_activity_native_preview"
-            android:theme="@style/AppTheme.NoActionBar" />
 
         <provider
             android:name="androidx.core.content.FileProvider"
@@ -40,6 +35,7 @@
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/file_paths"></meta-data>
         </provider>
+
     </application>
 
     <!-- Permissions -->

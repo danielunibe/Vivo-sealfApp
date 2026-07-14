@@ -103,7 +103,7 @@ export default function AppShell() {
     setBootPhase('revealing');
     const timer = window.setTimeout(() => {
       setBootPhase('done');
-    }, bootStatus === 'degraded' ? 1300 : 1900);
+    }, bootStatus === 'degraded' ? 1100 : 1400);
 
     return () => window.clearTimeout(timer);
   }, [bootStatus]);
@@ -309,7 +309,7 @@ function AppShellFrame({
   return (
     <div 
       className={`flex flex-col h-[100dvh] w-full overflow-hidden relative z-10 transition-all duration-700 ${
-        activeTab === 'register' ? 'bg-transparent' : 'bg-[var(--neo-bg)]'
+        activeTab === 'register' ? 'bg-transparent' : 'bg-diagonal-pattern'
       }`}
     >
       <LiquidGlassFilter />

@@ -1,47 +1,39 @@
 # ARCHITECTURE.md
 
-## 1. Proposito
+## Proposito
 
-Este documento registra la estructura activa para evitar monolitos y cambios mal ubicados.
+Este documento describe la estructura activa despues de sustituir el proyecto por la app React/Vite entregada en `vivoapp.zip`.
 
-## 2. Estructura activa
+## Estructura activa
 
 ```txt
-app/                         Next App Router y CSS global
-components/                  UI principal por secciones
-components/calendar/         Calendario y estados diarios
-components/catalog/          Catalogo y fichas comerciales
-components/settings/         Ajustes, dispositivos, metas, respaldo
-components/ui/               Primitivos visuales compartidos
-lib/                         datos iniciales, storage, backup, helpers
-types/                       contratos TypeScript
-docs/                        documentacion viva por fase
-android/                     proyecto Android generado por Capacitor
-android/app/src/main/kotlin/ base Kotlin/Compose nativa experimental
-scripts/                     scripts auxiliares de build
+src/                         App React/Vite
+src/components/              Shell, UI compartida e iconos
+src/features/                Secciones principales: registro, calendario, catalogo, puerquito, ajustes
+src/lib/                     Storage, constantes, imagenes, ordenamiento, analytics y helpers
+src/types.ts                 Contratos TypeScript principales
+public/assets/devices/       Portadas oficiales copiadas desde Downloads/portadas
+docs/                        Documentacion incluida en el ZIP
+android/                     Envoltura Capacitor conservada para instalar como actualizacion
 ```
 
-## 3. Reglas anti-monolito
+## Reglas
 
-- Las secciones viven en `components/sections/`.
-- `components/sections/MainContent.tsx` mantiene Registro como seccion inicial y carga Calendario, Catalogo, Puerquito y Ajustes bajo demanda con `next/dynamic` para reducir el arranque en Android.
-- La logica de conocimiento comercial vive en `lib/deviceKnowledge.ts`, no dentro de las cards.
-- La persistencia vive en `lib/storage.ts`, `lib/persistentStorage.ts`, `lib/backup.ts` y migraciones en `lib/migrations.ts`.
-- Las cards no deben contener investigacion extensa; solo resumen y entrada a ficha.
-- Android debe ser envoltura Capacitor, no reescritura de la app.
-- La migracion Kotlin vive en paralelo bajo `nativeapp/` hasta que alcance paridad funcional; no debe reemplazar `MainActivity` sin QA.
-- `MainActivity.kt` ya es entrypoint Kotlin, pero conserva `BridgeActivity` para mantener la experiencia validada.
-- El backup JSON v1 es el puente canonico entre la app web actual y la app Kotlin.
-- `lib/dateUtils.ts` centraliza fechas locales `YYYY-MM-DD` y el fallback de movimientos: `effectiveDate`, venta enlazada y `createdAt`.
-- La fecha elegida en Registrar es la fecha comercial; `createdAt` queda reservado para auditoria.
+- La fuente de UI nueva es `src/`; no reintroducir las carpetas antiguas `app/`, `components/`, `lib/` de Next.
+- `android/` se conserva solo para empaquetar con el mismo `applicationId`.
+- Las portadas oficiales se resuelven desde `src/lib/officialDeviceCovers.ts`.
+- El orden de modelos y variantes se normaliza desde `src/lib/modelOrdering.ts` y se persiste con `sortOrder`.
+- La proyeccion visual de Inicio/Registro compartida por Registro y Ajustes vive en `src/lib/registerHomeProjection.ts`.
+- `src/features/settings/RegisterHomeVisualEditor.tsx` provee el modo visual de Ajustes > Productos y modelos; trabaja sobre un borrador de `phoneModels` y solo persiste al guardar.
+- `src/features/settings/VariantImageGallery.tsx` concentra la galeria local de imagenes por variante para que modo visual y modo avanzado conserven `imageGallery`/`activeImageId` igual.
+- Las migraciones de storage deben ser idempotentes y no borrar ventas historicas.
+- Las acciones destructivas deben vivir detras de controles explicitos de Ajustes.
 
-## 4. Modulos protegidos
+## Zonas protegidas
 
-| Modulo | Motivo | Proteccion |
+| Zona | Motivo | Proteccion |
 |---|---|---|
-| Dock inferior | Navegacion confirmada de 5 secciones | alto |
-| Registro de venta long-press | Flujo operativo sensible | alto |
-| `ProductImageFrame` / `SafeImage` | Proteccion visual de assets | alto |
-| Backup/import/export | Seguridad de datos del usuario | alto |
-| `android` signing identity | Requerida para actualizar APK sin perder datos | alto |
-| Launcher Android actual | Mantiene app validada mientras Kotlin madura | alto |
+| `android/app/build.gradle` identity | Requerida para actualizar encima | alta |
+| `src/lib/storage.ts` | Datos, ventas, backup/import/export | alta |
+| `src/lib/officialDeviceCovers.ts` | Mapeo oficial modelo/color/portada | media |
+| `public/assets/devices/official/` | Portadas entregadas por el usuario | media |

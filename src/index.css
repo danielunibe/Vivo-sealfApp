@@ -16,7 +16,7 @@
     --neo-surface: #ffffff;
     --neo-surface-soft: #eff2f6;
     --neo-text: #1a1d24;
-    --neo-muted: #858e99;
+    --neo-muted: #5a6470;
     --neo-accent: #4A72FF;
     --neo-success: #2DD4bf;
     --neo-warning: #f59e0b;
@@ -30,6 +30,8 @@
     /* OriginOS Shadows - Diffuse, smooth, minimal inset */
     --neo-shadow-raised: 0 10px 30px -4px rgba(0, 0, 0, 0.06), 0 4px 12px -2px rgba(0, 0, 0, 0.04);
     --neo-shadow-soft: 0 4px 16px -2px rgba(0, 0, 0, 0.04);
+    /* Sombra paralela para cajas grandes */
+    --neo-shadow-parallel: 6px 6px 0 rgba(26, 29, 36, 0.1), 12px 12px 28px rgba(26, 29, 36, 0.1);
     --neo-shadow-pressed: inset 0 2px 10px rgba(0,0,0, 0.03);
     --neo-shadow-inset: inset 0 2px 4px rgba(0, 0, 0, 0.02);
     
@@ -53,7 +55,7 @@
     --neo-surface: #14171c;
     --neo-surface-soft: #1b1e25;
     --neo-text: #f0f2f5;
-    --neo-muted: #858e99;
+    --neo-muted: #a8b0bb;
     --neo-accent: #4A72FF;
     --neo-success: #2DD4bf;
     --neo-warning: #f59e0b;
@@ -61,6 +63,7 @@
 
     --neo-shadow-raised: 0 10px 30px -4px rgba(0, 0, 0, 0.4), 0 4px 12px -2px rgba(0, 0, 0, 0.3);
     --neo-shadow-soft: 0 4px 16px -2px rgba(0, 0, 0, 0.3);
+    --neo-shadow-parallel: 6px 6px 0 rgba(0, 0, 0, 0.4), 12px 12px 28px rgba(0, 0, 0, 0.45);
     --neo-shadow-pressed: inset 0 2px 10px rgba(0, 0, 0, 0.3);
     --neo-shadow-inset: inset 0 2px 4px rgba(0, 0, 0, 0.2);
 
@@ -103,6 +106,7 @@ body {
   --neo-radius-xl: 24px;
   --neo-shadow-raised: 0 6px 18px -4px rgba(0, 0, 0, 0.05);
   --neo-shadow-soft: 0 3px 10px -3px rgba(0, 0, 0, 0.04);
+  --neo-shadow-parallel: 4px 4px 0 rgba(26, 29, 36, 0.06), 8px 8px 16px rgba(26, 29, 36, 0.07);
   --glass-bg: rgba(255, 255, 255, 0.9);
   --glass-bg-strong: rgba(255, 255, 255, 0.96);
   --glass-border: rgba(15, 23, 42, 0.08);
@@ -113,6 +117,7 @@ body {
 .dark:root[data-premium-visual="false"] {
   --neo-shadow-raised: 0 8px 22px -6px rgba(0, 0, 0, 0.28);
   --neo-shadow-soft: 0 4px 12px -4px rgba(0, 0, 0, 0.22);
+  --neo-shadow-parallel: 4px 4px 0 rgba(0, 0, 0, 0.32), 8px 8px 18px rgba(0, 0, 0, 0.36);
   --glass-bg: rgba(20, 23, 28, 0.88);
   --glass-bg-strong: rgba(20, 23, 28, 0.94);
   --glass-border: rgba(255, 255, 255, 0.06);
@@ -134,46 +139,53 @@ body {
     background-color: transparent;
   }
 
-  .vivo-card {
-    background-color: color-mix(in srgb, var(--neo-surface) 62%, transparent);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border: 1px solid color-mix(in srgb, var(--neo-text) 8%, transparent);
-    box-shadow: var(--neo-shadow-soft);
+  /* Cajas grandes: patrón visible + sombra paralela + texto legible */
+  .vivo-surface-on-pattern {
+    background-color: color-mix(in srgb, var(--neo-surface) 42%, transparent);
+    border: 1px solid color-mix(in srgb, var(--neo-text) 10%, transparent);
+    box-shadow: var(--neo-shadow-parallel);
+    color: var(--neo-text);
+  }
+
+  .vivo-surface-on-pattern h1,
+  .vivo-surface-on-pattern h2,
+  .vivo-surface-on-pattern h3,
+  .vivo-surface-on-pattern h4,
+  .vivo-panel h1,
+  .vivo-panel h2,
+  .vivo-panel h3,
+  .vivo-panel h4,
+  .vivo-card h1,
+  .vivo-card h2,
+  .vivo-card h3,
+  .vivo-card h4 {
+    color: var(--neo-text);
+  }
+
+  /* Elementos anidados encima de una caja grande — más translúcidos */
+  .vivo-inset-on-pattern {
+    background-color: color-mix(in srgb, var(--neo-surface) 22%, transparent);
+    border: 1px solid color-mix(in srgb, var(--neo-text) 7%, transparent);
     color: var(--neo-text);
   }
 
   .vivo-panel {
     border-radius: 2rem;
-    background-color: color-mix(in srgb, var(--neo-surface) 58%, transparent);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border: 1px solid color-mix(in srgb, var(--neo-text) 8%, transparent);
-    box-shadow: var(--neo-shadow-soft);
+    background-color: color-mix(in srgb, var(--neo-surface) 42%, transparent);
+    border: 1px solid color-mix(in srgb, var(--neo-text) 10%, transparent);
+    box-shadow: var(--neo-shadow-parallel);
+    color: var(--neo-text);
+  }
+
+  .vivo-card {
+    background-color: color-mix(in srgb, var(--neo-surface) 42%, transparent);
+    border: 1px solid color-mix(in srgb, var(--neo-text) 10%, transparent);
+    box-shadow: var(--neo-shadow-parallel);
     color: var(--neo-text);
   }
 
   .vivo-subtle {
-    background-color: color-mix(in srgb, var(--neo-surface-soft) 55%, transparent);
-    color: var(--neo-text);
-  }
-
-  /* Cajas grandes: dejan ver el patrón diagonal debajo */
-  .vivo-surface-on-pattern {
-    background-color: color-mix(in srgb, var(--neo-surface) 55%, transparent);
-    backdrop-filter: blur(11px);
-    -webkit-backdrop-filter: blur(11px);
-    border: 1px solid color-mix(in srgb, var(--neo-text) 8%, transparent);
-    box-shadow: var(--neo-shadow-soft);
-    color: var(--neo-text);
-  }
-
-  /* Elementos anidados encima de una caja grande */
-  .vivo-inset-on-pattern {
-    background-color: color-mix(in srgb, var(--neo-surface) 42%, transparent);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-    border: 1px solid color-mix(in srgb, var(--neo-text) 6%, transparent);
+    background-color: color-mix(in srgb, var(--neo-surface-soft) 20%, transparent);
     color: var(--neo-text);
   }
 
@@ -193,6 +205,31 @@ body {
   .no-scrollbar {
     -ms-overflow-style: none;
     scrollbar-width: none;
+  }
+
+  /*
+   * Fondo de líneas diagonales (todas las pantallas excepto Registro).
+   * Las cajas translúcidas dejan ver este patrón.
+   */
+  .bg-diagonal-pattern {
+    background-color: var(--neo-bg);
+    background-image: repeating-linear-gradient(
+      -45deg,
+      transparent 0,
+      transparent 10px,
+      color-mix(in srgb, var(--neo-muted) 5.5%, transparent) 10px,
+      color-mix(in srgb, var(--neo-muted) 5.5%, transparent) 11px
+    );
+  }
+
+  .dark .bg-diagonal-pattern {
+    background-image: repeating-linear-gradient(
+      -45deg,
+      transparent 0,
+      transparent 10px,
+      color-mix(in srgb, #ffffff 4%, transparent) 10px,
+      color-mix(in srgb, #ffffff 4%, transparent) 11px
+    );
   }
 
   /* Fotos de producto: sin filtros duros ni pixelado forzado */

@@ -1,22 +1,8 @@
 node_modules/
-.next/
-out/
+build/
+dist/
 coverage/
-dist-apk/*.apk
-dist-apk/*.aab
-.gradle/
-.idea/
 .DS_Store
 *.log
-*.tmp
-*.tsbuildinfo
 .env*
 !.env.example
-*.jks
-*.keystore
-android/key.properties
-asset-backups/
-/app vivo/
-/ChatGPT Image*.png
-/ChatGPT_Image*.jpeg
-/Logo_animation_*.mp4

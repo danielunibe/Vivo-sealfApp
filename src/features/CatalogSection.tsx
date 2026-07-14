@@ -73,7 +73,7 @@ export default function CatalogSection() {
   };
 
   return (
-    <div className={`flex flex-col h-full w-full ${previewModel ? 'overflow-hidden' : 'overflow-y-auto no-scrollbar'} relative`}>
+    <div className={`flex flex-col h-full w-full bg-transparent ${previewModel ? 'overflow-hidden' : 'overflow-y-auto no-scrollbar'} relative`}>
       <motion.div 
         variants={containerVariants}
         initial="hidden"
@@ -131,14 +131,14 @@ export default function CatalogSection() {
                   <div className="flex-1 flex flex-row items-center justify-between gap-2 min-w-0">
                     {/* Column 1: Name and Series */}
                     <div className="flex flex-col min-w-[3.8rem] shrink-0 text-left">
-                      <h3 className="font-extrabold text-[0.82rem] tracking-tight leading-none text-slate-800 dark:text-white truncate">{model.name}</h3>
-                      <span className="text-[0.42rem] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider mt-0.5">
+                      <h3 className="font-extrabold text-[0.82rem] tracking-tight leading-none text-[var(--neo-text)] truncate">{model.name}</h3>
+                      <span className="text-[0.42rem] font-bold text-[var(--neo-muted)] uppercase tracking-wider mt-0.5">
                         {model.seriesName || 'Serie Y'}
                       </span>
                     </div>
 
                     {/* Column 2: Colors summary */}
-                    <div className="text-[0.44rem] font-black text-gray-500 dark:text-gray-400 truncate uppercase max-w-[5.5rem] text-left shrink-0">
+                    <div className="text-[0.44rem] font-black text-[var(--neo-muted)] truncate uppercase max-w-[5.5rem] text-left shrink-0">
                       {colorSummary}
                     </div>
 

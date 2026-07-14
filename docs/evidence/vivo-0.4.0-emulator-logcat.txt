@@ -1,0 +1,868 @@
+--------- beginning of system
+06-29 09:00:49.841   606  1575 I ActivityManager: Force stopping com.davidsanchez.vivopromotor appid=10209 user=0: from pid 14694
+06-29 09:00:49.847   606  1575 I AppsFilter: interaction: PackageSetting{7a58d76 com.android.microdroid.empty_payload/10198} -> PackageSetting{a867d3d com.davidsanchez.vivopromotor/10209} BLOCKED
+--------- beginning of main
+06-29 09:00:49.854  2782  2782 D CarrierSvcBindHelper: onHandleForceStop: [com.davidsanchez.vivopromotor]
+06-29 09:00:49.856  2782  2782 D CarrierSvcBindHelper: No carrier app for: 0
+06-29 09:00:49.960   606  1575 W ActivityTaskManager: callingPackage for (uid=2000, pid=14699) has no WPC
+06-29 09:00:49.969   606  1575 W OptProp : Cannot read opt property android.window.PROPERTY_COMPAT_ALLOW_USER_ASPECT_RATIO_OVERRIDE
+06-29 09:00:49.969   606  1575 W OptProp : Cannot read opt property android.window.PROPERTY_COMPAT_ALLOW_USER_ASPECT_RATIO_FULLSCREEN_OVERRIDE
+06-29 09:00:49.970   606  1575 W OptProp : Cannot read opt property android.window.PROPERTY_COMPAT_ALLOW_ORIENTATION_OVERRIDE
+06-29 09:00:49.972   606  1575 V GrammaticalInflectionUtils: AttributionSource: android.content.AttributionSource@8bf79262 does not have READ_SYSTEM_GRAMMATICAL_GENDER permission.
+06-29 09:00:49.973   606  1575 W OptProp : Cannot read opt property android.window.PROPERTY_COMPAT_ALLOW_RESIZEABLE_ACTIVITY_OVERRIDES
+06-29 09:00:49.974   606  1575 W OptProp : Cannot read opt property android.window.PROPERTY_COMPAT_ALLOW_MIN_ASPECT_RATIO_OVERRIDE
+06-29 09:00:50.000   606  1575 I ActivityTaskManager: START u0 {flg=0x10000000 cmp=com.davidsanchez.vivopromotor/.MainActivity} with LAUNCH_SINGLE_TASK from uid 2000 (BAL_ALLOW_PERMISSION) result code=0
+06-29 09:00:50.002   846   915 V WindowManagerShell: Transition requested (#64): android.os.BinderProxy@ffe74ae TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=38 displayId=0 isRunning=true baseIntent=Intent { flg=0x10000000 cmp=com.davidsanchez.vivopromotor/.MainActivity } baseActivity=ComponentInfo{com.davidsanchez.vivopromotor/com.davidsanchez.vivopromotor.MainActivity} topActivity=ComponentInfo{com.davidsanchez.vivopromotor/com.davidsanchez.vivopromotor.MainActivity} origActivity=null realActivity=ComponentInfo{com.davidsanchez.vivopromotor/com.davidsanchez.vivopromotor.MainActivity} numActivities=1 lastActiveTime=48200276 supportsMultiWindow=true resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{android.window.IWindowContainerToken$Stub$Proxy@378e24f} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 156 - 0, 0) topActivityInfo=ActivityInfo{7869ddc com.davidsanchez.vivopromotor.MainActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isVisible=false isVisibleRequested=false isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false topActivityEligibleForLetterboxEducation= falseisLetterboxEducationEnabled= true isLetterboxDoubleTapEnabled= false topActivityEligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=1280 topActivityLetterboxHeight=2856 isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false cameraCompatTaskInfo=CameraCompatTaskInfo { cameraCompatControlState=hidden freeformCameraCompatMode=inactive}}}, pipTask = null, remoteTransition = null, displayChange = null, flags = 0, debugId = 64 }
+06-29 09:00:50.009  1067  1067 W SplitSelectStateCtor: Missing session instanceIds
+06-29 09:00:50.015   468   468 I BpBinder: onLastStrongRef automatically unlinking death recipients: 
+06-29 09:00:50.015  1067  1067 D StatsLog: LAUNCHER_SPLIT_SELECTION_EXIT_INTERRUPTED
+06-29 09:00:50.017   606   635 V GrammaticalInflectionUtils: AttributionSource: android.content.AttributionSource@8bf79262 does not have READ_SYSTEM_GRAMMATICAL_GENDER permission.
+06-29 09:00:50.018   846   915 D WindowManagerShell: setLauncherKeepClearAreaHeight: visible=false, height=603
+06-29 09:00:50.033   606  1612 I AppsFilter: interaction: PackageSetting{7a58d76 com.android.microdroid.empty_payload/10198} -> PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} BLOCKED
+06-29 09:00:50.040  1067  1067 I TopTaskTracker: onTaskMovedToFront: (moved taskInfo to front) taskId=38, baseIntent=Intent { flg=0x10000000 cmp=com.davidsanchez.vivopromotor/.MainActivity }
+06-29 09:00:50.056   391   391 D Zygote  : Forked child process 14702
+06-29 09:00:50.080   606   644 I ActivityManager: Start proc 14702:com.davidsanchez.vivopromotor/u0a209 for next-top-activity {com.davidsanchez.vivopromotor/com.davidsanchez.vivopromotor.MainActivity}
+06-29 09:00:50.088 14702 14702 I ez.vivopromotor: Late-enabling -Xcheck:jni
+06-29 09:00:50.128   606  1612 D CoreBackPreview: Window{9187e49 u0 Splash Screen com.davidsanchez.vivopromotor}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@b61b605, mPriority=0, mIsAnimationCallback=false}
+06-29 09:00:50.155  1067  1673 D EGL_emulation: app_time_stats: avg=12471.22ms min=339.84ms max=24602.60ms count=2
+06-29 09:00:50.232 14702 14702 I ez.vivopromotor: Using CollectorTypeCMC GC.
+06-29 09:00:50.234 14702 14702 W ez.vivopromotor: Unexpected CPU variant for x86: x86_64.
+06-29 09:00:50.234 14702 14702 W ez.vivopromotor: Known variants: atom, sandybridge, silvermont, goldmont, goldmont-plus, goldmont-without-sha-xsaves, tremont, kabylake, default
+06-29 09:00:50.254   477   491 I adbd    : jdwp connection from 14702
+06-29 09:00:50.272 14702 14702 D nativeloader: Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+06-29 09:00:50.311   606   632 V WindowManager: Sent Transition (#64) createdAt=06-29 09:00:49.975 via request=TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=38 displayId=0 isRunning=true baseIntent=Intent { flg=0x10000000 cmp=com.davidsanchez.vivopromotor/.MainActivity } baseActivity=ComponentInfo{com.davidsanchez.vivopromotor/com.davidsanchez.vivopromotor.MainActivity} topActivity=ComponentInfo{com.davidsanchez.vivopromotor/com.davidsanchez.vivopromotor.MainActivity} origActivity=null realActivity=ComponentInfo{com.davidsanchez.vivopromotor/com.davidsanchez.vivopromotor.MainActivity} numActivities=1 lastActiveTime=48200276 supportsMultiWindow=true resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{RemoteToken{5368568 Task{8adb94c #38 type=standard A=10209:com.davidsanchez.vivopromotor}}} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 156 - 0, 0) topActivityInfo=ActivityInfo{b4cad81 com.davidsanchez.vivopromotor.MainActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isVisible=false isVisibleRequested=false isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false topActivityEligibleForLetterboxEducation= falseisLetterboxEducationEnabled= true isLetterboxDoubleTapEnabled= false topActivityEligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=1280 topActivityLetterboxHeight=2856 isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false cameraCompatTaskInfo=CameraCompatTaskInfo { cameraCompatControlState=hidden freeformCameraCompatMode=inactive}}}, pipTask = null, remoteTransition = null, displayChange = null, flags = 0, debugId = 64 }
+06-29 09:00:50.312   606   632 V WindowManager:     startWCT=WindowContainerTransaction { changes = {} hops = [] errorCallbackToken=null taskFragmentOrganizer=null }
+06-29 09:00:50.312   606   632 V WindowManager:     info={id=64 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[
+06-29 09:00:50.312   606   632 V WindowManager:         {WCT{RemoteToken{5368568 Task{8adb94c #38 type=standard A=10209:com.davidsanchez.vivopromotor}}} m=OPEN f=NONE leash=Surface(name=Task=38)/@0xaee365a sb=Rect(0, 0 - 1280, 2856) eb=Rect(0, 0 - 1280, 2856) d=0 taskParent=-1},
+06-29 09:00:50.312   606   632 V WindowManager:         {WCT{RemoteToken{87ee837 Task{c33a563 #1 type=home}}} m=TO_BACK f=SHOW_WALLPAPER leash=Surface(name=Task=1)/@0xbcffad sb=Rect(0, 0 - 1280, 2856) eb=Rect(0, 0 - 1280, 2856) d=0 taskParent=-1}
+06-29 09:00:50.312   606   632 V WindowManager:     ]}
+06-29 09:00:50.314   846   857 V WindowManagerShell: onTransitionReady(transaction=2602750184780)
+06-29 09:00:50.317   846   915 V WindowManagerShell: onTransitionReady (#64) android.os.BinderProxy@ffe74ae: {id=64 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[{WCT{android.window.IWindowContainerToken$Stub$Proxy@7ce2e5b} m=OPEN f=NONE leash=Surface(name=Task=38)/@0x61b360c sb=Rect(0, 0 - 1280, 2856) eb=Rect(0, 0 - 1280, 2856) d=0 taskParent=-1},{WCT{android.window.IWindowContainerToken$Stub$Proxy@a4ba6f8} m=TO_BACK f=SHOW_WALLPAPER leash=Surface(name=Task=1)/@0xd55db55 sb=Rect(0, 0 - 1280, 2856) eb=Rect(0, 0 - 1280, 2856) d=0 taskParent=-1}]}
+06-29 09:00:50.320   846   915 V WindowManagerShell: Playing animation for (#64) android.os.BinderProxy@ffe74ae@0
+06-29 09:00:50.320   846   915 V WindowManagerShell:  try handler com.android.wm.shell.transition.DefaultMixedHandler@5ff153c
+06-29 09:00:50.322   846   915 V WindowManagerShell:  try handler com.android.wm.shell.keyguard.KeyguardTransitionHandler@e7c82c5
+06-29 09:00:50.322   846   915 V WindowManagerShell:  try handler com.android.wm.shell.pip.PipTransition@439e41a
+06-29 09:00:50.322   846   915 V WindowManagerShell:  try handler com.android.wm.shell.activityembedding.ActivityEmbeddingController@6423b4b
+06-29 09:00:50.322   846   915 V WindowManagerShell:  try handler com.android.wm.shell.recents.RecentsTransitionHandler@f464928
+06-29 09:00:50.322   846   915 V ShellRecents: RecentsTransitionHandler.startAnimation: no controller found
+06-29 09:00:50.322   846   915 V WindowManagerShell:  try handler com.android.wm.shell.splitscreen.StageCoordinator@8278641
+06-29 09:00:50.322   846   915 V WindowManagerShell:  try handler com.android.wm.shell.transition.RemoteTransitionHandler@b0227e6
+06-29 09:00:50.323   846   915 V WindowManagerShell: Transition doesn't have explicit remote, search filters for match for {id=64 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[{WCT{android.window.IWindowContainerToken$Stub$Proxy@7ce2e5b} m=OPEN f=NONE leash=Surface(name=Task=38)/@0x61b360c sb=Rect(0, 0 - 1280, 2856) eb=Rect(0, 0 - 1280, 2856) d=0 taskParent=-1},{WCT{android.window.IWindowContainerToken$Stub$Proxy@a4ba6f8} m=TO_BACK f=SHOW_WALLPAPER leash=Surface(name=Task=1)/@0xd55db55 sb=Rect(0, 0 - 1280, 2856) eb=Rect(0, 0 - 1280, 2856) d=0 taskParent=-1}]}
+06-29 09:00:50.323   846   915 V WindowManagerShell:  Checking filter Pair{{types=[] flags=0x0] notFlags=0x0 checks=[{atype=undefined independent=true modes=[OPEN,TO_FRONT] flags=IN_TASK_WITH_EMBEDDED_ACTIVITY mustBeTask=false order=ANY topActivity=ComponentInfo{com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity} launchCookie=null},{atype=undefined independent=true modes=[CLOSE,TO_BACK] flags=IN_TASK_WITH_EMBEDDED_ACTIVITY mustBeTask=false order=ANY topActivity=null launchCookie=null}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@d97402c, appThread = android.app.IApplicationThread$Stub$Proxy@cfbeaf5, debugName = OverlaySwipeBack }}
+06-29 09:00:50.323   846   915 V WindowManagerShell:  Checking filter Pair{{types=[] flags=0x0] notFlags=0x0 checks=[{atype=dream independent=true modes=[OPEN,TO_FRONT] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null},{atype=home independent=true modes=[CLOSE,TO_BACK] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@c880e11, appThread = android.app.IApplicationThread$Stub$Proxy@c5d5b76, debugName = LauncherToDream }}
+06-29 09:00:50.323   846   915 V WindowManagerShell:  Checking filter Pair{{types=[] flags=0x0] notFlags=0x100 checks=[{atype=home independent=true modes=[OPEN,TO_FRONT] flags=NONE mustBeTask=false order=TOP topActivity=ComponentInfo{com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity} launchCookie=null},{atype=standard independent=true modes=[CLOSE,TO_BACK] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@8e21577, appThread = android.app.IApplicationThread$Stub$Proxy@bd795e4, debugName = QuickstepLaunchHome }}
+06-29 09:00:50.323   846   915 V WindowManagerShell:  Delegate animation for (#64) to null
+06-29 09:00:50.323   846   915 V WindowManagerShell:  try handler com.android.wm.shell.transition.DefaultTransitionHandler@9f74127
+06-29 09:00:50.323   846   915 V WindowManagerShell: start default transition animation, info = {id=64 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[{WCT{android.window.IWindowContainerToken$Stub$Proxy@7ce2e5b} m=OPEN f=NONE leash=Surface(name=Task=38)/@0x61b360c sb=Rect(0, 0 - 1280, 2856) eb=Rect(0, 0 - 1280, 2856) d=0 taskParent=-1},{WCT{android.window.IWindowContainerToken$Stub$Proxy@a4ba6f8} m=TO_BACK f=SHOW_WALLPAPER leash=Surface(name=Task=1)/@0xd55db55 sb=Rect(0, 0 - 1280, 2856) eb=Rect(0, 0 - 1280, 2856) d=0 taskParent=-1}]}
+06-29 09:00:50.343   846   915 V WindowManagerShell: loadAnimation: anim=android.view.animation.AnimationSet@92cbc2 animAttr=0x13 type=OPEN isEntrance=false
+06-29 09:00:50.345   606  1575 W UserManagerService: Requested status bar icon for non-badged user 0
+06-29 09:00:50.361  1067  1673 D EGL_emulation: app_time_stats: avg=3277.14ms min=16.60ms max=25690.58ms count=8
+06-29 09:00:50.366   846   966 D EGL_emulation: app_time_stats: avg=1769.36ms min=2.79ms max=22861.28ms count=13
+06-29 09:00:50.372   846   915 V WindowManagerShell: loadAnimation: anim=android.view.animation.AnimationSet@5c5e20e animAttr=0x12 type=OPEN isEntrance=true
+06-29 09:00:50.377   846   915 V WindowManagerShell:  animated by com.android.wm.shell.transition.DefaultTransitionHandler@9f74127
+06-29 09:00:50.398 14702 14702 W ziparchive: Unable to open '/data/app/~~zn7PRv9q01fURPCn2bsjWA==/com.davidsanchez.vivopromotor-qcd3Fnh89syw6sRRBrskQQ==/base.dm': No such file or directory
+06-29 09:00:50.399 14702 14702 W ziparchive: Unable to open '/data/app/~~zn7PRv9q01fURPCn2bsjWA==/com.davidsanchez.vivopromotor-qcd3Fnh89syw6sRRBrskQQ==/base.dm': No such file or directory
+06-29 09:00:50.592 14702 14702 D nativeloader: Configuring clns-7 for other apk /data/app/~~zn7PRv9q01fURPCn2bsjWA==/com.davidsanchez.vivopromotor-qcd3Fnh89syw6sRRBrskQQ==/base.apk. target_sdk_version=36, uses_libraries=, library_path=/data/app/~~zn7PRv9q01fURPCn2bsjWA==/com.davidsanchez.vivopromotor-qcd3Fnh89syw6sRRBrskQQ==/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.davidsanchez.vivopromotor
+06-29 09:00:50.627 14702 14702 V GraphicsEnvironment: Currently set values for:
+06-29 09:00:50.627 14702 14702 V GraphicsEnvironment:   angle_gl_driver_selection_pkgs=[]
+06-29 09:00:50.627 14702 14702 V GraphicsEnvironment:   angle_gl_driver_selection_values=[]
+06-29 09:00:50.627 14702 14702 V GraphicsEnvironment: Global.Settings values are invalid: number of packages: 0, number of values: 0
+06-29 09:00:50.627 14702 14702 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+06-29 09:00:50.650   832   832 I wpa_supplicant: wlan0: CTRL-EVENT-BEACON-LOSS 
+06-29 09:00:50.683   846   915 V WindowManagerShell: Transition animation finished (aborted=false), notifying core (#64) android.os.BinderProxy@ffe74ae@0
+06-29 09:00:50.688   606   632 V WindowManager: Finish Transition (#64): created at 06-29 09:00:49.975 collect-started=0.297ms request-sent=22.228ms started=29.381ms ready=327.197ms sent=334.029ms finished=708.769ms
+06-29 09:00:50.691   846   915 V WindowManagerShell: Track 0 became idle
+06-29 09:00:50.691   846   915 V WindowManagerShell: All active transition animations finished
+06-29 09:00:50.691  1067  1067 D VRI[NexusLauncherActivity]: visibilityChanged oldVisibility=true newVisibility=false
+06-29 09:00:50.692   606  1612 W UserManagerService: Requested status bar icon for non-badged user 0
+06-29 09:00:50.695   606  1612 W UserManagerService: Requested status bar icon for non-badged user 0
+06-29 09:00:50.697  1067  1067 D NexusLauncherModelDelegate: notifySmartspaceEvent: SmartspaceTargetEvent{mSmartspaceTarget=null, mSmartspaceActionId='null', mEventType=7}
+06-29 09:00:50.790   606  1612 W OptProp : Cannot read opt property android.window.PROPERTY_COMPAT_ENABLE_FAKE_FOCUS
+06-29 09:00:51.024 14702 14702 D AppCompatDelegate: Checking for metadata for AppLocalesMetadataHolderService : Service not found
+06-29 09:00:51.274 14702 14702 W ez.vivopromotor: Accessing hidden method Landroid/view/ViewGroup;->makeOptionalFitsSystemWindows()V (unsupported, reflection, allowed)
+06-29 09:00:51.335 14702 14702 I WebViewFactory: Loading com.google.android.webview version 124.0.6367.219 (code 636771938)
+06-29 09:00:51.347 14702 14702 V ResourcesManager: The following library key has been added: ResourcesKey{ mHash=faf6d924 mResDir=null mSplitDirs=[] mOverlayDirs=[/product/overlay/EmulationPixel9Pro/EmulationPixel9ProOverlay.apk,/product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk,/data/resource-cache/com.android.systemui-neutral-NTFY.frro,/data/resource-cache/com.android.systemui-accent-0fqH.frro,/data/resource-cache/com.android.systemui-dynamic-xo3B.frro] mLibDirs=[/data/app/~~EwdBiA3jMeMfa-v-YEDETw==/com.google.android.webview-oZUXtQCay5eo9LHmTzosTA==/WebViewGoogle.apk,/data/app/~~yClXnQa4hdVDkyJWRXFWBw==/com.google.android.trichromelibrary_636771938-_BJo-GHdYL90m5dt3tWK4A==/TrichromeLibrary.apk,/system_ext/framework/androidx.window.extensions.jar] mDisplayId=0 mOverrideConfig=v35 mCompatInfo={480dpi always-compat} mLoaders=[]}
+06-29 09:00:51.351 14702 14702 W ziparchive: Unable to open '/data/app/~~yClXnQa4hdVDkyJWRXFWBw==/com.google.android.trichromelibrary_636771938-_BJo-GHdYL90m5dt3tWK4A==/TrichromeLibrary.dm': No such file or directory
+06-29 09:00:51.352 14702 14702 W ziparchive: Unable to open '/data/app/~~yClXnQa4hdVDkyJWRXFWBw==/com.google.android.trichromelibrary_636771938-_BJo-GHdYL90m5dt3tWK4A==/TrichromeLibrary.dm': No such file or directory
+06-29 09:00:51.352 14702 14702 W ez.vivopromotor: Entry not found
+06-29 09:00:51.357 14702 14702 D nativeloader: Configuring clns-8 for other apk /data/app/~~yClXnQa4hdVDkyJWRXFWBw==/com.google.android.trichromelibrary_636771938-_BJo-GHdYL90m5dt3tWK4A==/TrichromeLibrary.apk. target_sdk_version=34, uses_libraries=ALL, library_path=/data/app/~~EwdBiA3jMeMfa-v-YEDETw==/com.google.android.webview-oZUXtQCay5eo9LHmTzosTA==/lib/x86_64:/data/app/~~EwdBiA3jMeMfa-v-YEDETw==/com.google.android.webview-oZUXtQCay5eo9LHmTzosTA==/WebViewGoogle.apk!/lib/x86_64:/data/app/~~yClXnQa4hdVDkyJWRXFWBw==/com.google.android.trichromelibrary_636771938-_BJo-GHdYL90m5dt3tWK4A==/TrichromeLibrary.apk!/lib/x86_64, permitted_path=/data:/mnt/expand
+06-29 09:00:51.362 14702 14702 D ApplicationLoaders: Returning zygote-cached class loader: /system_ext/framework/androidx.window.extensions.jar
+06-29 09:00:51.374 14702 14702 D nativeloader: Configuring clns-9 for other apk /data/app/~~EwdBiA3jMeMfa-v-YEDETw==/com.google.android.webview-oZUXtQCay5eo9LHmTzosTA==/WebViewGoogle.apk. target_sdk_version=34, uses_libraries=, library_path=/data/app/~~EwdBiA3jMeMfa-v-YEDETw==/com.google.android.webview-oZUXtQCay5eo9LHmTzosTA==/lib/x86_64:/data/app/~~EwdBiA3jMeMfa-v-YEDETw==/com.google.android.webview-oZUXtQCay5eo9LHmTzosTA==/WebViewGoogle.apk!/lib/x86_64:/data/app/~~yClXnQa4hdVDkyJWRXFWBw==/com.google.android.trichromelibrary_636771938-_BJo-GHdYL90m5dt3tWK4A==/TrichromeLibrary.apk!/lib/x86_64, permitted_path=/data:/mnt/expand
+06-29 09:00:51.374   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{8c63863 com.android.cts.priv.ctsshim/10189} BLOCKED
+06-29 09:00:51.375   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{1265c60 com.google.android.youtube/10166} BLOCKED
+06-29 09:00:51.375   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{fbac519 com.android.internal.display.cutout.emulation.corner/10004} BLOCKED
+06-29 09:00:51.375   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{4e9b9de com.android.internal.display.cutout.emulation.double/10007} BLOCKED
+06-29 09:00:51.375   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{d7bb07 com.google.android.googlequicksearchbox/10145} BLOCKED
+06-29 09:00:51.375   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{c04de8c com.google.android.onetimeinitializer/10131} BLOCKED
+06-29 09:00:51.375   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{62999d5 com.google.android.ext.shared/10118} BLOCKED
+06-29 09:00:51.375   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{c5395ea com.android.virtualmachine.res/10197} BLOCKED
+06-29 09:00:51.376   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{44050db com.android.managedprovisioning.auto_generated_rro_product__/10041} BLOCKED
+06-29 09:00:51.376   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{c675778 com.android.carrierconfig.auto_generated_rro_vendor__/10085} BLOCKED
+06-29 09:00:51.376   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{376fe51 com.google.android.server.deviceconfig.resources/10208} BLOCKED
+06-29 09:00:51.376   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{ecd26b6 com.android.systemui.emulation.pixel_3_xl/10054} BLOCKED
+06-29 09:00:51.376   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{5e91fb7 com.android.systemui.emulation.pixel_4_xl/10058} BLOCKED
+06-29 09:00:51.376   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{a767324 com.android.systemui.emulation.pixel_fold/10074} BLOCKED
+06-29 09:00:51.376   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{d5c2e8d com.android.providers.telephony.auto_generated_characteristics_rro/10079} BLOCKED
+06-29 09:00:51.376   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{47cf842 com.android.simappdialog.auto_generated_rro_product__/10051} BLOCKED
+06-29 09:00:51.376   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{1e60053 com.android.htmlviewer/10121} BLOCKED
+06-29 09:00:51.376   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{6399d90 com.google.android.health.connect.backuprestore/10206} BLOCKED
+06-29 09:00:51.376   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{1ea2689 com.android.systemui.auto_generated_rro_product__/10075} BLOCKED
+06-29 09:00:51.377   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{f66568e com.google.android.apps.messaging/10142} BLOCKED
+06-29 09:00:51.377   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{cc64eaf com.google.android.soundpicker/10163} BLOCKED
+06-29 09:00:51.377   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{6c302bc com.google.android.marvin.talkbackoverlay/10086} BLOCKED
+06-29 09:00:51.377   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{545a245 com.google.android.configupdater/10128} BLOCKED
+06-29 09:00:51.377   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{c754d9a com.android.internal.emulation.pixel_3a_xl/10016} BLOCKED
+06-29 09:00:51.377   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{ab326cb com.android.internal.emulation.pixel_6_pro/10019} BLOCKED
+06-29 09:00:51.377   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{1b8ea8 com.android.internal.emulation.pixel_7_pro/10022} BLOCKED
+06-29 09:00:51.377   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{f231dc1 com.android.internal.emulation.pixel_8_pro/10027} BLOCKED
+06-29 09:00:51.377   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{94aa966 com.android.internal.emulation.pixel_9_pro/10029} BLOCKED
+06-29 09:00:51.377   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{f4b64a7 com.android.internal.emulation.pixel_3a/10012} BLOCKED
+06-29 09:00:51.377   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{beeed54 com.android.internal.emulation.pixel_4a/10017} BLOCKED
+06-29 09:00:51.377   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{402d4fd com.android.internal.emulation.pixel_6a/10025} BLOCKED
+06-29 09:00:51.377   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{ac7f5f2 com.android.internal.emulation.pixel_7a/10028} BLOCKED
+06-29 09:00:51.378   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{f3fa443 com.android.internal.emulation.pixel_8a/10032} BLOCKED
+06-29 09:00:51.378   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{f78ac0 com.google.android.overlay.googlewebview/10037} BLOCKED
+06-29 09:00:51.378   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{62cc3f9 com.google.android.apps.safetyhub/10139} BLOCKED
+06-29 09:00:51.378   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{5b7f3e com.google.android.hotspot2.osulogin/10202} BLOCKED
+06-29 09:00:51.378   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{fae419f com.android.simappdialog/10125} BLOCKED
+06-29 09:00:51.378   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{52a92ec com.android.internal.display.cutout.emulation.hole/10008} BLOCKED
+06-29 09:00:51.378   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{a6ca6b5 com.android.internal.display.cutout.emulation.tall/10011} BLOCKED
+06-29 09:00:51.378   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{c514a com.android.internal.systemui.navbar.threebutton/10047} BLOCKED
+06-29 09:00:51.378   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{f3f58bb com.android.camera2/10147} BLOCKED
+06-29 09:00:51.379   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{6a3f1d8 com.android.internal.ranchu.commonoverlay/10049} BLOCKED
+06-29 09:00:51.379   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{c8df931 com.android.systemui.auto_generated_rro_vendor__/10090} BLOCKED
+06-29 09:00:51.379   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{18643b8 com.google.android.deskclock/10157} BLOCKED
+06-29 09:00:51.379   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{500c597 com.android.internal.systemui.navbar.twobutton/10045} BLOCKED
+06-29 09:00:51.379   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{7525384 com.google.android.as/10137} BLOCKED
+06-29 09:00:51.379   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{f97f76d com.google.android.gm/10168} BLOCKED
+06-29 09:00:51.379   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{c65bfa2 com.android.compos.payload/10192} BLOCKED
+06-29 09:00:51.379   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{1022433 com.android.systemui.emulation.pixel_3/10053} BLOCKED
+06-29 09:00:51.380   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{76323f0 com.android.systemui.emulation.pixel_4/10057} BLOCKED
+06-29 09:00:51.380   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{5c99d69 com.android.systemui.emulation.pixel_5/10064} BLOCKED
+06-29 09:00:51.380   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{d0433ee com.android.systemui.emulation.pixel_6/10060} BLOCKED
+06-29 09:00:51.380   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{ab0d08f com.android.systemui.emulation.pixel_7/10061} BLOCKED
+06-29 09:00:51.380   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{a6e8f1c com.android.systemui.emulation.pixel_8/10067} BLOCKED
+06-29 09:00:51.380   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{c55a725 com.android.systemui.emulation.pixel_9/10070} BLOCKED
+06-29 09:00:51.380   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{503a0fa com.android.printspooler/10124} BLOCKED
+06-29 09:00:51.381   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{8f3e6ab com.google.android.connectivity.resources.goldfish.overlay/10088} BLOCKED
+06-29 09:00:51.381   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{3638108 com.android.dreams.basic/10113} BLOCKED
+06-29 09:00:51.381   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{6de90a1 com.google.android.networkstack.tethering.emulator/10038} BLOCKED
+06-29 09:00:51.381   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{a5ad2c6 com.android.providers.settings.auto_generated_rro_product__/10050} BLOCKED
+06-29 09:00:51.381   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{333a5b4 com.google.android.as.oss/10130} BLOCKED
+06-29 09:00:51.381   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{6b295dd com.android.traceur.auto_generated_rro_product__/10081} BLOCKED
+06-29 09:00:51.382   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{9a15552 com.android.internal.emulation.pixel_9_pro_fold/10035} BLOCKED
+06-29 09:00:51.383   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{11c8023 com.google.android.devicelockcontroller/10207} BLOCKED
+06-29 09:00:51.383   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{63f6920 com.google.android.dialer/10138} BLOCKED
+06-29 09:00:51.383   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{9c7b2d9 com.android.internal.emulation.pixel_3/10014} BLOCKED
+06-29 09:00:51.383   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{f5b749e com.android.internal.emulation.pixel_4/10018} BLOCKED
+06-29 09:00:51.383   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{7acfb7f com.android.internal.emulation.pixel_5/10023} BLOCKED
+06-29 09:00:51.383   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{c81f74c com.android.internal.emulation.pixel_6/10020} BLOCKED
+06-29 09:00:51.383   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{d77a395 com.android.internal.emulation.pixel_7/10024} BLOCKED
+06-29 09:00:51.383   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{a063caa com.android.internal.emulation.pixel_8/10026} BLOCKED
+06-29 09:00:51.383   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{9fd09b com.android.internal.emulation.pixel_9/10030} BLOCKED
+06-29 09:00:51.383   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{87d3c38 com.google.android.captiveportallogin/10115} BLOCKED
+06-29 09:00:51.384   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{fbe411 android.auto_generated_characteristics_rro/10083} BLOCKED
+06-29 09:00:51.384   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{e37976 com.google.android.appsearch.apk/10191} BLOCKED
+06-29 09:00:51.384   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{720db77 com.android.musicfx/10105} BLOCKED
+06-29 09:00:51.384   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{e5e3e4 com.google.android.apps.docs/10151} BLOCKED
+06-29 09:00:51.384   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{7af9f43 com.google.android.apps.maps/10156} BLOCKED
+06-29 09:00:51.384   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{3a9b04d com.google.android.markup/10154} BLOCKED
+06-29 09:00:51.384   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{b85b702 com.google.android.rkpdapp/10200} BLOCKED
+06-29 09:00:51.384   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{33db813 com.google.android.contacts/10149} BLOCKED
+06-29 09:00:51.385   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{10f5a50 com.android.server.telecom.auto_generated_rro_product__/10078} BLOCKED
+06-29 09:00:51.385   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{aee0449 com.android.phone.auto_generated_characteristics_rro/10076} BLOCKED
+06-29 09:00:51.385   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{61c414e com.google.android.overlay.googleconfig/10034} BLOCKED
+06-29 09:00:51.385   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{d0ef4d1 com.android.chrome/10146} BLOCKED
+06-29 09:00:51.385   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{417cb7c com.android.bips.auto_generated_rro_product__/10003} BLOCKED
+06-29 09:00:51.385   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{c099c05 com.google.android.apps.customization.pixel/10155} BLOCKED
+06-29 09:00:51.385   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{e7f245a com.google.android.tag/10108} BLOCKED
+06-29 09:00:51.385   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{d2168b com.google.android.overlay.permissioncontroller/10039} BLOCKED
+06-29 09:00:51.385   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{2f5c5cc com.google.android.partnersetup/10135} BLOCKED
+06-29 09:00:51.387   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{6d42368 com.google.android.apps.wallpaper.nexus/10153} BLOCKED
+06-29 09:00:51.387   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{58cf381 com.google.android.apps.nexuslauncher/10176} BLOCKED
+06-29 09:00:51.387   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{5fb2c26 com.android.theme.font.notoserifsource/10036} BLOCKED
+06-29 09:00:51.387   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{ec99067 com.google.android.safetycenter.resources/10187} BLOCKED
+06-29 09:00:51.387   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{c7c0e14 com.android.internal.display.cutout.emulation.waterfall/10010} BLOCKED
+06-29 09:00:51.387   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{49446bd com.android.internal.systemui.navbar.transparent/10082} BLOCKED
+06-29 09:00:51.387   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{3dde4b2 com.google.android.connectivity.resources/10196} BLOCKED
+06-29 09:00:51.387   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{4d4cc03 com.android.providers.contacts.auto_generated_rro_product__/10005} BLOCKED
+06-29 09:00:51.387   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{215f780 com.google.android.feedback/10172} BLOCKED
+06-29 09:00:51.387   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{1c391b9 com.google.android.printservice.recommendation/10120} BLOCKED
+06-29 09:00:51.387   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{4c199fe com.google.android.apps.photos/10164} BLOCKED
+06-29 09:00:51.388   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{921afa7 com.google.android.calendar/10150} BLOCKED
+06-29 09:00:51.388   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{bce255f com.google.android.documentsui/10100} BLOCKED
+06-29 09:00:51.388   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{ca30bac com.android.systemui.emulation.pixel_3a_xl/10056} BLOCKED
+06-29 09:00:51.388   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{2029075 com.android.systemui.emulation.pixel_6_pro/10062} BLOCKED
+06-29 09:00:51.388   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{299580a com.android.systemui.emulation.pixel_7_pro/10065} BLOCKED
+06-29 09:00:51.388   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{5d9b87b com.android.systemui.emulation.pixel_8_pro/10068} BLOCKED
+06-29 09:00:51.388   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{e0b3698 com.android.systemui.emulation.pixel_9_pro/10073} BLOCKED
+06-29 09:00:51.388   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{6f8bef1 com.android.carrierconfig.auto_generated_rro_product__/10002} BLOCKED
+06-29 09:00:51.388   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{17cead6 com.android.devicediagnostics.auto_generated_rro_product__/10006} BLOCKED
+06-29 09:00:51.388   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{9416157 com.android.providers.partnerbookmarks/10123} BLOCKED
+06-29 09:00:51.388   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{cc92444 com.android.wallpaper.livepicker/10103} BLOCKED
+06-29 09:00:51.388   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{b49592d com.android.providers.telephony.auto_generated_rro_product__/10080} BLOCKED
+06-29 09:00:51.389   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{d34de62 com.android.phone.auto_generated_rro_vendor__/10089} BLOCKED
+06-29 09:00:51.389   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{d10bbf3 com.android.imsserviceentitlement/10132} BLOCKED
+06-29 09:00:51.389   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{a5640b0 com.android.internal.emulation.pixel_9_pro_xl/10033} BLOCKED
+06-29 09:00:51.389   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{68f5b29 com.google.android.healthconnect.controller/10205} BLOCKED
+06-29 09:00:51.389   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{3867eae com.android.internal.emulation.pixel_2_xl/10013} BLOCKED
+06-29 09:00:51.389   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{371244f com.android.internal.emulation.pixel_3_xl/10015} BLOCKED
+06-29 09:00:51.389   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{456b7dc com.android.internal.emulation.pixel_4_xl/10021} BLOCKED
+06-29 09:00:51.389   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{51980e5 com.android.internal.emulation.pixel_fold/10031} BLOCKED
+06-29 09:00:51.389   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{73fd7ba com.android.bookmarkprovider/10111} BLOCKED
+06-29 09:00:51.389   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{dc5b66b com.google.android.overlay.pixelconfigcommon/10046} BLOCKED
+06-29 09:00:51.389   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{c8575c8 com.android.systemui.accessibility.accessibilitymenu.auto_generated_rro_product__/10001} BLOCKED
+06-29 09:00:51.389   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{f664661 com.android.systemui.emulation.pixel_3a/10055} BLOCKED
+06-29 09:00:51.389   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{803b586 com.android.systemui.emulation.pixel_4a/10059} BLOCKED
+06-29 09:00:51.389   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{6874e47 com.android.systemui.emulation.pixel_6a/10063} BLOCKED
+06-29 09:00:51.389   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{3602674 com.android.systemui.emulation.pixel_7a/10066} BLOCKED
+06-29 09:00:51.389   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{d5fe79d com.android.systemui.emulation.pixel_8a/10069} BLOCKED
+06-29 09:00:51.389   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{ad5a412 com.google.android.settings.intelligence/10140} BLOCKED
+06-29 09:00:51.389   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{ce00d87 com.google.android.projection.gearhead/10129} BLOCKED
+06-29 09:00:51.389   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{ce087e3 com.google.android.uwb.resources/10199} BLOCKED
+06-29 09:00:51.389   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{cef14b4 com.android.cts.ctsshim/10190} BLOCKED
+06-29 09:00:51.389   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{19335e0 com.google.android.wifi.resources/10201} BLOCKED
+06-29 09:00:51.389   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{1586099 com.google.android.wifi.dialog/10203} BLOCKED
+06-29 09:00:51.389   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{f65ef5e com.android.wallpaper/10178} BLOCKED
+06-29 09:00:51.389   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{7a58d76 com.android.microdroid.empty_payload/10198} BLOCKED
+06-29 09:00:51.389   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{e09bf3f com.google.android.apps.wallpaper/10180} BLOCKED
+06-29 09:00:51.389   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{c25d00c com.google.android.odad/10134} BLOCKED
+06-29 09:00:51.389   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{6c56d55 com.android.settings.auto_generated_rro_product__/10048} BLOCKED
+06-29 09:00:51.389   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{e1da36a com.android.systemui.emulation.pixel_9_pro_xl/10072} BLOCKED
+06-29 09:00:51.389   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{865105b com.android.companiondevicemanager.auto_generated_characteristics_rro/10000} BLOCKED
+06-29 09:00:51.389   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{f65e0f8 com.android.internal.systemui.navbar.gestural/10044} BLOCKED
+06-29 09:00:51.389   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{bc89d1 com.google.android.apps.youtube.music/10165} BLOCKED
+06-29 09:00:51.389   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{aea8c36 com.android.bluetoothmidiservice/10110} BLOCKED
+06-29 09:00:51.389   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{45a5737 com.android.storagemanager.auto_generated_rro_product__/10052} BLOCKED
+06-29 09:00:51.389   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{c9414a4 com.google.android.cellbroadcastreceiver/10184} BLOCKED
+06-29 09:00:51.389   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{42ef20d com.android.phone.auto_generated_rro_product__/10077} BLOCKED
+06-29 09:00:51.389   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{8cb35c2 com.android.systemui.emulation.pixel_9_pro_fold/10071} BLOCKED
+06-29 09:00:51.390   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{ef32fd3 android.auto_generated_rro_product__/10084} BLOCKED
+06-29 09:00:51.390   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{64fd710 com.google.android.inputmethod.latin/10160} BLOCKED
+06-29 09:00:51.390   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{9e5a209 android.auto_generated_rro_vendor__/10087} BLOCKED
+06-29 09:00:51.390   606  1575 I AppsFilter: interaction: PackageSetting{8a31e38 com.davidsanchez.vivopromotor/10209} -> PackageSetting{a1aec0e com.google.android.apps.restore/10136} BLOCKED
+06-29 09:00:51.797 14702 14702 I cr_WVCFactoryProvider: Loaded version=124.0.6367.219 minSdkVersion=29 isBundle=false multiprocess=true packageId=2
+06-29 09:00:51.840 14702 14702 D nativeloader: Load /data/app/~~yClXnQa4hdVDkyJWRXFWBw==/com.google.android.trichromelibrary_636771938-_BJo-GHdYL90m5dt3tWK4A==/TrichromeLibrary.apk!/lib/x86_64/libmonochrome_64.so using ns clns-9 from class loader (caller=/data/app/~~EwdBiA3jMeMfa-v-YEDETw==/com.google.android.webview-oZUXtQCay5eo9LHmTzosTA==/WebViewGoogle.apk): ok
+06-29 09:00:51.844 14702 14702 D nativeloader: Load /system/lib64/libwebviewchromium_plat_support.so using ns clns-9 from class loader (caller=/data/app/~~EwdBiA3jMeMfa-v-YEDETw==/com.google.android.webview-oZUXtQCay5eo9LHmTzosTA==/WebViewGoogle.apk): ok
+06-29 09:00:51.868 14702 14724 E chromium: [0629/090051.867454:ERROR:variations_seed_loader.cc(37)] Seed missing signature.
+06-29 09:00:51.871 14702 14724 I chromium: [0629/090051.870745:INFO:variations_seed_loader.cc(66)] Failed to open file for reading.: No such file or directory (2)
+06-29 09:00:51.882   606  1612 V GrammaticalInflectionUtils: AttributionSource: android.content.AttributionSource@3bc3cd31 does not have READ_SYSTEM_GRAMMATICAL_GENDER permission.
+06-29 09:00:51.883 14702 14702 I cr_LibraryLoader: Successfully loaded native library
+06-29 09:00:51.884 14702 14702 I cr_CachingUmaRecorder: Flushed 6 samples from 6 histograms, 0 samples were dropped.
+06-29 09:00:51.898 14702 14702 I cr_CombinedPProvider: #registerProvider() provider:WV.V7@3f35c68 isPolicyCacheEnabled:false policyProvidersSize:0
+06-29 09:00:51.900 14702 14702 I cr_PolicyProvider: #setManagerAndSource() 0
+06-29 09:00:51.904   391   391 D Zygote  : Forked child process 14727
+06-29 09:00:51.905   606   644 I ActivityManager: Start proc 14727:com.google.android.webview:webview_service/u0a162 for service {com.google.android.webview/org.chromium.android_webview.services.VariationsSeedServer}
+06-29 09:00:51.933   606  2101 V GrammaticalInflectionUtils: AttributionSource: android.content.AttributionSource@84a2c87a does not have READ_SYSTEM_GRAMMATICAL_GENDER permission.
+06-29 09:00:51.949 14727 14727 I webview_service: Using CollectorTypeCMC GC.
+06-29 09:00:51.953 14727 14727 W webview_service: Unexpected CPU variant for x86: x86_64.
+06-29 09:00:51.953 14727 14727 W webview_service: Known variants: atom, sandybridge, silvermont, goldmont, goldmont-plus, goldmont-without-sha-xsaves, tremont, kabylake, default
+06-29 09:00:51.955 14727 14727 E webview_service: Not starting debugger since process cannot load the jdwp agent.
+06-29 09:00:51.959 14727 14727 D nativeloader: Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+06-29 09:00:51.973 14702 14702 I cr_CombinedPProvider: #linkNativeInternal() 1
+06-29 09:00:51.978 14702 14702 I cr_AppResProvider: #getApplicationRestrictionsFromUserManager() Bundle[EMPTY_PARCEL]
+06-29 09:00:51.978 14702 14702 I cr_PolicyProvider: #notifySettingsAvailable() 0
+06-29 09:00:51.978 14702 14702 I cr_CombinedPProvider: #onSettingsAvailable() 0
+06-29 09:00:51.978 14702 14702 I cr_CombinedPProvider: #flushPolicies()
+06-29 09:00:51.982 14727 14727 D CompatChangeReporter: Compat change id reported: 242716250; UID 10162; state: ENABLED
+06-29 09:00:52.000 14727 14727 W ziparchive: Unable to open '/data/app/~~yClXnQa4hdVDkyJWRXFWBw==/com.google.android.trichromelibrary_636771938-_BJo-GHdYL90m5dt3tWK4A==/TrichromeLibrary.dm': No such file or directory
+06-29 09:00:52.002 14727 14727 W ziparchive: Unable to open '/data/app/~~yClXnQa4hdVDkyJWRXFWBw==/com.google.android.trichromelibrary_636771938-_BJo-GHdYL90m5dt3tWK4A==/TrichromeLibrary.dm': No such file or directory
+06-29 09:00:52.002 14727 14727 W webview_service: Entry not found
+06-29 09:00:52.003 14727 14727 D nativeloader: Configuring clns-7 for other apk /data/app/~~yClXnQa4hdVDkyJWRXFWBw==/com.google.android.trichromelibrary_636771938-_BJo-GHdYL90m5dt3tWK4A==/TrichromeLibrary.apk. target_sdk_version=34, uses_libraries=ALL, library_path=/data/app/~~EwdBiA3jMeMfa-v-YEDETw==/com.google.android.webview-oZUXtQCay5eo9LHmTzosTA==/lib/x86_64:/data/app/~~EwdBiA3jMeMfa-v-YEDETw==/com.google.android.webview-oZUXtQCay5eo9LHmTzosTA==/WebViewGoogle.apk!/lib/x86_64:/data/app/~~yClXnQa4hdVDkyJWRXFWBw==/com.google.android.trichromelibrary_636771938-_BJo-GHdYL90m5dt3tWK4A==/TrichromeLibrary.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.webview
+06-29 09:00:52.004 14727 14727 D ApplicationLoaders: Returning zygote-cached class loader: /system_ext/framework/androidx.window.extensions.jar
+06-29 09:00:52.020 14727 14727 D nativeloader: Configuring clns-8 for other apk /data/app/~~EwdBiA3jMeMfa-v-YEDETw==/com.google.android.webview-oZUXtQCay5eo9LHmTzosTA==/WebViewGoogle.apk. target_sdk_version=34, uses_libraries=, library_path=/data/app/~~EwdBiA3jMeMfa-v-YEDETw==/com.google.android.webview-oZUXtQCay5eo9LHmTzosTA==/lib/x86_64:/data/app/~~EwdBiA3jMeMfa-v-YEDETw==/com.google.android.webview-oZUXtQCay5eo9LHmTzosTA==/WebViewGoogle.apk!/lib/x86_64:/data/app/~~yClXnQa4hdVDkyJWRXFWBw==/com.google.android.trichromelibrary_636771938-_BJo-GHdYL90m5dt3tWK4A==/TrichromeLibrary.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.webview
+06-29 09:00:52.027   885   885 D Zygote  : Forked child process 14743
+06-29 09:00:52.041 14727 14727 V GraphicsEnvironment: Currently set values for:
+06-29 09:00:52.041 14727 14727 V GraphicsEnvironment:   angle_gl_driver_selection_pkgs=[]
+06-29 09:00:52.041 14727 14727 V GraphicsEnvironment:   angle_gl_driver_selection_values=[]
+06-29 09:00:52.042 14727 14727 V GraphicsEnvironment: Global.Settings values are invalid: number of packages: 0, number of values: 0
+06-29 09:00:52.042 14727 14727 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+06-29 09:00:52.047 14727 14727 I LoadedApk: No resource references to update in package com.google.android.trichromelibrary
+06-29 09:00:52.049 14743 14743 I ocessService0:0: Using CollectorTypeCMC GC.
+06-29 09:00:52.054   606   644 W ActivityManager: Slow operation: 120ms so far, now at startProcess: returned from zygote!
+06-29 09:00:52.054 14727 14727 I cr_WebViewApkApp: Launched version=124.0.6367.219 minSdkVersion=29 isBundle=false processName=com.google.android.webview:webview_service
+06-29 09:00:52.056 14743 14743 W ocessService0:0: Unexpected CPU variant for x86: x86_64.
+06-29 09:00:52.056 14743 14743 W ocessService0:0: Known variants: atom, sandybridge, silvermont, goldmont, goldmont-plus, goldmont-without-sha-xsaves, tremont, kabylake, default
+06-29 09:00:52.061   606   644 W ActivityManager: Slow operation: 127ms so far, now at startProcess: done updating battery stats
+06-29 09:00:52.062   606   644 W ActivityManager: Slow operation: 128ms so far, now at startProcess: building log message
+06-29 09:00:52.062   606   644 I ActivityManager: Start proc 14743:com.google.android.webview:sandboxed_process0:org.chromium.content.app.SandboxedProcessService0:0/u0i17 for  {com.davidsanchez.vivopromotor/org.chromium.content.app.SandboxedProcessService0:0}
+06-29 09:00:52.062   606   644 W ActivityManager: Slow operation: 128ms so far, now at startProcess: starting to update pids map
+06-29 09:00:52.062   606   644 W ActivityManager: Slow operation: 128ms so far, now at startProcess: done updating pids map
+06-29 09:00:52.068 14743 14743 E ocessService0:0: Not starting debugger since process cannot load the jdwp agent.
+06-29 09:00:52.069 14702 14745 W chromium: [WARNING:dns_config_service_android.cc(81)] Failed to read DnsConfig.
+06-29 09:00:52.077 14743 14743 D nativeloader: Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+06-29 09:00:52.105 14702 14744 E chromium: [ERROR:simple_file_enumerator.cc(43)] readdir /data/user/0/com.davidsanchez.vivopromotor/cache/WebView/Default/HTTP Cache/Code Cache/wasm: No such file or directory (2)
+06-29 09:00:52.106 14702 14744 E chromium: [ERROR:simple_index_file.cc(614)] Could not reconstruct index from disk
+06-29 09:00:52.115 14743 14743 D CompatChangeReporter: Compat change id reported: 242716250; UID 99017; state: ENABLED
+06-29 09:00:52.133 14743 14743 D ApplicationLoaders: Returning zygote-cached class loader: /system_ext/framework/androidx.window.extensions.jar
+06-29 09:00:52.151   606  1612 D CompatChangeReporter: Compat change id reported: 261072174; UID 10162; state: ENABLED
+06-29 09:00:52.151 14743 14743 I LoadedApk: No resource references to update in package com.google.android.trichromelibrary
+06-29 09:00:52.159 14743 14743 I cr_WebViewApkApp: Launched version=124.0.6367.219 minSdkVersion=29 isBundle=false processName=com.google.android.webview:sandboxed_process0:org.chromium.content.app.SandboxedProcessService0:0
+06-29 09:00:52.161 14727 14727 D CompatChangeReporter: Compat change id reported: 253665015; UID 10162; state: ENABLED
+06-29 09:00:52.163   606  1575 D CompatChangeReporter: Compat change id reported: 271850009; UID 10162; state: ENABLED
+06-29 09:00:52.163   606  1575 D CompatChangeReporter: Compat change id reported: 253665015; UID 10162; state: ENABLED
+06-29 09:00:52.180   606  1575 V GrammaticalInflectionUtils: AttributionSource: android.content.AttributionSource@3bc3cd31 does not have READ_SYSTEM_GRAMMATICAL_GENDER permission.
+06-29 09:00:52.184 14743 14743 I cr_ChildProcessService: Creating new ChildProcessService pid=14743
+06-29 09:00:52.196   391   391 D Zygote  : Forked child process 14772
+06-29 09:00:52.202   606   644 I ActivityManager: Start proc 14772:com.google.android.webview:webview_apk/u0a162 for service {com.google.android.webview/org.chromium.android_webview.nonembedded.AwComponentUpdateService}
+06-29 09:00:52.232 14772 14772 I iew:webview_apk: Using CollectorTypeCMC GC.
+06-29 09:00:52.233 14772 14772 W iew:webview_apk: Unexpected CPU variant for x86: x86_64.
+06-29 09:00:52.233 14772 14772 W iew:webview_apk: Known variants: atom, sandybridge, silvermont, goldmont, goldmont-plus, goldmont-without-sha-xsaves, tremont, kabylake, default
+06-29 09:00:52.236 14772 14772 E iew:webview_apk: Not starting debugger since process cannot load the jdwp agent.
+06-29 09:00:52.240 14772 14772 D nativeloader: Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+06-29 09:00:52.258 14772 14772 D CompatChangeReporter: Compat change id reported: 242716250; UID 10162; state: ENABLED
+06-29 09:00:52.271 14772 14772 W ziparchive: Unable to open '/data/app/~~yClXnQa4hdVDkyJWRXFWBw==/com.google.android.trichromelibrary_636771938-_BJo-GHdYL90m5dt3tWK4A==/TrichromeLibrary.dm': No such file or directory
+06-29 09:00:52.271 14772 14772 W ziparchive: Unable to open '/data/app/~~yClXnQa4hdVDkyJWRXFWBw==/com.google.android.trichromelibrary_636771938-_BJo-GHdYL90m5dt3tWK4A==/TrichromeLibrary.dm': No such file or directory
+06-29 09:00:52.271 14772 14772 W iew:webview_apk: Entry not found
+06-29 09:00:52.272 14772 14772 D nativeloader: Configuring clns-7 for other apk /data/app/~~yClXnQa4hdVDkyJWRXFWBw==/com.google.android.trichromelibrary_636771938-_BJo-GHdYL90m5dt3tWK4A==/TrichromeLibrary.apk. target_sdk_version=34, uses_libraries=ALL, library_path=/data/app/~~EwdBiA3jMeMfa-v-YEDETw==/com.google.android.webview-oZUXtQCay5eo9LHmTzosTA==/lib/x86_64:/data/app/~~EwdBiA3jMeMfa-v-YEDETw==/com.google.android.webview-oZUXtQCay5eo9LHmTzosTA==/WebViewGoogle.apk!/lib/x86_64:/data/app/~~yClXnQa4hdVDkyJWRXFWBw==/com.google.android.trichromelibrary_636771938-_BJo-GHdYL90m5dt3tWK4A==/TrichromeLibrary.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.webview
+06-29 09:00:52.272 14772 14772 D ApplicationLoaders: Returning zygote-cached class loader: /system_ext/framework/androidx.window.extensions.jar
+06-29 09:00:52.274 14772 14772 D nativeloader: Configuring clns-8 for other apk /data/app/~~EwdBiA3jMeMfa-v-YEDETw==/com.google.android.webview-oZUXtQCay5eo9LHmTzosTA==/WebViewGoogle.apk. target_sdk_version=34, uses_libraries=, library_path=/data/app/~~EwdBiA3jMeMfa-v-YEDETw==/com.google.android.webview-oZUXtQCay5eo9LHmTzosTA==/lib/x86_64:/data/app/~~EwdBiA3jMeMfa-v-YEDETw==/com.google.android.webview-oZUXtQCay5eo9LHmTzosTA==/WebViewGoogle.apk!/lib/x86_64:/data/app/~~yClXnQa4hdVDkyJWRXFWBw==/com.google.android.trichromelibrary_636771938-_BJo-GHdYL90m5dt3tWK4A==/TrichromeLibrary.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.webview
+06-29 09:00:52.279 14772 14772 V GraphicsEnvironment: Currently set values for:
+06-29 09:00:52.279 14772 14772 V GraphicsEnvironment:   angle_gl_driver_selection_pkgs=[]
+06-29 09:00:52.279 14772 14772 V GraphicsEnvironment:   angle_gl_driver_selection_values=[]
+06-29 09:00:52.279 14772 14772 V GraphicsEnvironment: Global.Settings values are invalid: number of packages: 0, number of values: 0
+06-29 09:00:52.279 14772 14772 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+06-29 09:00:52.280 14772 14772 I LoadedApk: No resource references to update in package com.google.android.trichromelibrary
+06-29 09:00:52.281 14772 14772 I cr_WebViewApkApp: Launched version=124.0.6367.219 minSdkVersion=29 isBundle=false processName=com.google.android.webview:webview_apk
+06-29 09:00:52.315 14772 14772 D nativeloader: Load /data/app/~~yClXnQa4hdVDkyJWRXFWBw==/com.google.android.trichromelibrary_636771938-_BJo-GHdYL90m5dt3tWK4A==/TrichromeLibrary.apk!/lib/x86_64/libmonochrome_64.so using ns clns-8 from class loader (caller=/data/app/~~EwdBiA3jMeMfa-v-YEDETw==/com.google.android.webview-oZUXtQCay5eo9LHmTzosTA==/WebViewGoogle.apk): ok
+06-29 09:00:52.319 14772 14772 I cr_LibraryLoader: Successfully loaded native library
+06-29 09:00:52.363 14702 14702 D Capacitor: Starting BridgeActivity
+06-29 09:00:52.440 14702 14702 D Capacitor: Registering plugin instance: CapacitorCookies
+06-29 09:00:52.460 14702 14702 D Capacitor: Registering plugin instance: WebView
+06-29 09:00:52.462 14702 14702 D Capacitor: Registering plugin instance: CapacitorHttp
+06-29 09:00:52.465 14702 14702 D Capacitor: Registering plugin instance: SystemBars
+06-29 09:00:52.483 14772 14789 D TrafficStats: tagSocket(102) with statsTag=0xffffffff, statsUid=-1
+06-29 09:00:52.499 14702 14702 W Capacitor: Unable to read file at path public/plugins
+06-29 09:00:52.511 14702 14702 D Capacitor: Loading app at https://localhost
+06-29 09:00:52.567 14702 14748 W cr_media: BLUETOOTH_CONNECT permission is missing.
+06-29 09:00:52.574 14702 14748 W cr_media: registerBluetoothIntentsIfNeeded: Requires BLUETOOTH permission
+06-29 09:00:52.585 14702 14800 I EGL_emulation: Opening libGLESv1_CM_emulation.so
+06-29 09:00:52.589 14702 14800 I EGL_emulation: Opening libGLESv2_emulation.so
+06-29 09:00:52.659 14743 14771 I cr_LibraryLoader: Successfully loaded native library
+06-29 09:00:52.659 14743 14771 I cr_CachingUmaRecorder: Flushed 2 samples from 2 histograms, 0 samples were dropped.
+06-29 09:00:52.678 14743 14771 W SystemServiceRegistry: No service published for: uimode
+06-29 09:00:52.714 14743 14771 W chromium: [WARNING:runtime_features.cc(694)] SharedStorage for M118+ cannot be enabled in this configuration. Use --enable-features=SharedStorageAPI,SharedStorageAPIM118 in addition.
+06-29 09:00:52.714 14743 14771 W chromium: [WARNING:runtime_features.cc(730)] AttributionReportingCrossAppWeb cannot be enabled in this configuration. Use --enable-features=ConversionMeasurement,AttributionReportingCrossAppWeb in addition.
+06-29 09:00:52.775 14702 14702 D Capacitor: App started
+06-29 09:00:52.787  4041  4057 I FontLog : (REDACTED) Received query %s, URI %s
+06-29 09:00:52.787  4041  4057 I FontLog : (REDACTED) Query [%s] resolved to %s
+06-29 09:00:52.787 14702 14702 D Capacitor: App resumed
+06-29 09:00:52.789  4041  4057 I FontLog : (REDACTED) Font PFD returned from cache for %s
+06-29 09:00:52.790  4041  4057 I FontLog : (REDACTED) Fetch %s end status %s
+06-29 09:00:52.795  4041  4057 I FontLog : (REDACTED) Pulling font file for id = %d, cache size = %d
+06-29 09:00:52.799  4041  4057 I FontLog : (REDACTED) Received query %s, URI %s
+06-29 09:00:52.800  4041  4057 I FontLog : (REDACTED) Query [%s] resolved to %s
+06-29 09:00:52.805  4041  4057 I FontLog : (REDACTED) Fetch %s end status %s
+06-29 09:00:52.807 14702 14702 W HWUI    : Unknown dataspace 0
+06-29 09:00:52.813  4041  4057 I FontLog : (REDACTED) Pulling font file for id = %d, cache size = %d
+06-29 09:00:52.834  4041  4057 I FontLog : (REDACTED) Received query %s, URI %s
+06-29 09:00:52.834  4041  4057 I FontLog : (REDACTED) Query [%s] resolved to %s
+06-29 09:00:52.839  4041  4057 I FontLog : (REDACTED) Font PFD returned from cache for %s
+06-29 09:00:52.839  4041  4057 I FontLog : (REDACTED) Fetch %s end status %s
+06-29 09:00:52.841  4041  4877 I FontLog : (REDACTED) Pulling font file for id = %d, cache size = %d
+06-29 09:00:52.852  4041  4877 I FontLog : (REDACTED) Received query %s, URI %s
+06-29 09:00:52.852  4041  4877 I FontLog : (REDACTED) Query [%s] resolved to %s
+06-29 09:00:52.855  4041  4877 I FontLog : (REDACTED) Font PFD returned from cache for %s
+06-29 09:00:52.855  4041  4877 I FontLog : (REDACTED) Fetch %s end status %s
+06-29 09:00:52.857  4041  4877 I FontLog : (REDACTED) Pulling font file for id = %d, cache size = %d
+06-29 09:00:52.994 14702 14740 D Capacitor: Handling local request: https://localhost/
+06-29 09:00:53.096 14702 14702 I Choreographer: Skipped 31 frames!  The application may be doing too much work on its main thread.
+06-29 09:00:53.154 14702 14744 D Capacitor: Handling local request: https://localhost/assets/index-5C9eOEpu.js
+06-29 09:00:53.159   606  2101 D CoreBackPreview: Window{83dccff u0 com.davidsanchez.vivopromotor/com.davidsanchez.vivopromotor.MainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@649defc, mPriority=0, mIsAnimationCallback=false}
+06-29 09:00:53.162 14702 14741 D Capacitor: Handling local request: https://localhost/assets/index-Dz39QcP_.css
+06-29 09:00:53.200 14702 14718 W HWUI    : Failed to choose config with EGL_SWAP_BEHAVIOR_PRESERVED, retrying without...
+06-29 09:00:53.201 14702 14718 W HWUI    : Failed to initialize 101010-2 format, error = EGL_SUCCESS
+06-29 09:00:53.323   174   174 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device VINTF manifest.
+06-29 09:00:53.324 14702 14718 I Gralloc4: mapper 4.x is not supported
+06-29 09:00:53.488   606   632 W ziparchive: Unable to open '/data/app/~~zn7PRv9q01fURPCn2bsjWA==/com.davidsanchez.vivopromotor-qcd3Fnh89syw6sRRBrskQQ==/base.dm': No such file or directory
+06-29 09:00:53.489 14702 14813 I HWUI    : Davey! duration=870ms; Flags=1, FrameTimelineVsyncId=10131016, IntendedVsync=48202856827296, Vsync=48203373493942, InputEventId=0, HandleInputStart=48203375860900, AnimationStart=48203375889000, PerformTraversalsStart=48203382495200, DrawStart=48203661713900, FrameDeadline=48202873493962, FrameInterval=48203375241300, FrameStartTime=16666666, SyncQueued=48203668142900, SyncStart=48203698959900, IssueDrawCommandsStart=48203701986100, SwapBuffers=48203743973100, FrameCompleted=48203758149300, DequeueBufferDuration=109000, QueueBufferDuration=539900, GpuCompleted=48203758149300, SwapBuffersCompleted=48203746712600, DisplayPresentTime=16960825855817, CommandSubmissionCompleted=48203743973100, 
+06-29 09:00:53.491   606   632 I ActivityTaskManager: Displayed com.davidsanchez.vivopromotor/.MainActivity for user 0: +3s517ms
+06-29 09:00:53.532   606  1640 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+06-29 09:00:53.649   606   720 I ImeTracker: com.davidsanchez.vivopromotor:324c7669: onRequestHide at ORIGIN_SERVER reason HIDE_UNSPECIFIED_WINDOW fromUser false
+06-29 09:00:53.649   606   720 I ImeTracker: com.davidsanchez.vivopromotor:324c7669: onCancelled at PHASE_SERVER_SHOULD_HIDE
+06-29 09:00:53.649   468   473 I BpBinder: onLastStrongRef automatically unlinking death recipients: 
+06-29 09:00:53.691  3036  3036 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3157 
+06-29 09:00:53.700  3036  3036 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2248 repeatCheckTimes = 0, locked = false
+06-29 09:00:53.700  3036  3036 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1986 onStartInput(EditorInfo{EditorInfo{packageName=com.davidsanchez.vivopromotor, inputType=0, inputTypeString=NULL, enableLearning=false, autoCorrection=false, autoComplete=false, imeOptions=12000000, privateImeOptions=null, actionName=UNSPECIFIED, actionLabel=null, initialSelStart=-1, initialSelEnd=-1, initialCapsMode=0, label=null, fieldId=0, fieldName=null, extras=null, hintText=null, hintLocales=[]}}, false)
+06-29 09:00:53.700  3036  3036 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2248 repeatCheckTimes = 1, locked = false
+06-29 09:00:53.701  3036  3036 I AndroidIME: InputBundleManager.loadActiveInputBundleId():450 loadActiveInputBundleId: und-Latn-x-password, password
+06-29 09:00:53.702   606   923 W PackageConfigPersister: App-specific configuration not found for packageName: com.davidsanchez.vivopromotor and userId: 0
+06-29 09:00:53.728  4041  4877 I FontLog : (REDACTED) Received query %s, URI %s
+06-29 09:00:53.728  4041  4877 I FontLog : (REDACTED) Query [%s] resolved to %s
+06-29 09:00:53.732  4041  4877 I FontLog : (REDACTED) Fetch %s end status %s
+06-29 09:00:53.742  4041  4877 I FontLog : (REDACTED) Pulling font file for id = %d, cache size = %d
+06-29 09:00:53.774  4041  4877 I FontLog : (REDACTED) Pulling font file for id = %d, cache size = %d
+06-29 09:00:53.785  1067  1067 D BaseDepthController: setSurface:
+06-29 09:00:53.785  1067  1067 D BaseDepthController: 	mWaitingOnSurfaceValidity: false
+06-29 09:00:53.785  1067  1067 D BaseDepthController: 	mSurface: null
+06-29 09:00:53.785  1067  1067 D BaseDepthController: mSurface is null and mCurrentBlur is: 0
+06-29 09:00:53.792  1067  1067 D StateManager: goToState - fromState: Normal, toState: Normal, partial trace:
+06-29 09:00:53.792  1067  1067 D StateManager: 	at com.android.launcher3.statemanager.StateManager.moveToRestState(go/retraceme 2855a437b73635ce9cad76b9289087e631bbb67fc90008a0da13d343a00e5041:4)
+06-29 09:00:53.792  1067  1067 D StateManager: 	at com.android.launcher3.statemanager.StateManager.moveToRestState(go/retraceme 2855a437b73635ce9cad76b9289087e631bbb67fc90008a0da13d343a00e5041:1)
+06-29 09:00:53.792  1067  1067 D StateManager: 	at com.android.launcher3.statemanager.StatefulActivity.onStop(go/retraceme 2855a437b73635ce9cad76b9289087e631bbb67fc90008a0da13d343a00e5041:34)
+06-29 09:00:53.796  1067  1067 D StatsLog: LAUNCHER_ONSTOP
+06-29 09:00:53.798   606   635 I ActivityManager: Killing 14166:com.google.android.cellbroadcastreceiver/u0a184 (adj 985): empty #17
+06-29 09:00:53.800   606   635 I ActivityManager: Killing 14093:com.google.android.tts/u0a148 (adj 985): empty #18
+06-29 09:00:53.803  1067  1067 D StatsLog: LAUNCHER_GOOGLE_SEARCH_RESTORE_LIST_SIZE_AFTER_ACTIVITY_RESTART
+06-29 09:00:53.807  1067  1783 D OneSearchSuggestProvider: Shut down the binder channel
+06-29 09:00:53.811  1067  1947 I IPCThreadState: oneway function results for code 2 on binder at 0x7d8fd345a810 will be dropped but finished with status UNKNOWN_TRANSACTION
+06-29 09:00:53.833   606  2101 I ActivityManager: Killing 14222:com.google.android.apps.wallpaper/u0a180 (adj 975): empty #17
+06-29 09:00:53.920   391   391 I Zygote  : Process 14166 exited due to signal 9 (Killed)
+06-29 09:00:53.921   606   645 I libprocessgroup: Removed cgroup /sys/fs/cgroup/uid_10184/pid_14166
+06-29 09:00:53.927   606   633 D DisplayManagerService: Drop pending events for gone uid 10184
+06-29 09:00:53.928   846   944 W WindowOnBackDispatcher: sendCancelIfRunning: isInProgress=false callback=android.view.ViewRootImpl$$ExternalSyntheticLambda11@bfbe5e3
+06-29 09:00:53.932   606  2101 D CoreBackPreview: Window{9187e49 u0 Splash Screen com.davidsanchez.vivopromotor EXITING}: Setting back callback null
+06-29 09:00:53.933   606   932 W InputManager-JNI: Input channel object '9187e49 Splash Screen com.davidsanchez.vivopromotor (client)' was disposed without first being removed with the input manager!
+06-29 09:00:53.935   391   391 I Zygote  : Process 14222 exited due to signal 9 (Killed)
+06-29 09:00:53.952   606   633 D DisplayManagerService: Drop pending events for gone uid 10180
+06-29 09:00:53.987   606   645 I libprocessgroup: Removed cgroup /sys/fs/cgroup/uid_10148/pid_14093
+06-29 09:00:53.989   606   645 I libprocessgroup: Removed cgroup /sys/fs/cgroup/uid_10180/pid_14222
+06-29 09:00:53.991   391   391 I Zygote  : Process 14093 exited due to signal 9 (Killed)
+06-29 09:00:53.992   606   633 D DisplayManagerService: Drop pending events for gone uid 10148
+06-29 09:00:54.030 14702 14822 W InteractionJankMonitor: Initializing without READ_DEVICE_CONFIG permission. enabled=false, interval=1, missedFrameThreshold=3, frameTimeThreshold=64, package=com.davidsanchez.vivopromotor
+06-29 09:00:54.086  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/YouTube/YouTube.apk' with 1 weak references
+06-29 09:00:54.087  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/overlay/DisplayCutoutEmulationCorner/DisplayCutoutEmulationCornerOverlay.apk' with 1 weak references
+06-29 09:00:54.087  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /apex/com.android.extservices/priv-app/GoogleExtServices@350820300/GoogleExtServices.apk' with 1 weak references
+06-29 09:00:54.087  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/overlay/DisplayCutoutEmulationDouble/DisplayCutoutEmulationDoubleOverlay.apk' with 1 weak references
+06-29 09:00:54.087  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/TelephonyProvider/TelephonyProvider.apk' with 1 weak references
+06-29 09:00:54.087  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '/product/overlay/TelephonyProvider__sdk_gphone64_x86_64__auto_generated_rro_product.apk' with 1 weak references
+06-29 09:00:54.087  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/DynamicSystemInstallationService/DynamicSystemInstallationService.apk' with 1 weak references
+06-29 09:00:54.087  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/Velvet/Velvet.apk' with 1 weak references
+06-29 09:00:54.088  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/CalendarProvider/CalendarProvider.apk' with 1 weak references
+06-29 09:00:54.088  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/GoogleOneTimeInitializer/GoogleOneTimeInitializer.apk' with 1 weak references
+06-29 09:00:54.088  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/app/GoogleExtShared/GoogleExtShared.apk' with 1 weak references
+06-29 09:00:54.088  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/ExternalStorageProvider/ExternalStorageProvider.apk' with 1 weak references
+06-29 09:00:54.088  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/app/HTMLViewer/HTMLViewer.apk' with 1 weak references
+06-29 09:00:54.089  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/app/CompanionDeviceManager/CompanionDeviceManager.apk' with 1 weak references
+06-29 09:00:54.089  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/DownloadProvider/DownloadProvider.apk' with 1 weak references
+06-29 09:00:54.089  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/PrebuiltBugle/PrebuiltBugle.apk' with 1 weak references
+06-29 09:00:54.089  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/SoundPickerPrebuilt/SoundPickerPrebuilt.apk' with 1 weak references
+06-29 09:00:54.089  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /apex/com.android.mediaprovider/priv-app/MediaProviderGoogle@350820300/MediaProviderGoogle.apk' with 1 weak references
+06-29 09:00:54.090  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/SafetyHubPrebuilt/SafetyHubPrebuilt.apk' with 1 weak references
+06-29 09:00:54.090  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/DownloadProviderUi/DownloadProviderUi.apk' with 1 weak references
+06-29 09:00:54.090  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /apex/com.android.wifi/app/OsuLoginGoogle@350820300/OsuLoginGoogle.apk' with 1 weak references
+06-29 09:00:54.090  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~De-W5Kbx31YgqJTsBSn_GA==/com.android.vending-p3A9PI3BALclbWV3v3Cxlg==/base.apk' with 1 weak references
+06-29 09:00:54.091  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~De-W5Kbx31YgqJTsBSn_GA==/com.android.vending-p3A9PI3BALclbWV3v3Cxlg==/split_config.en.apk' with 1 weak references
+06-29 09:00:54.091  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~De-W5Kbx31YgqJTsBSn_GA==/com.android.vending-p3A9PI3BALclbWV3v3Cxlg==/split_config.x86_64.apk' with 1 weak references
+06-29 09:00:54.091  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~De-W5Kbx31YgqJTsBSn_GA==/com.android.vending-p3A9PI3BALclbWV3v3Cxlg==/split_phonesky_data_loader.apk' with 1 weak references
+06-29 09:00:54.091  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~De-W5Kbx31YgqJTsBSn_GA==/com.android.vending-p3A9PI3BALclbWV3v3Cxlg==/split_phonesky_data_loader.config.x86_64.apk' with 1 weak references
+06-29 09:00:54.091  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~De-W5Kbx31YgqJTsBSn_GA==/com.android.vending-p3A9PI3BALclbWV3v3Cxlg==/split_phonesky_webrtc_native_lib.apk' with 1 weak references
+06-29 09:00:54.091  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~De-W5Kbx31YgqJTsBSn_GA==/com.android.vending-p3A9PI3BALclbWV3v3Cxlg==/split_phonesky_webrtc_native_lib.config.x86_64.apk' with 1 weak references
+06-29 09:00:54.091  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/app/PacProcessor/PacProcessor.apk' with 1 weak references
+06-29 09:00:54.091  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/app/SimAppDialog/SimAppDialog.apk' with 1 weak references
+06-29 09:00:54.091  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '/product/overlay/SimAppDialog__sdk_gphone64_x86_64__auto_generated_rro_product.apk' with 1 weak references
+06-29 09:00:54.091  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /apex/com.android.adservices/priv-app/AdServicesApkGoogle@350820260/AdServicesApkGoogle.apk' with 1 weak references
+06-29 09:00:54.092  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/overlay/DisplayCutoutEmulationHole/DisplayCutoutEmulationHoleOverlay.apk' with 1 weak references
+06-29 09:00:54.092  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/overlay/DisplayCutoutEmulationTall/DisplayCutoutEmulationTallOverlay.apk' with 1 weak references
+06-29 09:00:54.092  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/app/CertInstaller/CertInstaller.apk' with 1 weak references
+06-29 09:00:54.092  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/talkback/talkback.apk' with 1 weak references
+06-29 09:00:54.092  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '/vendor/overlay/EmulatorTalkBackOverlay/EmulatorTalkBackOverlay.apk' with 1 weak references
+06-29 09:00:54.093  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/overlay/NavigationBarMode3Button/NavigationBarMode3ButtonOverlay.apk' with 1 weak references
+06-29 09:00:54.093  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/Camera2/Camera2.apk' with 1 weak references
+06-29 09:00:54.093  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/app/EasterEgg/EasterEgg.apk' with 1 weak references
+06-29 09:00:54.093  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/MtpService/MtpService.apk' with 1 weak references
+06-29 09:00:54.094  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /apex/com.android.nfcservices/priv-app/NfcNciApexGoogle@AE3A.240806.036/NfcNciApexGoogle.apk' with 1 weak references
+06-29 09:00:54.094  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/app/Stk/Stk.apk' with 1 weak references
+06-29 09:00:54.094  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/PrebuiltDeskClockGoogle/PrebuiltDeskClockGoogle.apk' with 1 weak references
+06-29 09:00:54.095  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/overlay/NavigationBarMode2Button/NavigationBarMode2ButtonOverlay.apk' with 1 weak references
+06-29 09:00:54.095  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/DevicePersonalizationPrebuiltPixel2021-aiai_20240329.00_RC16/DevicePersonalizationPrebuiltPixel2021-aiai_20240329.00_RC16.apk' with 1 weak references
+06-29 09:00:54.104  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/PrebuiltGmail/PrebuiltGmail.apk' with 1 weak references
+06-29 09:00:54.105  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /apex/com.android.permission/priv-app/GooglePermissionController@350820360/GooglePermissionController.apk' with 1 weak references
+06-29 09:00:54.105  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '/product/overlay/GooglePermissionControllerOverlay.apk' with 1 weak references
+06-29 09:00:54.105  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /apex/com.android.btservices/app/BluetoothGoogle@342010060/BluetoothGoogle.apk' with 1 weak references
+06-29 09:00:54.106  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/SettingsProvider/SettingsProvider.apk' with 1 weak references
+06-29 09:00:54.106  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '/product/overlay/LargeScreenSettingsProviderOverlay.apk' with 1 weak references
+06-29 09:00:54.106  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '/product/overlay/SettingsProvider__sdk_gphone64_x86_64__auto_generated_rro_product.apk' with 1 weak references
+06-29 09:00:54.106  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/app/PrintSpooler/PrintSpooler.apk' with 1 weak references
+06-29 09:00:54.108  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/app/BasicDreams/BasicDreams.apk' with 1 weak references
+06-29 09:00:54.108  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/DeviceIntelligenceNetworkPrebuilt-astrea_20240329.00_RC02/DeviceIntelligenceNetworkPrebuilt-astrea_20240329.00_RC02.apk' with 1 weak references
+06-29 09:00:54.108  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/InputDevices/InputDevices.apk' with 1 weak references
+06-29 09:00:54.108  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /apex/com.android.devicelock/priv-app/DeviceLockControllerGoogle@AE3A.240806.036/DeviceLockControllerGoogle.apk' with 1 weak references
+06-29 09:00:54.109  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/GoogleDialer/GoogleDialer.apk' with 1 weak references
+06-29 09:00:54.110  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/BuiltInPrintService/BuiltInPrintService.apk' with 1 weak references
+06-29 09:00:54.110  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '/product/overlay/BuiltInPrintService__sdk_gphone64_x86_64__auto_generated_rro_product.apk' with 1 weak references
+06-29 09:00:54.110  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/app/CaptivePortalLoginGoogle/CaptivePortalLoginGoogle.apk' with 1 weak references
+06-29 09:00:54.110  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/MusicFX/MusicFX.apk' with 1 weak references
+06-29 09:00:54.110  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/Drive/Drive.apk' with 1 weak references
+06-29 09:00:54.111  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/Maps/Maps.apk' with 1 weak references
+06-29 09:00:54.111  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/ModuleMetadataGoogle/ModuleMetadataGoogle.apk' with 1 weak references
+06-29 09:00:54.111  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/overlay/DisplayCutoutEmulationEmu01/DisplayCutoutEmulationEmu01Overlay.apk' with 1 weak references
+06-29 09:00:54.111  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system_ext/priv-app/AvatarPickerGoogle/AvatarPickerGoogle.apk' with 1 weak references
+06-29 09:00:54.111  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/MarkupGoogle_v2/MarkupGoogle_v2.apk' with 1 weak references
+06-29 09:00:54.111  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/NetworkStackGoogle/NetworkStackGoogle.apk' with 1 weak references
+06-29 09:00:54.111  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /apex/com.android.rkpd/priv-app/rkpdapp.google@350820300/rkpdapp.google.apk' with 1 weak references
+06-29 09:00:54.112  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/GoogleContacts/GoogleContacts.apk' with 1 weak references
+06-29 09:00:54.112  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~zn7PRv9q01fURPCn2bsjWA==/com.davidsanchez.vivopromotor-qcd3Fnh89syw6sRRBrskQQ==/base.apk' with 1 weak references
+06-29 09:00:54.112  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/Telecom/Telecom.apk' with 1 weak references
+06-29 09:00:54.112  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '/product/overlay/Telecom__sdk_gphone64_x86_64__auto_generated_rro_product.apk' with 1 weak references
+06-29 09:00:54.112  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/app/KeyChain/KeyChain.apk' with 1 weak references
+06-29 09:00:54.112  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~ng84-uIO5_aYODFKI4ormw==/com.android.chrome-PvzltFrinvWFIoXCNYrmDQ==/Chrome.apk' with 1 weak references
+06-29 09:00:54.118  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~yClXnQa4hdVDkyJWRXFWBw==/com.google.android.trichromelibrary_636771938-_BJo-GHdYL90m5dt3tWK4A==/TrichromeLibrary.apk' with 1 weak references
+06-29 09:00:54.118  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/GooglePackageInstaller/GooglePackageInstaller.apk' with 1 weak references
+06-29 09:00:54.118  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/PixelThemesStub/PixelThemesStub.apk' with 1 weak references
+06-29 09:00:54.118  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~IEeLTzfN7wf1rc3vlUkN9w==/com.google.android.gms-VOXGXrDWP2C8N3Qp6ezBGA==/base.apk' with 1 weak references
+06-29 09:00:54.118  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~IEeLTzfN7wf1rc3vlUkN9w==/com.google.android.gms-VOXGXrDWP2C8N3Qp6ezBGA==/split_AdsDynamite_installtime.apk' with 1 weak references
+06-29 09:00:54.118  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~IEeLTzfN7wf1rc3vlUkN9w==/com.google.android.gms-VOXGXrDWP2C8N3Qp6ezBGA==/split_CronetDynamite_installtime.apk' with 1 weak references
+06-29 09:00:54.118  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~IEeLTzfN7wf1rc3vlUkN9w==/com.google.android.gms-VOXGXrDWP2C8N3Qp6ezBGA==/split_DynamiteLoader_installtime.apk' with 1 weak references
+06-29 09:00:54.118  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~IEeLTzfN7wf1rc3vlUkN9w==/com.google.android.gms-VOXGXrDWP2C8N3Qp6ezBGA==/split_DynamiteModulesA_installtime.apk' with 1 weak references
+06-29 09:00:54.118  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~IEeLTzfN7wf1rc3vlUkN9w==/com.google.android.gms-VOXGXrDWP2C8N3Qp6ezBGA==/split_DynamiteModulesC_installtime.apk' with 1 weak references
+06-29 09:00:54.118  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~IEeLTzfN7wf1rc3vlUkN9w==/com.google.android.gms-VOXGXrDWP2C8N3Qp6ezBGA==/split_GoogleCertificates_installtime.apk' with 1 weak references
+06-29 09:00:54.119  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~IEeLTzfN7wf1rc3vlUkN9w==/com.google.android.gms-VOXGXrDWP2C8N3Qp6ezBGA==/split_MapsDynamite_installtime.apk' with 1 weak references
+06-29 09:00:54.119  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~IEeLTzfN7wf1rc3vlUkN9w==/com.google.android.gms-VOXGXrDWP2C8N3Qp6ezBGA==/split_MeasurementDynamite_installtime.apk' with 1 weak references
+06-29 09:00:54.119  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~IEeLTzfN7wf1rc3vlUkN9w==/com.google.android.gms-VOXGXrDWP2C8N3Qp6ezBGA==/split_all_locale_splits.apk' with 1 weak references
+06-29 09:00:54.119  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~IEeLTzfN7wf1rc3vlUkN9w==/com.google.android.gms-VOXGXrDWP2C8N3Qp6ezBGA==/split_config.en.apk' with 1 weak references
+06-29 09:00:54.119  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~IEeLTzfN7wf1rc3vlUkN9w==/com.google.android.gms-VOXGXrDWP2C8N3Qp6ezBGA==/split_config.xxhdpi.apk' with 1 weak references
+06-29 09:00:54.119  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~IEeLTzfN7wf1rc3vlUkN9w==/com.google.android.gms-VOXGXrDWP2C8N3Qp6ezBGA==/split_maps_core_dynamite_ondemand.apk' with 1 weak references
+06-29 09:00:54.119  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system_ext/priv-app/GoogleServicesFramework/GoogleServicesFramework.apk' with 1 weak references
+06-29 09:00:54.119  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/TagGoogle/TagGoogle.apk' with 1 weak references
+06-29 09:00:54.119  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/GoogleTTS/GoogleTTS.apk' with 1 weak references
+06-29 09:00:54.119  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/CallLogBackup/CallLogBackup.apk' with 1 weak references
+06-29 09:00:54.120  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/PartnerSetupPrebuilt/PartnerSetupPrebuilt.apk' with 1 weak references
+06-29 09:00:54.120  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/app/CameraExtensionsProxy/CameraExtensionsProxy.apk' with 1 weak references
+06-29 09:00:54.120  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/NexusWallpapersStubPrebuilt2018/NexusWallpapersStubPrebuilt2018.apk' with 1 weak references
+06-29 09:00:54.120  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system_ext/priv-app/NexusLauncherRelease/NexusLauncherRelease.apk' with 1 weak references
+06-29 09:00:54.120  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/app/CarrierDefaultApp/CarrierDefaultApp.apk' with 1 weak references
+06-29 09:00:54.120  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/CredentialManager/CredentialManager.apk' with 1 weak references
+06-29 09:00:54.120  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/overlay/FontNotoSerifSource/FontNotoSerifSourceOverlay.apk' with 1 weak references
+06-29 09:00:54.120  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/DeviceAsWebcam/DeviceAsWebcam.apk' with 1 weak references
+06-29 09:00:54.120  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/ProxyHandler/ProxyHandler.apk' with 1 weak references
+06-29 09:00:54.120  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /apex/com.android.permission/priv-app/GoogleSafetyCenterResources@350820360/GoogleSafetyCenterResources.apk' with 1 weak references
+06-29 09:00:54.120  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/overlay/DisplayCutoutEmulationWaterfall/DisplayCutoutEmulationWaterfallOverlay.apk' with 1 weak references
+06-29 09:00:54.120  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/IntentResolver/IntentResolver.apk' with 1 weak references
+06-29 09:00:54.121  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/overlay/TransparentNavigationBar/TransparentNavigationBarOverlay.apk' with 1 weak references
+06-29 09:00:54.121  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/E2eeContactKeysProvider/E2eeContactKeysProvider.apk' with 1 weak references
+06-29 09:00:54.121  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /apex/com.android.tethering/priv-app/ServiceConnectivityResourcesGoogle@350820300/ServiceConnectivityResourcesGoogle.apk' with 1 weak references
+06-29 09:00:54.121  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '/vendor/overlay/goldfish_overlay_connectivity_google.apk' with 1 weak references
+06-29 09:00:54.121  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system_ext/priv-app/GoogleFeedback/GoogleFeedback.apk' with 1 weak references
+06-29 09:00:54.121  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/app/GooglePrintRecommendationService/GooglePrintRecommendationService.apk' with 1 weak references
+06-29 09:00:54.121  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/Photos/Photos.apk' with 1 weak references
+06-29 09:00:54.121  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/CalendarGooglePrebuilt/CalendarGooglePrebuilt.apk' with 1 weak references
+06-29 09:00:54.122  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/ManagedProvisioning/ManagedProvisioning.apk' with 1 weak references
+06-29 09:00:54.123  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/SoundPicker/SoundPicker.apk' with 1 weak references
+06-29 09:00:54.123  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/DocumentsUIGoogle/DocumentsUIGoogle.apk' with 1 weak references
+06-29 09:00:54.123  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/PrebuiltGoogleTelemetryTvp/PrebuiltGoogleTelemetryTvp.apk' with 1 weak references
+06-29 09:00:54.123  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system_ext/priv-app/MultiDisplayProvider/MultiDisplayProvider.apk' with 1 weak references
+06-29 09:00:54.124  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/DeviceDiagnostics/DeviceDiagnostics.apk' with 1 weak references
+06-29 09:00:54.124  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '/product/overlay/DeviceDiagnostics__sdk_gphone64_x86_64__auto_generated_rro_product.apk' with 1 weak references
+06-29 09:00:54.124  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/overlay/NotesRoleEnabled/NotesRoleEnabledOverlay.apk' with 1 weak references
+06-29 09:00:54.124  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/LiveWallpapersPicker/LiveWallpapersPicker.apk' with 1 weak references
+06-29 09:00:54.124  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/PrebuiltGoogleAdservicesTvp/PrebuiltGoogleAdservicesTvp.apk' with 1 weak references
+06-29 09:00:54.124  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /apex/com.android.healthfitness/priv-app/HealthConnectControllerGoogle@350820300/HealthConnectControllerGoogle.apk' with 1 weak references
+06-29 09:00:54.124  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/KidsSupervisionStub/KidsSupervisionStub.apk' with 1 weak references
+06-29 09:00:54.124  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system_ext/priv-app/StorageManager/StorageManager.apk' with 1 weak references
+06-29 09:00:54.125  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '/product/overlay/StorageManager__sdk_gphone64_x86_64__auto_generated_rro_product.apk' with 1 weak references
+06-29 09:00:54.125  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/app/BookmarkProvider/BookmarkProvider.apk' with 1 weak references
+06-29 09:00:54.125  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system_ext/priv-app/SettingsGoogle/SettingsGoogle.apk' with 1 weak references
+06-29 09:00:54.125  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '/product/overlay/SettingsGoogle__sdk_gphone64_x86_64__auto_generated_rro_product.apk' with 1 weak references
+06-29 09:00:54.126  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/SettingsIntelligenceGooglePrebuilt/SettingsIntelligenceGooglePrebuilt.apk' with 1 weak references
+06-29 09:00:54.126  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /apex/com.android.uwb/priv-app/ServiceUwbResourcesGoogle@350820300/ServiceUwbResourcesGoogle.apk' with 1 weak references
+06-29 09:00:54.126  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /apex/com.android.wifi/priv-app/ServiceWifiResourcesGoogle@350820300/ServiceWifiResourcesGoogle.apk' with 1 weak references
+06-29 09:00:54.127  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system_ext/priv-app/ThemePicker/ThemePicker.apk' with 1 weak references
+06-29 09:00:54.127  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system_ext/priv-app/WallpaperPickerGoogleRelease/WallpaperPickerGoogleRelease.apk' with 1 weak references
+06-29 09:00:54.127  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/OdadPrebuilt/OdadPrebuilt.apk' with 1 weak references
+06-29 09:00:54.127  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/TeleService/TeleService.apk' with 1 weak references
+06-29 09:00:54.128  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '/vendor/overlay/TeleService__sdk_gphone64_x86_64__auto_generated_rro_vendor.apk' with 1 weak references
+06-29 09:00:54.128  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '/product/overlay/TeleService__sdk_gphone64_x86_64__auto_generated_rro_product.apk' with 1 weak references
+06-29 09:00:54.128  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/Shell/Shell.apk' with 1 weak references
+06-29 09:00:54.128  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/BlockedNumberProvider/BlockedNumberProvider.apk' with 1 weak references
+06-29 09:00:54.128  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/UserDictionaryProvider/UserDictionaryProvider.apk' with 1 weak references
+06-29 09:00:54.128  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system_ext/app/EmergencyInfoGoogleNoUi/EmergencyInfoGoogleNoUi.apk' with 1 weak references
+06-29 09:00:54.128  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk' with 1 weak references
+06-29 09:00:54.129  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/FusedLocation/FusedLocation.apk' with 1 weak references
+06-29 09:00:54.129  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system_ext/priv-app/SystemUIGoogle/SystemUIGoogle.apk' with 1 weak references
+06-29 09:00:54.129  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '/vendor/overlay/SystemUIGoogle__sdk_gphone64_x86_64__auto_generated_rro_vendor.apk' with 1 weak references
+06-29 09:00:54.129  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '/product/overlay/SystemUIGoogle__sdk_gphone64_x86_64__auto_generated_rro_product.apk' with 1 weak references
+06-29 09:00:54.129  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '/product/overlay/SystemUIEmulationPixel9Pro/SystemUIEmulationPixel9ProOverlay.apk' with 1 weak references
+06-29 09:00:54.129  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/YouTubeMusicPrebuilt/YouTubeMusicPrebuilt.apk' with 1 weak references
+06-29 09:00:54.129  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/app/BluetoothMidiService/BluetoothMidiService.apk' with 1 weak references
+06-29 09:00:54.130  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/app/Traceur/Traceur.apk' with 1 weak references
+06-29 09:00:54.130  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /apex/com.android.cellbroadcast/priv-app/GoogleCellBroadcastApp@350820300/GoogleCellBroadcastApp.apk' with 1 weak references
+06-29 09:00:54.131  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/ContactsProvider/ContactsProvider.apk' with 1 weak references
+06-29 09:00:54.131  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '/product/overlay/ContactsProvider__sdk_gphone64_x86_64__auto_generated_rro_product.apk' with 1 weak references
+06-29 09:00:54.131  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/LatinIMEGooglePrebuilt/LatinIMEGooglePrebuilt.apk' with 1 weak references
+06-29 09:00:54.131  1326  1334 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/GoogleRestorePrebuilt-v526684/GoogleRestorePrebuilt-v526684.apk' with 1 weak references
+06-29 09:00:54.702 14702 14718 D EGL_emulation: app_time_stats: avg=410.88ms min=118.69ms max=988.04ms count=3
+06-29 09:00:55.271 14702 14707 I ez.vivopromotor: Compiler allocated 5174KB to compile void android.view.ViewRootImpl.performTraversals()
+06-29 09:00:55.815 14743 14771 I chromium: [INFO:document_style_environment_variables.cc(104)] E2E_Used SafeAreaInsetBottom
+06-29 09:00:55.927 14702 14702 E Capacitor/Console: File:  - Line 827 - Msg: TypeError: Cannot read properties of undefined (reading 'map')
+06-29 09:00:55.937 14702 14702 E Capacitor/Console: File: https://localhost/assets/index-5C9eOEpu.js - Line 98 - Msg: Uncaught TypeError: Cannot read properties of undefined (reading 'map')
+06-29 09:00:55.942 14702 14741 D Capacitor: Handling local request: https://localhost/favicon.ico
+06-29 09:00:55.953 14702 14702 E Capacitor: JavaScript Error: {"type":"js.error","error":{"message":"Uncaught TypeError: Cannot read properties of undefined (reading 'map')","url":"https://localhost/assets/index-5C9eOEpu.js","line":98,"col":43937,"errorObject":"{}"}}
+06-29 09:00:55.965 14743 14771 I chromium: [INFO:document_style_environment_variables.cc(104)] E2E_Used SafeAreaInsetBottom
+06-29 09:00:55.997 14831 14831 W BpBinder: Linking to death on android.gui.ISurfaceComposer but there are no threads (yet?) listening to incoming transactions. See ProcessState::startThreadPool and ProcessState::setThreadPoolMaxThreadCount. Generally you should setup the binder threadpool before other initialization steps.
+06-29 09:00:55.998 14831 14831 W ProcessState: Extra binder thread started, but 0 threads requested. Do not use *startThreadPool when zero threads are requested.
+06-29 09:00:56.039   174   174 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device VINTF manifest.
+06-29 09:00:56.039 14831 14835 I Gralloc4: mapper 4.x is not supported
+06-29 09:00:56.326 14743 14771 I chromium: [INFO:document_style_environment_variables.cc(104)] E2E_Used SafeAreaInsetBottom
+06-29 09:00:56.326 14702 14718 D EGL_emulation: app_time_stats: avg=92.93ms min=1.63ms max=1341.33ms count=16
+06-29 09:00:56.665 14838 14838 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+06-29 09:00:56.674 14838 14838 I AndroidRuntime: Using default boot image
+06-29 09:00:56.674 14838 14838 I AndroidRuntime: Leaving lock profiling enabled
+06-29 09:00:56.679 14702 14839 D ProfileInstaller: Installing profile for com.davidsanchez.vivopromotor
+06-29 09:00:56.693 14838 14838 I app_process: Using CollectorTypeCMC GC.
+06-29 09:00:57.103 14838 14838 D nativeloader: InitDefaultPublicLibraries for_preload=1: libandroid.so:libaaudio.so:libamidi.so:libbinder_ndk.so:libc.so:libcamera2ndk.so:libdl.so:libEGL.so:libGLESv1_CM.so:libGLESv2.so:libGLESv3.so:libicu.so:libicui18n.so:libicuuc.so:libjnigraphics.so:liblog.so:libmediandk.so:libm.so:libnativehelper.so:libnativewindow.so:libOpenMAXAL.so:libOpenSLES.so:libRS.so:libstdc++.so:libsync.so:libvulkan.so:libwebviewchromium_plat_support.so:libz.so
+06-29 09:00:57.146 14838 14838 D nativeloader: Load libicu_jni.so using APEX ns com_android_art for caller /apex/com.android.art/javalib/core-oj.jar: ok
+06-29 09:00:57.146 14838 14838 D app_process: u_setTimeZoneFilesDirectory("/apex/com.android.tzdata/etc/tz/versioned/8/icu") succeeded. 
+06-29 09:00:57.146 14838 14838 D app_process: I18n APEX ICU file found: /apex/com.android.i18n/etc/icu/icudt75l.dat
+06-29 09:00:57.151 14838 14838 D nativeloader: Load libjavacore.so using APEX ns com_android_art for caller /apex/com.android.art/javalib/core-oj.jar: ok
+06-29 09:00:57.159 14838 14838 D nativeloader: Load libopenjdk.so using APEX ns com_android_art for caller /apex/com.android.art/javalib/core-oj.jar: ok
+06-29 09:00:57.165 14838 14838 W app_process: Unexpected CPU variant for x86: x86_64.
+06-29 09:00:57.165 14838 14838 W app_process: Known variants: atom, sandybridge, silvermont, goldmont, goldmont-plus, goldmont-without-sha-xsaves, tremont, kabylake, default
+06-29 09:00:57.178 14838 14838 W app_process: ClassLoaderContext shared library size mismatch. Expected=2, found=0 (PCL[]{PCL[/system/framework/android.test.base.jar*724373495]#PCL[/system/framework/android.test.mock.jar*1452759902]} | PCL[])
+06-29 09:00:57.187 14838 14838 W app_process: ClassLoaderContext classpath size mismatch. expected=0, found=1 (PCL[]{PCL[/system/framework/android.test.runner.jar*2496447986]#PCL[/system/framework/android.test.base.jar*724373495]} | PCL[/system/framework/android.test.runner.jar*2496447986])
+06-29 09:00:57.251 14838 14838 D nativeloader: Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+06-29 09:00:57.252 14838 14838 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+06-29 09:00:57.267 14838 14838 D UiAutomationConnection: Created on user UserHandle{0}
+06-29 09:00:57.267 14838 14838 I UiAutomation: Initialized for user 0 on display 0
+06-29 09:00:57.268 14838 14838 W UiAutomation: Created with deprecatead constructor, assumes DEFAULT_DISPLAY
+06-29 09:00:57.273   606  1612 D AccessibilityManagerService: changeCurrentUserForTestAutomationIfNeededLocked(0): ignoring because device doesn't support visible background users
+06-29 09:00:57.273   606  1612 I UiAutomationManager: Registering UiTestAutomationService (id=com.android.server.accessibility/UiAutomation, flags=0x0) when called by user 0
+06-29 09:00:57.279   606  1612 W MagnificationConnectionManager: requestConnection duplicated request: connect=false, mConnectionState=DISCONNECTED
+06-29 09:00:57.282  1440  1963 I AiAiEcho: Settings changed for uri: content://settings/secure/accessibility_enabled
+06-29 09:00:57.283  1440  1769 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+06-29 09:00:57.283   606   606 W IPCThreadState: Sending oneway calls to frozen process.
+06-29 09:00:57.283  1440  1769 I AiAiEcho: EchoTargets: 
+06-29 09:00:57.283  1440  1769 I AiAiEcho: Filtered by AiAi flag check: 
+06-29 09:00:57.283  1440  1769 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+06-29 09:00:57.283   606   606 W IPCThreadState: Sending oneway calls to frozen process.
+06-29 09:00:57.284   606   606 W IPCThreadState: Sending oneway calls to frozen process.
+06-29 09:00:57.284   606   606 W IPCThreadState: Sending oneway calls to frozen process.
+06-29 09:00:57.284   606   606 W IPCThreadState: Sending oneway calls to frozen process.
+06-29 09:00:57.285   606   606 W IPCThreadState: Sending oneway calls to frozen process.
+06-29 09:00:57.285  1440  1769 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+06-29 09:00:57.285  1440  1769 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+06-29 09:00:57.286  1440  1769 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+06-29 09:00:57.287  1440  1769 I AiAiEcho: EchoTargets: 
+06-29 09:00:57.287  1440  1769 I AiAiEcho: Filtered by AiAi flag check: 
+06-29 09:00:57.287  1440  1769 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+06-29 09:00:57.287  1440  1769 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+06-29 09:00:57.287  1440  1769 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+06-29 09:00:57.287   606   606 W IPCThreadState: Sending oneway calls to frozen process.
+06-29 09:00:57.288   606   606 W IPCThreadState: Sending oneway calls to frozen process.
+06-29 09:00:57.288  1440  1769 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+06-29 09:00:57.288  1440  1769 I AiAiEcho: EchoTargets: 
+06-29 09:00:57.288  1440  1769 I AiAiEcho: Filtered by AiAi flag check: 
+06-29 09:00:57.288  1440  1769 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+06-29 09:00:57.288  1440  1769 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+06-29 09:00:57.288  1440  1769 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+06-29 09:00:57.289   606   606 W IPCThreadState: Sending oneway calls to frozen process.
+06-29 09:00:57.292 14528 14633 I A       : NGA disabled since it's running Panthera and at least one a11y feature is on.
+06-29 09:00:57.291   606   606 D BatterySaverPolicy: accessibility changed to true, updating policy.
+06-29 09:00:57.292  1440  1769 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface media_data_manager with targets# 0 (types=[])
+06-29 09:00:57.293 14528 14633 I A       : (REDACTED) Nga state changed to %s
+06-29 09:00:57.294 14528 14633 I A       : (REDACTED) isTngActive=%s
+06-29 09:00:57.305  1440  1769 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0 (types=[])
+06-29 09:00:57.306   846   846 D SsMediaDataProvider: Forwarding Smartspace updates []
+06-29 09:00:57.307  1440  1769 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0 (types=[])
+06-29 09:00:57.310  1067  1067 D SsBaseTemplateCard: No text view can be set up
+06-29 09:00:57.311  1067  1067 D SsBaseTemplateCard: Passed-in item info is null
+06-29 09:00:57.311  1067  1067 D SsBaseTemplateCard: Passed-in item info is null
+06-29 09:00:57.311  1067  1067 D SsBaseTemplateCard: Passed-in item info is null
+06-29 09:00:57.311  1067  1067 I SsBaseTemplateCard: Secondary card pane is null
+06-29 09:00:57.314   606  1032 W MagnificationConnectionManager: requestConnection duplicated request: connect=false, mConnectionState=DISCONNECTED
+06-29 09:00:57.315  1469  1852 I A       : (REDACTED) Nga on-device enabled based on TNG:MA active state: %b
+06-29 09:00:57.316   606   606 W IPCThreadState: Sending oneway calls to frozen process.
+06-29 09:00:57.316   606   606 W IPCThreadState: Sending oneway calls to frozen process.
+06-29 09:00:57.320   606   606 W IPCThreadState: Sending oneway calls to frozen process.
+06-29 09:00:57.323  1469  1852 I A       : (REDACTED) Nga on-device enabled based on TNG:MA active state: %b
+06-29 09:00:57.323   606   606 W IPCThreadState: Sending oneway calls to frozen process.
+06-29 09:00:57.324  1469  1852 I A       : Unsubscribed to apa or classic variant change.
+06-29 09:00:57.324   606   606 W IPCThreadState: Sending oneway calls to frozen process.
+06-29 09:00:57.325  1440  1963 I AiAiEcho: Settings changed for uri: content://settings/secure/accessibility_enabled
+06-29 09:00:57.326   606   606 W IPCThreadState: Sending oneway calls to frozen process.
+06-29 09:00:57.326  1440  1769 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+06-29 09:00:57.326  1440  1769 I AiAiEcho: EchoTargets: 
+06-29 09:00:57.326  1440  1769 I AiAiEcho: Filtered by AiAi flag check: 
+06-29 09:00:57.326  1440  1769 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+06-29 09:00:57.327  1440  1769 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+06-29 09:00:57.327  1440  1769 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+06-29 09:00:57.327  1440  1769 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+06-29 09:00:57.327  1440  1769 I AiAiEcho: EchoTargets: 
+06-29 09:00:57.327  1440  1769 I AiAiEcho: Filtered by AiAi flag check: 
+06-29 09:00:57.327  1440  1769 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+06-29 09:00:57.327  1440  1769 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+06-29 09:00:57.327  1440  1769 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+06-29 09:00:57.328  1440  1769 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+06-29 09:00:57.328  1440  1769 I AiAiEcho: EchoTargets: 
+06-29 09:00:57.328  1440  1769 I AiAiEcho: Filtered by AiAi flag check: 
+06-29 09:00:57.328  1440  1769 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+06-29 09:00:57.328  1440  1769 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+06-29 09:00:57.328  1440  1769 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+06-29 09:00:57.332  1440  1769 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface media_data_manager with targets# 0 (types=[])
+06-29 09:00:57.333  1440  1769 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0 (types=[])
+06-29 09:00:57.333  1440  1769 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0 (types=[])
+06-29 09:00:57.335   846   846 W PageIndicator: Total number of pages invalid: 0. Assuming 1 page.
+06-29 09:00:57.335  1067  1067 D SsBaseTemplateCard: No text view can be set up
+06-29 09:00:57.335  1067  1067 D SsBaseTemplateCard: Passed-in item info is null
+06-29 09:00:57.335  1067  1067 D SsBaseTemplateCard: Passed-in item info is null
+06-29 09:00:57.335  1067  1067 D SsBaseTemplateCard: Passed-in item info is null
+06-29 09:00:57.335  1067  1067 I SsBaseTemplateCard: Secondary card pane is null
+06-29 09:00:57.337   846   846 D SsMediaDataProvider: Forwarding Smartspace updates []
+06-29 09:00:57.338   846   846 W PageIndicator: Total number of pages invalid: 0. Assuming 1 page.
+06-29 09:00:58.384 14702 14702 I cr_A11yState: Enabled accessibility services list updated.
+06-29 09:00:58.395 14702 14702 I cr_A11yState: Informing listeners of changes.
+06-29 09:00:58.395 14702 14702 I cr_A11yState: New AccessibilityState: State{isScreenReaderEnabled=false, isTouchExplorationEnabled=false, isPerformGesturesEnabled=false, isAnyAccessibilityServiceEnabled=false, isAccessibilityToolPresent=false, isSpokenFeedbackServicePresent=false, isTextShowPasswordEnabled=true, isOnlyPasswordManagersEnabled=false}
+06-29 09:00:58.401 14838 14838 W AccessibilityNodeInfoDumper: Fetch time: 76ms
+06-29 09:00:58.406   606  1032 W MagnificationConnectionManager: requestConnection duplicated request: connect=false, mConnectionState=DISCONNECTED
+06-29 09:00:58.407   606  1032 D AccessibilityManagerService: restoreCurrentUserForTestAutomationIfNeededLocked(): ignoring because device doesn't support visible background users
+06-29 09:00:58.408  1440  1963 I AiAiEcho: Settings changed for uri: content://settings/secure/accessibility_enabled
+06-29 09:00:58.409   606   606 W IPCThreadState: Sending oneway calls to frozen process.
+06-29 09:00:58.409   606   606 W IPCThreadState: Sending oneway calls to frozen process.
+06-29 09:00:58.410  1440  1769 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+06-29 09:00:58.411   606   606 W IPCThreadState: Sending oneway calls to frozen process.
+06-29 09:00:58.411  1440  1769 I AiAiEcho: EchoTargets: 
+06-29 09:00:58.411  1440  1769 I AiAiEcho: Filtered by AiAi flag check: 
+06-29 09:00:58.411  1440  1769 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+06-29 09:00:58.412   606   606 W IPCThreadState: Sending oneway calls to frozen process.
+06-29 09:00:58.414  1440  1769 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+06-29 09:00:58.415  1440  1769 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+06-29 09:00:58.415   606   606 W IPCThreadState: Sending oneway calls to frozen process.
+06-29 09:00:58.415  1440  1769 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+06-29 09:00:58.415  1440  1769 I AiAiEcho: EchoTargets: 
+06-29 09:00:58.415  1440  1769 I AiAiEcho: Filtered by AiAi flag check: 
+06-29 09:00:58.415  1440  1769 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+06-29 09:00:58.415  1440  1769 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+06-29 09:00:58.415  1440  1769 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+06-29 09:00:58.416   606   606 W IPCThreadState: Sending oneway calls to frozen process.
+06-29 09:00:58.416 14838 14838 D AndroidRuntime: Shutting down VM
+06-29 09:00:58.416   606   606 W IPCThreadState: Sending oneway calls to frozen process.
+06-29 09:00:58.416   606   606 W IPCThreadState: Sending oneway calls to frozen process.
+06-29 09:00:58.417  1440  1769 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+06-29 09:00:58.417   606   606 W IPCThreadState: Sending oneway calls to frozen process.
+06-29 09:00:58.417  1440  1769 I AiAiEcho: EchoTargets: 
+06-29 09:00:58.417  1440  1769 I AiAiEcho: Filtered by AiAi flag check: 
+06-29 09:00:58.417  1440  1769 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+06-29 09:00:58.418  1440  1769 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+06-29 09:00:58.418   606   606 D BatterySaverPolicy: accessibility changed to false, updating policy.
+06-29 09:00:58.418  1440  1769 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+06-29 09:00:58.423 14743 14771 I chromium: [INFO:document_style_environment_variables.cc(104)] E2E_Used SafeAreaInsetBottom
+06-29 09:00:58.424  1440  1769 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface media_data_manager with targets# 0 (types=[])
+06-29 09:00:58.424 14528 14634 I A       : NGA enabled in interactor.
+06-29 09:00:58.425  1440  1769 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0 (types=[])
+06-29 09:00:58.425 14528 14634 I A       : (REDACTED) Nga state changed to %s
+06-29 09:00:58.425 14528 14634 I A       : (REDACTED) isTngActive=%s
+06-29 09:00:58.426  1440  1769 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0 (types=[])
+06-29 09:00:58.426  1067  1067 D SsBaseTemplateCard: No text view can be set up
+06-29 09:00:58.426  1067  1067 D SsBaseTemplateCard: Passed-in item info is null
+06-29 09:00:58.426  1067  1067 D SsBaseTemplateCard: Passed-in item info is null
+06-29 09:00:58.427  1067  1067 D SsBaseTemplateCard: Passed-in item info is null
+06-29 09:00:58.427  1067  1067 I SsBaseTemplateCard: Secondary card pane is null
+06-29 09:00:58.432   846   846 D SsMediaDataProvider: Forwarding Smartspace updates []
+06-29 09:00:58.432   846   846 W PageIndicator: Total number of pages invalid: 0. Assuming 1 page.
+06-29 09:00:58.445  1469  1941 I A       : (REDACTED) on opa visibility changed %s
+06-29 09:00:58.450  1469  1941 I A       : (REDACTED) on opa visibility changed %s
+06-29 09:00:58.458  1469  1852 I A       : (REDACTED) Nga on-device enabled based on TNG:MA active state: %b
+06-29 09:00:58.460  1469  2724 I A       : Initializing all components
+06-29 09:00:58.462  1469  1941 I A       : (REDACTED) onIsEnabledChanged, isEnabled: %s
+06-29 09:00:58.463  1469  1852 I A       : (REDACTED) Nga on-device enabled based on TNG:MA active state: %b
+06-29 09:00:58.463  1469  1941 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+06-29 09:00:58.463  1469  1941 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+06-29 09:00:58.463  1469  1941 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+06-29 09:00:58.463  1469  1941 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+06-29 09:00:58.463  1469  1941 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+06-29 09:00:58.464  1469  1941 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+06-29 09:00:58.464  1469  1941 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+06-29 09:00:58.464  1469  1941 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+06-29 09:00:58.465  1469  1941 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+06-29 09:00:58.465  1469  1941 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+06-29 09:00:58.465  1469  1941 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+06-29 09:00:58.465  1469  1852 I A       : (REDACTED) Nga on-device enabled based on TNG:MA active state: %b
+06-29 09:00:58.466  1469  1941 I A       : (REDACTED) Setting session to type: %s
+06-29 09:00:58.467  1469  1941 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+06-29 09:00:58.467  1469  1941 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+06-29 09:00:58.467  1469  1941 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+06-29 09:00:58.467  1469  1941 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+06-29 09:00:58.467  1469  1941 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+06-29 09:00:58.467  1469  1941 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+06-29 09:00:58.468  1469  1941 I A       : (REDACTED) setNavBarVisible: %s
+06-29 09:00:58.471  1469  1941 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+06-29 09:00:58.471  1469  1941 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+06-29 09:00:58.471  1469  1941 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+06-29 09:00:58.471  1469  1941 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+06-29 09:00:58.471  1469  1941 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+06-29 09:00:58.472  1469  1941 W A       : Disposing empty manager. Did you forgot to subscribe observables?
+06-29 09:00:58.476  1469  1852 I A       : Initialize
+06-29 09:00:58.478  1469  1941 I A       : (REDACTED) State changed: %s => %s by %s and %s with %s
+06-29 09:00:58.480  1469  1852 I A       : (REDACTED) stopListening(%s, %s)
+06-29 09:00:58.485  1469  1941 I A       : (REDACTED) Recognizer choice: (recognizer_type: %s, recognizer_mode: %s, choice_reason: %s)
+06-29 09:00:58.497  1469  1941 I A       : (REDACTED) onActiveStateChangeEvent: %s => %s
+06-29 09:00:58.498  1469  1852 I NgaEntryPointEventSendr: setupConnection
+06-29 09:00:58.500  1469  1941 I A       : (REDACTED) #onActiveStateChangeEvent, newState: %s, previousState: %s.
+06-29 09:00:58.505  1469  1852 I NgaEntryPointEventSendr: (REDACTED) State changed: %s => %s
+06-29 09:00:58.511  1469  1941 I NgaEntryPointEventSendr: onServiceConnected
+06-29 09:00:58.512 14528 14638 I A       : Calling beginBinderSession().
+06-29 09:00:58.514 14528 14638 I A       : beginBinderSession(): calling binder
+06-29 09:00:58.515  1469  1941 I NgaEntryPointEventSendr: (REDACTED) State changed: %s => %s
+06-29 09:00:58.516  1469  1941 I INV.SystemUI: showGestureNav
+06-29 09:00:58.517  1469  1941 I INV.SystemUI: (REDACTED) setUiHints(hints = %s)
+06-29 09:00:58.545  1469  1852 I A       : Successfully initialized all components
+06-29 09:00:58.579 14528 14644 W A       : (REDACTED) Queue length for executor %s is now %d. Perhaps some tasks are too long, or the pool is too small.
+06-29 09:00:58.580  1469  1941 I INV.SystemUI: setUiHints: finished successfully
+06-29 09:00:58.581   832   832 I wpa_supplicant: wlan0: CTRL-EVENT-BEACON-LOSS 
+06-29 09:00:58.589  4471  4493 I Icing   : IndexChimeraService.getServiceInterface callingPackage=com.google.android.googlequicksearchbox componentName=null serviceId=36
+06-29 09:00:58.617 14528 14640 I MicroDetectionState: (REDACTED) Updating hotword opa ineligibility to %b
+06-29 09:00:58.623 14528 14640 I A       : getLocaleToModelSpecsMap
+06-29 09:00:58.624 14528 14640 I A       : Fetching latest config from MDD...
+06-29 09:00:58.624 14528 14640 I A       : (REDACTED) Found map of size: %d
+06-29 09:00:58.633   606  1575 W ActivityManager: Unable to start service Intent { cmp=com.google.android.apps.tachyon/.clientapi.ClientApiService } U=0: not found
+06-29 09:00:58.635 14528 14640 W A       : (REDACTED) %s task was not run. Callback from Service received after client was disposed.
+06-29 09:00:58.636 14528 14640 W A       : (REDACTED) %s task was not run. Callback from Service received after client was disposed.
+06-29 09:00:58.636 14528 14640 W A       : (REDACTED) %s task was not run. Callback from Service received after client was disposed.
+06-29 09:00:58.637 14528 14640 W A       : (REDACTED) %s task was not run. Callback from Service received after client was disposed.
+06-29 09:00:58.638 14528 14640 W A       : (REDACTED) %s task was not run. Callback from Service received after client was disposed.
+06-29 09:00:58.638 14528 14640 W A       : (REDACTED) %s task was not run. Callback from Service received after client was disposed.
+06-29 09:00:58.638 14528 14640 W A       : (REDACTED) %s task was not run. Callback from Service received after client was disposed.
+06-29 09:00:58.639  1469  1941 I NgaEntryPointEventSendr: (REDACTED) State changed: %s => %s (%s)
+06-29 09:00:58.639  4471  4514 I Icing   : IndexChimeraService.getServiceInterface callingPackage=com.google.android.gms componentName=null serviceId=30
+06-29 09:00:58.639 14528 14640 W A       : (REDACTED) %s task was not run. Callback from Service received after client was disposed.
+06-29 09:00:58.650  4471 13789 I Icing   : Usage reports ok 1, Failed Usage reports 0, indexed 0, rejected 0
+06-29 09:00:58.659 14528 14640 W A       : (REDACTED) %s task was not run. Callback from Service received after client was disposed.
+06-29 09:00:58.660 14528 14640 I MicroDetectionWorker: (REDACTED) Initializing MicroDataManager InitializeType-%d, isForced-%b, isActivePhoneEnrollment-%b isActiveGoogleHomeEnrollment-%b
+06-29 09:00:58.663 14528 14640 I A       : getLocaleToModelSpecsMap
+06-29 09:00:58.663 14528 14640 I A       : Fetching latest config from MDD...
+06-29 09:00:58.664 14528 14640 I A       : (REDACTED) Found map of size: %d
+06-29 09:00:58.664 14528 14640 I MicroDataManager: (REDACTED) Location for model with model type: %s and locale: %s, is : %s
+06-29 09:00:58.666  4471 13789 I Icing   : Usage reports ok 0, Failed Usage reports 0, indexed 0, rejected 0
+06-29 09:00:58.668 14528 14531 I earchbox:search: Compiler allocated 5481KB to compile java.lang.Object com.google.android.apps.gsa.binaries.velvet.app.tu.a()
+06-29 09:00:58.673 14528 14640 I MicroDetectionState: (REDACTED) #takeChangeMicroDetectorMode [mIsBargeInEnabled: %b, mCurrentDetectionMode: %s]
+06-29 09:00:58.673 14528 14640 I MicroDetectionState: (REDACTED) Should stop hotword detection immediately - %b
+06-29 09:00:58.680 14528 14640 I MicroDetectionState: (REDACTED) #takeChangeMicroDetectorMode [mIsBargeInEnabled: %b, mCurrentDetectionMode: %s]
+06-29 09:00:58.680 14528 14640 I MicroDetectionState: (REDACTED) Should stop hotword detection immediately - %b
+06-29 09:00:58.682 14528 14640 W A       : (REDACTED) %s task was not run. Callback from Service received after client was disposed.
+06-29 09:00:58.682 14528 14640 W A       : (REDACTED) %s task was not run. Callback from Service received after client was disposed.
+06-29 09:00:58.692 14528 14660 I PBSessionCacheImpl: (REDACTED) Deleted sessionId[%d] from persistence.
+06-29 09:00:58.695 14528 14640 W A       : (REDACTED) %s task was not run. Callback from Service received after client was disposed.
+06-29 09:00:58.705  1469  2076 V ClearcutMetricXmitter: Transmission is done.
+06-29 09:00:58.705 14528 14640 W SearchServiceCore: Abort, client detached.
+06-29 09:00:58.712 14528 14640 I MicroDetectionState: (REDACTED) #takeChangeMicroDetectorMode [mIsBargeInEnabled: %b, mCurrentDetectionMode: %s]
+06-29 09:00:58.713 14528 14640 I MicroDetectionState: (REDACTED) Should stop hotword detection immediately - %b
+06-29 09:00:58.716 14528 14640 I A       : getLocaleToModelSpecsMap
+06-29 09:00:58.716 14528 14640 I A       : Fetching latest config from MDD...
+06-29 09:00:58.716 14528 14640 I A       : (REDACTED) Found map of size: %d
+06-29 09:00:58.729   606   762 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+06-29 09:00:58.731   606   762 D InetDiagMessage: Destroyed 1 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+06-29 09:00:58.731   606   762 D InetDiagMessage: Destroyed live tcp sockets for uids={10162} in 2ms
+06-29 09:00:58.732   606   762 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+06-29 09:00:58.733   606   762 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+06-29 09:00:58.733   606   762 D InetDiagMessage: Destroyed live tcp sockets for uids={20162} in 2ms
+06-29 09:00:58.771 14528 14531 I earchbox:search: Compiler allocated 4129KB to compile java.lang.Object com.google.android.apps.gsa.binaries.velvet.app.tu.f()
+06-29 09:00:59.235   606   762 W IPCThreadState: Sending oneway calls to frozen process.
+06-29 09:00:59.235   606   762 W IPCThreadState: Sending oneway calls to frozen process.
+06-29 09:00:59.236  1503  2237 I BugleRcsEngine: handleMessage processing message:[NOTIFY_UPTIME_IGNORE_STATE_CHANGED] with [non-null]:RcsEngineImpl reference [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[b3cfd2cb-28b4]>Handler" thread_id=63 ]
+06-29 09:00:59.242  1503  1954 I BugleRcsEngine: Connected state: [1], networkType: [WIFI] [CONTEXT thread_id=55 ]
+06-29 09:00:59.242   606   762 W IPCThreadState: Sending oneway calls to frozen process.
+06-29 09:00:59.242   606   762 W IPCThreadState: Sending oneway calls to frozen process.
+06-29 09:00:59.242   606   762 W IPCThreadState: Sending oneway calls to frozen process.
+06-29 09:00:59.244   606   762 W IPCThreadState: Sending oneway calls to frozen process.
+06-29 09:00:59.244   606   762 W IPCThreadState: Sending oneway calls to frozen process.
+06-29 09:00:59.244   606   762 W IPCThreadState: Sending oneway calls to frozen process.
+06-29 09:00:59.244   606   762 W IPCThreadState: Sending oneway calls to frozen process.
+06-29 09:00:59.244   606   762 W IPCThreadState: Sending oneway calls to frozen process.
+06-29 09:00:59.244   606   762 W IPCThreadState: Sending oneway calls to frozen process.
+06-29 09:00:59.245   606   762 W IPCThreadState: Sending oneway calls to frozen process.
+06-29 09:00:59.250  4041  4339 I NullBinder: NullBinder for android.net.action.RECOMMEND_NETWORKS triggering remote TransactionTooLargeException due to Service without Chimera impl, calling uid: 1000, calling pid: 0
+06-29 09:00:59.250  4041  4339 W .gms.persistent: Large reply transaction of 1056768 bytes, interface descriptor , code 1
+06-29 09:00:59.251   606   762 D ConnectivityService: NetReassign [no changes] [c 0] [a 1] [i 0]
+06-29 09:00:59.254  4041  4451 I NearbyMediums: Wifi changed new SSID: "AndroidWifi"
+06-29 09:00:59.255  1503  2237 I BugleRcsEngine: No RCS Configuration was found in Bugle for simID: redacted-pii:sim_id[chars:20,last3:897] [CONTEXT log_prefix="ProvisioningEngineDataRetriever" thread_id=63 ]
+06-29 09:00:59.254  4041  4451 I NearbyMediums: WifiLanConnectivityInfo is not changed, skip notify.

@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="stellarGreyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#60636A" />
+      <stop offset="50%" stop-color="#404349" />
+      <stop offset="100%" stop-color="#26282E" />
+    </linearGradient>
+    <linearGradient id="moduleGreyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#555860" />
+      <stop offset="100%" stop-color="#3A3D44" />
+    </linearGradient>
+    <linearGradient id="glareGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="3" dy="5" stdDeviation="5" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+    <filter id="moduleShadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.3"/>
+    </filter>
+    <clipPath id="phoneClip">
+      <rect x="25" y="20" width="150" height="360" rx="18" />
+    </clipPath>
+  </defs>
+  <rect x="25" y="20" width="150" height="360" rx="18" fill="url(#stellarGreyGrad)" filter="url(#shadow)" stroke="#6C7078" stroke-width="1.5" />
+  <rect x="23" y="100" width="2" height="40" rx="1" fill="#35373D" />
+  <rect x="23" y="155" width="2" height="20" rx="1" fill="#35373D" />
+  <g clip-path="url(#phoneClip)">
+    <path d="M-20,150 L180,-50 L180,80 L-20,280 Z" fill="url(#glareGrad)" />
+  </g>
+  <rect x="34" y="32" width="65" height="92" rx="20" fill="url(#moduleGreyGrad)" stroke="#6C7078" stroke-width="1" filter="url(#moduleShadow)" />
+  <circle cx="55" cy="55" r="16" fill="#0A0B0E" stroke="#2A2C32" stroke-width="2" />
+  <circle cx="55" cy="55" r="6" fill="#030405" />
+  <circle cx="55" cy="55" r="1.5" fill="#296A85" />
+  <circle cx="51" cy="51" r="2.5" fill="#ffffff" opacity="0.4" />
+  <circle cx="55" cy="98" r="16" fill="#0A0B0E" stroke="#2A2C32" stroke-width="2" />
+  <circle cx="55" cy="98" r="6" fill="#030405" />
+  <circle cx="55" cy="98" r="1.5" fill="#296A85" />
+  <circle cx="51" cy="94" r="2.5" fill="#ffffff" opacity="0.4" />
+  <circle cx="82" cy="55" r="3.5" fill="#FFFBE6" stroke="#4A4D54" stroke-width="0.5" />
+  <circle cx="82" cy="98" r="4.5" fill="none" stroke="#E0E2E6" stroke-width="1.8" />
+  <g transform="translate(50, 340) rotate(-90)">
+    <text x="0" y="0" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="16" font-weight="600" fill="#9CA0A8" letter-spacing="3.5">vivo</text>
+  </g>
+</svg>

@@ -1,0 +1,577 @@
+--------- beginning of main
+06-29 09:07:17.778 I/artd    (14493): Dex parent of /data/app/~~xaozyjyzwxGLbKnhdyVOow==/com.davidsanchez.vivopromotor-hRHsGI7sH3t2JToCfgH99A==/base.apk is not writable: Permission denied
+06-29 09:07:17.778 I/artd    (14493): GetBestInfo checking odex in dalvik-cache (/data/dalvik-cache/x86_64/data@app@~~xaozyjyzwxGLbKnhdyVOow==@com.davidsanchez.vivopromotor-hRHsGI7sH3t2JToCfgH99A==@base.apk@classes.dex)
+06-29 09:07:17.779 I/artd    (14493): Loading /data/dalvik-cache/x86_64/data@app@~~xaozyjyzwxGLbKnhdyVOow==@com.davidsanchez.vivopromotor-hRHsGI7sH3t2JToCfgH99A==@base.apk@classes.dex with executable: 0
+06-29 09:07:17.779 I/artd    (14493): OatFileAssistant test for existing oat file /data/dalvik-cache/x86_64/data@app@~~xaozyjyzwxGLbKnhdyVOow==@com.davidsanchez.vivopromotor-hRHsGI7sH3t2JToCfgH99A==@base.apk@classes.dex: File /data/dalvik-cache/x86_64/data@app@~~xaozyjyzwxGLbKnhdyVOow==@com.davidsanchez.vivopromotor-hRHsGI7sH3t2JToCfgH99A==@base.apk@classes.vdex does not exist.
+06-29 09:07:17.779 I/artd    (14493): GetBestInfo checking odex next to the dex file (/data/app/~~xaozyjyzwxGLbKnhdyVOow==/com.davidsanchez.vivopromotor-hRHsGI7sH3t2JToCfgH99A==/oat/x86_64/base.odex)
+06-29 09:07:17.779 I/artd    (14493): Loading /data/app/~~xaozyjyzwxGLbKnhdyVOow==/com.davidsanchez.vivopromotor-hRHsGI7sH3t2JToCfgH99A==/oat/x86_64/base.odex with executable: 0
+06-29 09:07:17.779 I/artd    (14493): OatFileAssistant test for existing oat file /data/app/~~xaozyjyzwxGLbKnhdyVOow==/com.davidsanchez.vivopromotor-hRHsGI7sH3t2JToCfgH99A==/oat/x86_64/base.odex: File /data/app/~~xaozyjyzwxGLbKnhdyVOow==/com.davidsanchez.vivopromotor-hRHsGI7sH3t2JToCfgH99A==/oat/x86_64/base.vdex does not exist.
+06-29 09:07:17.779 I/artd    (14493): GetBestInfo checking vdex in dalvik-cache (/data/dalvik-cache/x86_64/data@app@~~xaozyjyzwxGLbKnhdyVOow==@com.davidsanchez.vivopromotor-hRHsGI7sH3t2JToCfgH99A==@base.apk@classes.vdex)
+06-29 09:07:17.779 I/artd    (14493): unable to open vdex file /data/dalvik-cache/x86_64/data@app@~~xaozyjyzwxGLbKnhdyVOow==@com.davidsanchez.vivopromotor-hRHsGI7sH3t2JToCfgH99A==@base.apk@classes.vdex: File /data/dalvik-cache/x86_64/data@app@~~xaozyjyzwxGLbKnhdyVOow==@com.davidsanchez.vivopromotor-hRHsGI7sH3t2JToCfgH99A==@base.apk@classes.vdex does not exist.
+06-29 09:07:17.779 I/artd    (14493): OatFileAssistant test for existing oat file /data/dalvik-cache/x86_64/data@app@~~xaozyjyzwxGLbKnhdyVOow==@com.davidsanchez.vivopromotor-hRHsGI7sH3t2JToCfgH99A==@base.apk@classes.vdex: File /data/dalvik-cache/x86_64/data@app@~~xaozyjyzwxGLbKnhdyVOow==@com.davidsanchez.vivopromotor-hRHsGI7sH3t2JToCfgH99A==@base.apk@classes.vdex does not exist.
+06-29 09:07:17.779 I/artd    (14493): GetBestInfo checking vdex next to the dex file (/data/app/~~xaozyjyzwxGLbKnhdyVOow==/com.davidsanchez.vivopromotor-hRHsGI7sH3t2JToCfgH99A==/oat/x86_64/base.vdex)
+06-29 09:07:17.779 I/artd    (14493): unable to open vdex file /data/app/~~xaozyjyzwxGLbKnhdyVOow==/com.davidsanchez.vivopromotor-hRHsGI7sH3t2JToCfgH99A==/oat/x86_64/base.vdex: File /data/app/~~xaozyjyzwxGLbKnhdyVOow==/com.davidsanchez.vivopromotor-hRHsGI7sH3t2JToCfgH99A==/oat/x86_64/base.vdex does not exist.
+06-29 09:07:17.779 I/artd    (14493): OatFileAssistant test for existing oat file /data/app/~~xaozyjyzwxGLbKnhdyVOow==/com.davidsanchez.vivopromotor-hRHsGI7sH3t2JToCfgH99A==/oat/x86_64/base.vdex: File /data/app/~~xaozyjyzwxGLbKnhdyVOow==/com.davidsanchez.vivopromotor-hRHsGI7sH3t2JToCfgH99A==/oat/x86_64/base.vdex does not exist.
+06-29 09:07:17.779 I/artd    (14493): GetBestInfo checking dm (/data/app/~~xaozyjyzwxGLbKnhdyVOow==/com.davidsanchez.vivopromotor-hRHsGI7sH3t2JToCfgH99A==/base.dm)
+06-29 09:07:17.780 W/ziparchive(14493): Unable to open '/data/app/~~xaozyjyzwxGLbKnhdyVOow==/com.davidsanchez.vivopromotor-hRHsGI7sH3t2JToCfgH99A==/base.dm': No such file or directory
+06-29 09:07:17.780 I/artd    (14493): OatFileAssistant test for existing oat file /data/app/~~xaozyjyzwxGLbKnhdyVOow==/com.davidsanchez.vivopromotor-hRHsGI7sH3t2JToCfgH99A==/base.dm: I/O error
+06-29 09:07:17.780 I/artd    (14493): GetBestInfo checking dm (/data/app/~~xaozyjyzwxGLbKnhdyVOow==/com.davidsanchez.vivopromotor-hRHsGI7sH3t2JToCfgH99A==/base.dm)
+06-29 09:07:17.780 W/ziparchive(14493): Unable to open '/data/app/~~xaozyjyzwxGLbKnhdyVOow==/com.davidsanchez.vivopromotor-hRHsGI7sH3t2JToCfgH99A==/base.dm': No such file or directory
+06-29 09:07:17.780 I/artd    (14493): OatFileAssistant test for existing oat file /data/app/~~xaozyjyzwxGLbKnhdyVOow==/com.davidsanchez.vivopromotor-hRHsGI7sH3t2JToCfgH99A==/base.dm: I/O error
+06-29 09:07:17.780 I/artd    (14493): GetBestInfo no usable artifacts
+--------- beginning of system
+06-29 09:07:19.251 D/ActivityManager(  606): freezing 3996 com.google.android.apps.messaging
+06-29 09:07:20.549 W/ProcessStats(  606): Tracking association SourceState{d22a30 com.google.android.apps.nexuslauncher/10176 BTop #13252} whose proc state 2 is better than process ProcessState{d14df03 com.google.android.googlequicksearchbox:search/10145 pkg=com.google.android.googlequicksearchbox} proc state 14 (26 skipped)
+06-29 09:07:20.745 I/BistoHotwordHelper( 1469): (REDACTED) getHotwordActive::active query: %s, watch: %s, devices connected: %s
+06-29 09:07:20.794 D/ActivityManager(  606): freezing 13892 com.android.vending:background
+06-29 09:07:20.796 D/ActivityManager(  606): freezing 2423 com.android.vending
+06-29 09:07:20.926 D/InetDiagMessage(  606): Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+06-29 09:07:20.927 D/InetDiagMessage(  606): Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+06-29 09:07:20.927 D/InetDiagMessage(  606): Destroyed live tcp sockets for uids={10141} in 2ms
+06-29 09:07:22.582 I/wpa_supplicant(  832): wlan0: CTRL-EVENT-BEACON-LOSS 
+06-29 09:07:22.979 D/InetDiagMessage(  606): Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+06-29 09:07:22.979 D/InetDiagMessage(  606): Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+06-29 09:07:22.979 D/InetDiagMessage(  606): Destroyed live tcp sockets for uids={10143} in 1ms
+06-29 09:07:22.979 D/InetDiagMessage(  606): Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+06-29 09:07:22.980 D/InetDiagMessage(  606): Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+06-29 09:07:22.980 D/InetDiagMessage(  606): Destroyed live tcp sockets for uids={20143} in 1ms
+06-29 09:07:24.806 I/ActivityManager(  606): Force stopping com.davidsanchez.vivopromotor appid=10209 user=0: from pid 14958
+06-29 09:07:24.809 I/AppsFilter(  606): interaction: PackageSetting{7a58d76 com.android.microdroid.empty_payload/10198} -> PackageSetting{9ea0a4e com.davidsanchez.vivopromotor/10209} BLOCKED
+06-29 09:07:24.819 D/CarrierSvcBindHelper( 2782): onHandleForceStop: [com.davidsanchez.vivopromotor]
+06-29 09:07:24.819 D/CarrierSvcBindHelper( 2782): No carrier app for: 0
+06-29 09:07:25.039 W/ActivityTaskManager(  606): callingPackage for (uid=2000, pid=14963) has no WPC
+06-29 09:07:25.040 W/OptProp (  606): Cannot read opt property android.window.PROPERTY_COMPAT_ALLOW_USER_ASPECT_RATIO_OVERRIDE
+06-29 09:07:25.041 W/OptProp (  606): Cannot read opt property android.window.PROPERTY_COMPAT_ALLOW_USER_ASPECT_RATIO_FULLSCREEN_OVERRIDE
+06-29 09:07:25.041 W/OptProp (  606): Cannot read opt property android.window.PROPERTY_COMPAT_ALLOW_ORIENTATION_OVERRIDE
+06-29 09:07:25.043 V/GrammaticalInflectionUtils(  606): AttributionSource: android.content.AttributionSource@8bf79262 does not have READ_SYSTEM_GRAMMATICAL_GENDER permission.
+06-29 09:07:25.044 W/OptProp (  606): Cannot read opt property android.window.PROPERTY_COMPAT_ALLOW_RESIZEABLE_ACTIVITY_OVERRIDES
+06-29 09:07:25.045 W/OptProp (  606): Cannot read opt property android.window.PROPERTY_COMPAT_ALLOW_MIN_ASPECT_RATIO_OVERRIDE
+06-29 09:07:25.068 V/WindowManagerShell(  846): Transition requested (#66): android.os.BinderProxy@11f8fca TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=39 displayId=0 isRunning=true baseIntent=Intent { flg=0x10000000 cmp=com.davidsanchez.vivopromotor/.MainActivity } baseActivity=ComponentInfo{com.davidsanchez.vivopromotor/com.davidsanchez.vivopromotor.MainActivity} topActivity=ComponentInfo{com.davidsanchez.vivopromotor/com.davidsanchez.vivopromotor.MainActivity} origActivity=null realActivity=ComponentInfo{com.davidsanchez.vivopromotor/com.davidsanchez.vivopromotor.MainActivity} numActivities=1 lastActiveTime=48595341 supportsMultiWindow=true resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{android.window.IWindowContainerToken$Stub$Proxy@87bf53b} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 156 - 0, 0) topActivityInfo=ActivityInfo{8219458 com.davidsanchez.vivopromotor.MainActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isVisible=false isVisibleRequested=false isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false topActivityEligibleForLetterboxEducation= falseisLetterboxEducationEnabled= true isLetterboxDoubleTapEnabled= false topActivityEligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=1280 topActivityLetterboxHeight=2856 isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false cameraCompatTaskInfo=CameraCompatTaskInfo { cameraCompatControlState=hidden freeformCameraCompatMode=inactive}}}, pipTask = null, remoteTransition = null, displayChange = null, flags = 0, debugId = 66 }
+06-29 09:07:25.068 I/ActivityTaskManager(  606): START u0 {flg=0x10000000 cmp=com.davidsanchez.vivopromotor/.MainActivity} with LAUNCH_SINGLE_TASK from uid 2000 (BAL_ALLOW_PERMISSION) result code=0
+06-29 09:07:25.080 I/BpBinder(  468): onLastStrongRef automatically unlinking death recipients: 
+06-29 09:07:25.080 V/GrammaticalInflectionUtils(  606): AttributionSource: android.content.AttributionSource@8bf79262 does not have READ_SYSTEM_GRAMMATICAL_GENDER permission.
+06-29 09:07:25.081 W/SplitSelectStateCtor( 1067): Missing session instanceIds
+06-29 09:07:25.081 D/StatsLog( 1067): LAUNCHER_SPLIT_SELECTION_EXIT_INTERRUPTED
+06-29 09:07:25.095 I/AppsFilter(  606): interaction: PackageSetting{7a58d76 com.android.microdroid.empty_payload/10198} -> PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} BLOCKED
+06-29 09:07:25.099 D/WindowManagerShell(  846): setLauncherKeepClearAreaHeight: visible=false, height=603
+06-29 09:07:25.103 I/TopTaskTracker( 1067): onTaskMovedToFront: (moved taskInfo to front) taskId=39, baseIntent=Intent { flg=0x10000000 cmp=com.davidsanchez.vivopromotor/.MainActivity }
+06-29 09:07:25.116 D/Zygote  (  391): Forked child process 14966
+06-29 09:07:25.119 I/ActivityManager(  606): Start proc 14966:com.davidsanchez.vivopromotor/u0a209 for next-top-activity {com.davidsanchez.vivopromotor/com.davidsanchez.vivopromotor.MainActivity}
+06-29 09:07:25.123 D/CoreBackPreview(  606): Window{76b5664 u0 Splash Screen com.davidsanchez.vivopromotor}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@f7c7eef, mPriority=0, mIsAnimationCallback=false}
+06-29 09:07:25.132 I/ez.vivopromotor(14966): Late-enabling -Xcheck:jni
+06-29 09:07:25.184 I/ez.vivopromotor(14966): Using CollectorTypeCMC GC.
+06-29 09:07:25.186 W/ez.vivopromotor(14966): Unexpected CPU variant for x86: x86_64.
+06-29 09:07:25.186 W/ez.vivopromotor(14966): Known variants: atom, sandybridge, silvermont, goldmont, goldmont-plus, goldmont-without-sha-xsaves, tremont, kabylake, default
+06-29 09:07:25.191 D/EGL_emulation( 1067): app_time_stats: avg=520.37ms min=3.68ms max=15148.18ms count=30
+06-29 09:07:25.243 I/adbd    (  477): jdwp connection from 14966
+06-29 09:07:25.254 D/nativeloader(14966): Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+06-29 09:07:25.273 V/WindowManagerShell(  846): onTransitionReady(transaction=2602750184889)
+06-29 09:07:25.279 V/WindowManager(  606): Sent Transition (#66) createdAt=06-29 09:07:25.046 via request=TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=39 displayId=0 isRunning=true baseIntent=Intent { flg=0x10000000 cmp=com.davidsanchez.vivopromotor/.MainActivity } baseActivity=ComponentInfo{com.davidsanchez.vivopromotor/com.davidsanchez.vivopromotor.MainActivity} topActivity=ComponentInfo{com.davidsanchez.vivopromotor/com.davidsanchez.vivopromotor.MainActivity} origActivity=null realActivity=ComponentInfo{com.davidsanchez.vivopromotor/com.davidsanchez.vivopromotor.MainActivity} numActivities=1 lastActiveTime=48595341 supportsMultiWindow=true resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{RemoteToken{5be5aa6 Task{f8599cc #39 type=standard A=10209:com.davidsanchez.vivopromotor}}} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 156 - 0, 0) topActivityInfo=ActivityInfo{40f5ce7 com.davidsanchez.vivopromotor.MainActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isVisible=false isVisibleRequested=false isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false topActivityEligibleForLetterboxEducation= falseisLetterboxEducationEnabled= true isLetterboxDoubleTapEnabled= false topActivityEligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=1280 topActivityLetterboxHeight=2856 isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false cameraCompatTaskInfo=CameraCompatTaskInfo { cameraCompatControlState=hidden freeformCameraCompatMode=inactive}}}, pipTask = null, remoteTransition = null, displayChange = null, flags = 0, debugId = 66 }
+06-29 09:07:25.279 V/WindowManager(  606):     startWCT=WindowContainerTransaction { changes = {} hops = [] errorCallbackToken=null taskFragmentOrganizer=null }
+06-29 09:07:25.279 V/WindowManager(  606):     info={id=66 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[
+06-29 09:07:25.279 V/WindowManager(  606):         {WCT{RemoteToken{5be5aa6 Task{f8599cc #39 type=standard A=10209:com.davidsanchez.vivopromotor}}} m=OPEN f=NONE leash=Surface(name=Task=39)/@0x1f46ada sb=Rect(0, 0 - 1280, 2856) eb=Rect(0, 0 - 1280, 2856) d=0 taskParent=-1},
+06-29 09:07:25.279 V/WindowManager(  606):         {WCT{RemoteToken{87ee837 Task{c33a563 #1 type=home}}} m=TO_BACK f=SHOW_WALLPAPER leash=Surface(name=Task=1)/@0xbcffad sb=Rect(0, 0 - 1280, 2856) eb=Rect(0, 0 - 1280, 2856) d=0 taskParent=-1}
+06-29 09:07:25.279 V/WindowManager(  606):     ]}
+06-29 09:07:25.295 V/WindowManagerShell(  846): onTransitionReady (#66) android.os.BinderProxy@11f8fca: {id=66 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[{WCT{android.window.IWindowContainerToken$Stub$Proxy@4344707} m=OPEN f=NONE leash=Surface(name=Task=39)/@0x2d0a32b sb=Rect(0, 0 - 1280, 2856) eb=Rect(0, 0 - 1280, 2856) d=0 taskParent=-1},{WCT{android.window.IWindowContainerToken$Stub$Proxy@e509034} m=TO_BACK f=SHOW_WALLPAPER leash=Surface(name=Task=1)/@0x2cec388 sb=Rect(0, 0 - 1280, 2856) eb=Rect(0, 0 - 1280, 2856) d=0 taskParent=-1}]}
+06-29 09:07:25.307 V/WindowManagerShell(  846): Playing animation for (#66) android.os.BinderProxy@11f8fca@0
+06-29 09:07:25.307 V/WindowManagerShell(  846):  try handler com.android.wm.shell.transition.DefaultMixedHandler@5ff153c
+06-29 09:07:25.308 V/WindowManagerShell(  846):  try handler com.android.wm.shell.keyguard.KeyguardTransitionHandler@e7c82c5
+06-29 09:07:25.309 V/WindowManagerShell(  846):  try handler com.android.wm.shell.pip.PipTransition@439e41a
+06-29 09:07:25.309 V/WindowManagerShell(  846):  try handler com.android.wm.shell.activityembedding.ActivityEmbeddingController@6423b4b
+06-29 09:07:25.309 V/WindowManagerShell(  846):  try handler com.android.wm.shell.recents.RecentsTransitionHandler@f464928
+06-29 09:07:25.309 V/ShellRecents(  846): RecentsTransitionHandler.startAnimation: no controller found
+06-29 09:07:25.309 V/WindowManagerShell(  846):  try handler com.android.wm.shell.splitscreen.StageCoordinator@8278641
+06-29 09:07:25.309 V/WindowManagerShell(  846):  try handler com.android.wm.shell.transition.RemoteTransitionHandler@b0227e6
+06-29 09:07:25.310 V/WindowManagerShell(  846): Transition doesn't have explicit remote, search filters for match for {id=66 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[{WCT{android.window.IWindowContainerToken$Stub$Proxy@4344707} m=OPEN f=NONE leash=Surface(name=Task=39)/@0x2d0a32b sb=Rect(0, 0 - 1280, 2856) eb=Rect(0, 0 - 1280, 2856) d=0 taskParent=-1},{WCT{android.window.IWindowContainerToken$Stub$Proxy@e509034} m=TO_BACK f=SHOW_WALLPAPER leash=Surface(name=Task=1)/@0x2cec388 sb=Rect(0, 0 - 1280, 2856) eb=Rect(0, 0 - 1280, 2856) d=0 taskParent=-1}]}
+06-29 09:07:25.311 V/WindowManagerShell(  846):  Checking filter Pair{{types=[] flags=0x0] notFlags=0x0 checks=[{atype=undefined independent=true modes=[OPEN,TO_FRONT] flags=IN_TASK_WITH_EMBEDDED_ACTIVITY mustBeTask=false order=ANY topActivity=ComponentInfo{com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity} launchCookie=null},{atype=undefined independent=true modes=[CLOSE,TO_BACK] flags=IN_TASK_WITH_EMBEDDED_ACTIVITY mustBeTask=false order=ANY topActivity=null launchCookie=null}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@d97402c, appThread = android.app.IApplicationThread$Stub$Proxy@cfbeaf5, debugName = OverlaySwipeBack }}
+06-29 09:07:25.311 V/WindowManagerShell(  846):  Checking filter Pair{{types=[] flags=0x0] notFlags=0x0 checks=[{atype=dream independent=true modes=[OPEN,TO_FRONT] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null},{atype=home independent=true modes=[CLOSE,TO_BACK] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@c880e11, appThread = android.app.IApplicationThread$Stub$Proxy@c5d5b76, debugName = LauncherToDream }}
+06-29 09:07:25.311 V/WindowManagerShell(  846):  Checking filter Pair{{types=[] flags=0x0] notFlags=0x100 checks=[{atype=home independent=true modes=[OPEN,TO_FRONT] flags=NONE mustBeTask=false order=TOP topActivity=ComponentInfo{com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity} launchCookie=null},{atype=standard independent=true modes=[CLOSE,TO_BACK] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@8e21577, appThread = android.app.IApplicationThread$Stub$Proxy@bd795e4, debugName = QuickstepLaunchHome }}
+06-29 09:07:25.311 V/WindowManagerShell(  846):  Delegate animation for (#66) to null
+06-29 09:07:25.312 V/WindowManagerShell(  846):  try handler com.android.wm.shell.transition.DefaultTransitionHandler@9f74127
+06-29 09:07:25.312 V/WindowManagerShell(  846): start default transition animation, info = {id=66 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[{WCT{android.window.IWindowContainerToken$Stub$Proxy@4344707} m=OPEN f=NONE leash=Surface(name=Task=39)/@0x2d0a32b sb=Rect(0, 0 - 1280, 2856) eb=Rect(0, 0 - 1280, 2856) d=0 taskParent=-1},{WCT{android.window.IWindowContainerToken$Stub$Proxy@e509034} m=TO_BACK f=SHOW_WALLPAPER leash=Surface(name=Task=1)/@0x2cec388 sb=Rect(0, 0 - 1280, 2856) eb=Rect(0, 0 - 1280, 2856) d=0 taskParent=-1}]}
+06-29 09:07:25.312 V/WindowManagerShell(  846): loadAnimation: anim=android.view.animation.AnimationSet@28e83d2 animAttr=0x13 type=OPEN isEntrance=false
+06-29 09:07:25.324 V/WindowManagerShell(  846): loadAnimation: anim=android.view.animation.AnimationSet@ad0c15 animAttr=0x12 type=OPEN isEntrance=true
+06-29 09:07:25.327 V/WindowManagerShell(  846):  animated by com.android.wm.shell.transition.DefaultTransitionHandler@9f74127
+06-29 09:07:25.328 W/UserManagerService(  606): Requested status bar icon for non-badged user 0
+06-29 09:07:25.346 D/EGL_emulation( 1067): app_time_stats: avg=927.28ms min=1.98ms max=15352.95ms count=17
+06-29 09:07:25.348 D/EGL_emulation(  846): app_time_stats: avg=2014.45ms min=4.79ms max=15925.77ms count=8
+06-29 09:07:25.398 W/ziparchive(14966): Unable to open '/data/app/~~xaozyjyzwxGLbKnhdyVOow==/com.davidsanchez.vivopromotor-hRHsGI7sH3t2JToCfgH99A==/base.dm': No such file or directory
+06-29 09:07:25.398 W/ziparchive(14966): Unable to open '/data/app/~~xaozyjyzwxGLbKnhdyVOow==/com.davidsanchez.vivopromotor-hRHsGI7sH3t2JToCfgH99A==/base.dm': No such file or directory
+06-29 09:07:25.633 V/WindowManagerShell(  846): Transition animation finished (aborted=false), notifying core (#66) android.os.BinderProxy@11f8fca@0
+06-29 09:07:25.635 V/WindowManager(  606): Finish Transition (#66): created at 06-29 09:07:25.046 collect-started=0.089ms request-sent=20.146ms started=23.653ms ready=216.895ms sent=225.568ms finished=588.317ms
+06-29 09:07:25.642 V/WindowManagerShell(  846): Track 0 became idle
+06-29 09:07:25.643 V/WindowManagerShell(  846): All active transition animations finished
+06-29 09:07:25.644 D/VRI[NexusLauncherActivity]( 1067): visibilityChanged oldVisibility=true newVisibility=false
+06-29 09:07:25.645 W/UserManagerService(  606): Requested status bar icon for non-badged user 0
+06-29 09:07:25.647 D/NexusLauncherModelDelegate( 1067): notifySmartspaceEvent: SmartspaceTargetEvent{mSmartspaceTarget=null, mSmartspaceActionId='null', mEventType=7}
+06-29 09:07:25.655 W/UserManagerService(  606): Requested status bar icon for non-badged user 0
+06-29 09:07:25.681 D/nativeloader(14966): Configuring clns-7 for other apk /data/app/~~xaozyjyzwxGLbKnhdyVOow==/com.davidsanchez.vivopromotor-hRHsGI7sH3t2JToCfgH99A==/base.apk. target_sdk_version=36, uses_libraries=, library_path=/data/app/~~xaozyjyzwxGLbKnhdyVOow==/com.davidsanchez.vivopromotor-hRHsGI7sH3t2JToCfgH99A==/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.davidsanchez.vivopromotor
+06-29 09:07:25.719 V/GraphicsEnvironment(14966): Currently set values for:
+06-29 09:07:25.719 V/GraphicsEnvironment(14966):   angle_gl_driver_selection_pkgs=[]
+06-29 09:07:25.722 V/GraphicsEnvironment(14966):   angle_gl_driver_selection_values=[]
+06-29 09:07:25.723 V/GraphicsEnvironment(14966): Global.Settings values are invalid: number of packages: 0, number of values: 0
+06-29 09:07:25.723 V/GraphicsEnvironment(14966): Neither updatable production driver nor prerelease driver is supported.
+06-29 09:07:25.823 W/OptProp (  606): Cannot read opt property android.window.PROPERTY_COMPAT_ENABLE_FAKE_FOCUS
+06-29 09:07:26.046 D/AppCompatDelegate(14966): Checking for metadata for AppLocalesMetadataHolderService : Service not found
+06-29 09:07:26.255 W/ez.vivopromotor(14966): Accessing hidden method Landroid/view/ViewGroup;->makeOptionalFitsSystemWindows()V (unsupported, reflection, allowed)
+06-29 09:07:26.295 I/WebViewFactory(14966): Loading com.google.android.webview version 124.0.6367.219 (code 636771938)
+06-29 09:07:26.309 V/ResourcesManager(14966): The following library key has been added: ResourcesKey{ mHash=faf6d924 mResDir=null mSplitDirs=[] mOverlayDirs=[/product/overlay/EmulationPixel9Pro/EmulationPixel9ProOverlay.apk,/product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk,/data/resource-cache/com.android.systemui-neutral-NTFY.frro,/data/resource-cache/com.android.systemui-accent-0fqH.frro,/data/resource-cache/com.android.systemui-dynamic-xo3B.frro] mLibDirs=[/data/app/~~EwdBiA3jMeMfa-v-YEDETw==/com.google.android.webview-oZUXtQCay5eo9LHmTzosTA==/WebViewGoogle.apk,/data/app/~~yClXnQa4hdVDkyJWRXFWBw==/com.google.android.trichromelibrary_636771938-_BJo-GHdYL90m5dt3tWK4A==/TrichromeLibrary.apk,/system_ext/framework/androidx.window.extensions.jar] mDisplayId=0 mOverrideConfig=v35 mCompatInfo={480dpi always-compat} mLoaders=[]}
+06-29 09:07:26.313 W/ziparchive(14966): Unable to open '/data/app/~~yClXnQa4hdVDkyJWRXFWBw==/com.google.android.trichromelibrary_636771938-_BJo-GHdYL90m5dt3tWK4A==/TrichromeLibrary.dm': No such file or directory
+06-29 09:07:26.313 W/ziparchive(14966): Unable to open '/data/app/~~yClXnQa4hdVDkyJWRXFWBw==/com.google.android.trichromelibrary_636771938-_BJo-GHdYL90m5dt3tWK4A==/TrichromeLibrary.dm': No such file or directory
+06-29 09:07:26.313 W/ez.vivopromotor(14966): Entry not found
+06-29 09:07:26.316 D/nativeloader(14966): Configuring clns-8 for other apk /data/app/~~yClXnQa4hdVDkyJWRXFWBw==/com.google.android.trichromelibrary_636771938-_BJo-GHdYL90m5dt3tWK4A==/TrichromeLibrary.apk. target_sdk_version=34, uses_libraries=ALL, library_path=/data/app/~~EwdBiA3jMeMfa-v-YEDETw==/com.google.android.webview-oZUXtQCay5eo9LHmTzosTA==/lib/x86_64:/data/app/~~EwdBiA3jMeMfa-v-YEDETw==/com.google.android.webview-oZUXtQCay5eo9LHmTzosTA==/WebViewGoogle.apk!/lib/x86_64:/data/app/~~yClXnQa4hdVDkyJWRXFWBw==/com.google.android.trichromelibrary_636771938-_BJo-GHdYL90m5dt3tWK4A==/TrichromeLibrary.apk!/lib/x86_64, permitted_path=/data:/mnt/expand
+06-29 09:07:26.321 D/ApplicationLoaders(14966): Returning zygote-cached class loader: /system_ext/framework/androidx.window.extensions.jar
+06-29 09:07:26.330 D/nativeloader(14966): Configuring clns-9 for other apk /data/app/~~EwdBiA3jMeMfa-v-YEDETw==/com.google.android.webview-oZUXtQCay5eo9LHmTzosTA==/WebViewGoogle.apk. target_sdk_version=34, uses_libraries=, library_path=/data/app/~~EwdBiA3jMeMfa-v-YEDETw==/com.google.android.webview-oZUXtQCay5eo9LHmTzosTA==/lib/x86_64:/data/app/~~EwdBiA3jMeMfa-v-YEDETw==/com.google.android.webview-oZUXtQCay5eo9LHmTzosTA==/WebViewGoogle.apk!/lib/x86_64:/data/app/~~yClXnQa4hdVDkyJWRXFWBw==/com.google.android.trichromelibrary_636771938-_BJo-GHdYL90m5dt3tWK4A==/TrichromeLibrary.apk!/lib/x86_64, permitted_path=/data:/mnt/expand
+06-29 09:07:26.331 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{8c63863 com.android.cts.priv.ctsshim/10189} BLOCKED
+06-29 09:07:26.331 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{1265c60 com.google.android.youtube/10166} BLOCKED
+06-29 09:07:26.331 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{fbac519 com.android.internal.display.cutout.emulation.corner/10004} BLOCKED
+06-29 09:07:26.331 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{4e9b9de com.android.internal.display.cutout.emulation.double/10007} BLOCKED
+06-29 09:07:26.331 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{d7bb07 com.google.android.googlequicksearchbox/10145} BLOCKED
+06-29 09:07:26.331 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{c04de8c com.google.android.onetimeinitializer/10131} BLOCKED
+06-29 09:07:26.331 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{62999d5 com.google.android.ext.shared/10118} BLOCKED
+06-29 09:07:26.331 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{c5395ea com.android.virtualmachine.res/10197} BLOCKED
+06-29 09:07:26.331 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{44050db com.android.managedprovisioning.auto_generated_rro_product__/10041} BLOCKED
+06-29 09:07:26.331 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{c675778 com.android.carrierconfig.auto_generated_rro_vendor__/10085} BLOCKED
+06-29 09:07:26.331 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{376fe51 com.google.android.server.deviceconfig.resources/10208} BLOCKED
+06-29 09:07:26.331 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{ecd26b6 com.android.systemui.emulation.pixel_3_xl/10054} BLOCKED
+06-29 09:07:26.331 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{5e91fb7 com.android.systemui.emulation.pixel_4_xl/10058} BLOCKED
+06-29 09:07:26.331 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{a767324 com.android.systemui.emulation.pixel_fold/10074} BLOCKED
+06-29 09:07:26.331 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{d5c2e8d com.android.providers.telephony.auto_generated_characteristics_rro/10079} BLOCKED
+06-29 09:07:26.331 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{47cf842 com.android.simappdialog.auto_generated_rro_product__/10051} BLOCKED
+06-29 09:07:26.331 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{1e60053 com.android.htmlviewer/10121} BLOCKED
+06-29 09:07:26.331 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{6399d90 com.google.android.health.connect.backuprestore/10206} BLOCKED
+06-29 09:07:26.331 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{1ea2689 com.android.systemui.auto_generated_rro_product__/10075} BLOCKED
+06-29 09:07:26.331 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{f66568e com.google.android.apps.messaging/10142} BLOCKED
+06-29 09:07:26.331 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{cc64eaf com.google.android.soundpicker/10163} BLOCKED
+06-29 09:07:26.331 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{6c302bc com.google.android.marvin.talkbackoverlay/10086} BLOCKED
+06-29 09:07:26.331 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{545a245 com.google.android.configupdater/10128} BLOCKED
+06-29 09:07:26.331 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{c754d9a com.android.internal.emulation.pixel_3a_xl/10016} BLOCKED
+06-29 09:07:26.331 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{ab326cb com.android.internal.emulation.pixel_6_pro/10019} BLOCKED
+06-29 09:07:26.332 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{1b8ea8 com.android.internal.emulation.pixel_7_pro/10022} BLOCKED
+06-29 09:07:26.332 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{f231dc1 com.android.internal.emulation.pixel_8_pro/10027} BLOCKED
+06-29 09:07:26.332 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{94aa966 com.android.internal.emulation.pixel_9_pro/10029} BLOCKED
+06-29 09:07:26.332 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{f4b64a7 com.android.internal.emulation.pixel_3a/10012} BLOCKED
+06-29 09:07:26.332 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{beeed54 com.android.internal.emulation.pixel_4a/10017} BLOCKED
+06-29 09:07:26.332 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{402d4fd com.android.internal.emulation.pixel_6a/10025} BLOCKED
+06-29 09:07:26.332 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{ac7f5f2 com.android.internal.emulation.pixel_7a/10028} BLOCKED
+06-29 09:07:26.332 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{f3fa443 com.android.internal.emulation.pixel_8a/10032} BLOCKED
+06-29 09:07:26.332 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{f78ac0 com.google.android.overlay.googlewebview/10037} BLOCKED
+06-29 09:07:26.332 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{62cc3f9 com.google.android.apps.safetyhub/10139} BLOCKED
+06-29 09:07:26.332 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{5b7f3e com.google.android.hotspot2.osulogin/10202} BLOCKED
+06-29 09:07:26.332 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{fae419f com.android.simappdialog/10125} BLOCKED
+06-29 09:07:26.332 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{52a92ec com.android.internal.display.cutout.emulation.hole/10008} BLOCKED
+06-29 09:07:26.332 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{a6ca6b5 com.android.internal.display.cutout.emulation.tall/10011} BLOCKED
+06-29 09:07:26.332 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{c514a com.android.internal.systemui.navbar.threebutton/10047} BLOCKED
+06-29 09:07:26.332 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{f3f58bb com.android.camera2/10147} BLOCKED
+06-29 09:07:26.332 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{6a3f1d8 com.android.internal.ranchu.commonoverlay/10049} BLOCKED
+06-29 09:07:26.332 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{c8df931 com.android.systemui.auto_generated_rro_vendor__/10090} BLOCKED
+06-29 09:07:26.333 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{18643b8 com.google.android.deskclock/10157} BLOCKED
+06-29 09:07:26.333 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{500c597 com.android.internal.systemui.navbar.twobutton/10045} BLOCKED
+06-29 09:07:26.334 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{7525384 com.google.android.as/10137} BLOCKED
+06-29 09:07:26.334 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{f97f76d com.google.android.gm/10168} BLOCKED
+06-29 09:07:26.334 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{c65bfa2 com.android.compos.payload/10192} BLOCKED
+06-29 09:07:26.334 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{1022433 com.android.systemui.emulation.pixel_3/10053} BLOCKED
+06-29 09:07:26.334 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{76323f0 com.android.systemui.emulation.pixel_4/10057} BLOCKED
+06-29 09:07:26.334 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{5c99d69 com.android.systemui.emulation.pixel_5/10064} BLOCKED
+06-29 09:07:26.334 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{d0433ee com.android.systemui.emulation.pixel_6/10060} BLOCKED
+06-29 09:07:26.334 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{ab0d08f com.android.systemui.emulation.pixel_7/10061} BLOCKED
+06-29 09:07:26.334 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{a6e8f1c com.android.systemui.emulation.pixel_8/10067} BLOCKED
+06-29 09:07:26.334 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{c55a725 com.android.systemui.emulation.pixel_9/10070} BLOCKED
+06-29 09:07:26.334 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{503a0fa com.android.printspooler/10124} BLOCKED
+06-29 09:07:26.334 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{8f3e6ab com.google.android.connectivity.resources.goldfish.overlay/10088} BLOCKED
+06-29 09:07:26.334 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{3638108 com.android.dreams.basic/10113} BLOCKED
+06-29 09:07:26.334 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{6de90a1 com.google.android.networkstack.tethering.emulator/10038} BLOCKED
+06-29 09:07:26.334 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{a5ad2c6 com.android.providers.settings.auto_generated_rro_product__/10050} BLOCKED
+06-29 09:07:26.334 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{333a5b4 com.google.android.as.oss/10130} BLOCKED
+06-29 09:07:26.334 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{6b295dd com.android.traceur.auto_generated_rro_product__/10081} BLOCKED
+06-29 09:07:26.335 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{9a15552 com.android.internal.emulation.pixel_9_pro_fold/10035} BLOCKED
+06-29 09:07:26.335 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{11c8023 com.google.android.devicelockcontroller/10207} BLOCKED
+06-29 09:07:26.335 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{63f6920 com.google.android.dialer/10138} BLOCKED
+06-29 09:07:26.335 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{9c7b2d9 com.android.internal.emulation.pixel_3/10014} BLOCKED
+06-29 09:07:26.335 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{f5b749e com.android.internal.emulation.pixel_4/10018} BLOCKED
+06-29 09:07:26.335 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{7acfb7f com.android.internal.emulation.pixel_5/10023} BLOCKED
+06-29 09:07:26.335 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{c81f74c com.android.internal.emulation.pixel_6/10020} BLOCKED
+06-29 09:07:26.335 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{d77a395 com.android.internal.emulation.pixel_7/10024} BLOCKED
+06-29 09:07:26.335 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{a063caa com.android.internal.emulation.pixel_8/10026} BLOCKED
+06-29 09:07:26.335 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{9fd09b com.android.internal.emulation.pixel_9/10030} BLOCKED
+06-29 09:07:26.335 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{87d3c38 com.google.android.captiveportallogin/10115} BLOCKED
+06-29 09:07:26.335 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{fbe411 android.auto_generated_characteristics_rro/10083} BLOCKED
+06-29 09:07:26.335 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{e37976 com.google.android.appsearch.apk/10191} BLOCKED
+06-29 09:07:26.335 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{720db77 com.android.musicfx/10105} BLOCKED
+06-29 09:07:26.335 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{e5e3e4 com.google.android.apps.docs/10151} BLOCKED
+06-29 09:07:26.335 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{7af9f43 com.google.android.apps.maps/10156} BLOCKED
+06-29 09:07:26.335 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{3a9b04d com.google.android.markup/10154} BLOCKED
+06-29 09:07:26.335 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{b85b702 com.google.android.rkpdapp/10200} BLOCKED
+06-29 09:07:26.335 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{33db813 com.google.android.contacts/10149} BLOCKED
+06-29 09:07:26.335 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{10f5a50 com.android.server.telecom.auto_generated_rro_product__/10078} BLOCKED
+06-29 09:07:26.335 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{aee0449 com.android.phone.auto_generated_characteristics_rro/10076} BLOCKED
+06-29 09:07:26.335 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{61c414e com.google.android.overlay.googleconfig/10034} BLOCKED
+06-29 09:07:26.335 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{d0ef4d1 com.android.chrome/10146} BLOCKED
+06-29 09:07:26.336 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{417cb7c com.android.bips.auto_generated_rro_product__/10003} BLOCKED
+06-29 09:07:26.336 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{c099c05 com.google.android.apps.customization.pixel/10155} BLOCKED
+06-29 09:07:26.336 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{e7f245a com.google.android.tag/10108} BLOCKED
+06-29 09:07:26.336 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{d2168b com.google.android.overlay.permissioncontroller/10039} BLOCKED
+06-29 09:07:26.336 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{2f5c5cc com.google.android.partnersetup/10135} BLOCKED
+06-29 09:07:26.336 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{6d42368 com.google.android.apps.wallpaper.nexus/10153} BLOCKED
+06-29 09:07:26.336 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{58cf381 com.google.android.apps.nexuslauncher/10176} BLOCKED
+06-29 09:07:26.336 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{5fb2c26 com.android.theme.font.notoserifsource/10036} BLOCKED
+06-29 09:07:26.336 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{ec99067 com.google.android.safetycenter.resources/10187} BLOCKED
+06-29 09:07:26.336 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{c7c0e14 com.android.internal.display.cutout.emulation.waterfall/10010} BLOCKED
+06-29 09:07:26.337 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{49446bd com.android.internal.systemui.navbar.transparent/10082} BLOCKED
+06-29 09:07:26.337 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{3dde4b2 com.google.android.connectivity.resources/10196} BLOCKED
+06-29 09:07:26.337 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{4d4cc03 com.android.providers.contacts.auto_generated_rro_product__/10005} BLOCKED
+06-29 09:07:26.337 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{215f780 com.google.android.feedback/10172} BLOCKED
+06-29 09:07:26.337 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{1c391b9 com.google.android.printservice.recommendation/10120} BLOCKED
+06-29 09:07:26.337 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{4c199fe com.google.android.apps.photos/10164} BLOCKED
+06-29 09:07:26.337 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{921afa7 com.google.android.calendar/10150} BLOCKED
+06-29 09:07:26.337 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{bce255f com.google.android.documentsui/10100} BLOCKED
+06-29 09:07:26.337 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{ca30bac com.android.systemui.emulation.pixel_3a_xl/10056} BLOCKED
+06-29 09:07:26.337 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{2029075 com.android.systemui.emulation.pixel_6_pro/10062} BLOCKED
+06-29 09:07:26.337 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{299580a com.android.systemui.emulation.pixel_7_pro/10065} BLOCKED
+06-29 09:07:26.337 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{5d9b87b com.android.systemui.emulation.pixel_8_pro/10068} BLOCKED
+06-29 09:07:26.337 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{e0b3698 com.android.systemui.emulation.pixel_9_pro/10073} BLOCKED
+06-29 09:07:26.337 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{6f8bef1 com.android.carrierconfig.auto_generated_rro_product__/10002} BLOCKED
+06-29 09:07:26.337 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{17cead6 com.android.devicediagnostics.auto_generated_rro_product__/10006} BLOCKED
+06-29 09:07:26.337 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{9416157 com.android.providers.partnerbookmarks/10123} BLOCKED
+06-29 09:07:26.337 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{cc92444 com.android.wallpaper.livepicker/10103} BLOCKED
+06-29 09:07:26.337 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{b49592d com.android.providers.telephony.auto_generated_rro_product__/10080} BLOCKED
+06-29 09:07:26.338 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{d34de62 com.android.phone.auto_generated_rro_vendor__/10089} BLOCKED
+06-29 09:07:26.338 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{d10bbf3 com.android.imsserviceentitlement/10132} BLOCKED
+06-29 09:07:26.338 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{a5640b0 com.android.internal.emulation.pixel_9_pro_xl/10033} BLOCKED
+06-29 09:07:26.338 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{68f5b29 com.google.android.healthconnect.controller/10205} BLOCKED
+06-29 09:07:26.339 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{3867eae com.android.internal.emulation.pixel_2_xl/10013} BLOCKED
+06-29 09:07:26.339 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{371244f com.android.internal.emulation.pixel_3_xl/10015} BLOCKED
+06-29 09:07:26.339 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{456b7dc com.android.internal.emulation.pixel_4_xl/10021} BLOCKED
+06-29 09:07:26.339 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{51980e5 com.android.internal.emulation.pixel_fold/10031} BLOCKED
+06-29 09:07:26.339 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{73fd7ba com.android.bookmarkprovider/10111} BLOCKED
+06-29 09:07:26.339 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{dc5b66b com.google.android.overlay.pixelconfigcommon/10046} BLOCKED
+06-29 09:07:26.339 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{c8575c8 com.android.systemui.accessibility.accessibilitymenu.auto_generated_rro_product__/10001} BLOCKED
+06-29 09:07:26.339 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{f664661 com.android.systemui.emulation.pixel_3a/10055} BLOCKED
+06-29 09:07:26.339 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{803b586 com.android.systemui.emulation.pixel_4a/10059} BLOCKED
+06-29 09:07:26.340 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{6874e47 com.android.systemui.emulation.pixel_6a/10063} BLOCKED
+06-29 09:07:26.340 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{3602674 com.android.systemui.emulation.pixel_7a/10066} BLOCKED
+06-29 09:07:26.340 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{d5fe79d com.android.systemui.emulation.pixel_8a/10069} BLOCKED
+06-29 09:07:26.340 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{ad5a412 com.google.android.settings.intelligence/10140} BLOCKED
+06-29 09:07:26.340 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{ce00d87 com.google.android.projection.gearhead/10129} BLOCKED
+06-29 09:07:26.340 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{ce087e3 com.google.android.uwb.resources/10199} BLOCKED
+06-29 09:07:26.340 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{cef14b4 com.android.cts.ctsshim/10190} BLOCKED
+06-29 09:07:26.340 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{19335e0 com.google.android.wifi.resources/10201} BLOCKED
+06-29 09:07:26.340 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{1586099 com.google.android.wifi.dialog/10203} BLOCKED
+06-29 09:07:26.340 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{f65ef5e com.android.wallpaper/10178} BLOCKED
+06-29 09:07:26.340 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{7a58d76 com.android.microdroid.empty_payload/10198} BLOCKED
+06-29 09:07:26.340 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{e09bf3f com.google.android.apps.wallpaper/10180} BLOCKED
+06-29 09:07:26.340 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{c25d00c com.google.android.odad/10134} BLOCKED
+06-29 09:07:26.340 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{6c56d55 com.android.settings.auto_generated_rro_product__/10048} BLOCKED
+06-29 09:07:26.340 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{e1da36a com.android.systemui.emulation.pixel_9_pro_xl/10072} BLOCKED
+06-29 09:07:26.340 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{865105b com.android.companiondevicemanager.auto_generated_characteristics_rro/10000} BLOCKED
+06-29 09:07:26.340 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{f65e0f8 com.android.internal.systemui.navbar.gestural/10044} BLOCKED
+06-29 09:07:26.340 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{bc89d1 com.google.android.apps.youtube.music/10165} BLOCKED
+06-29 09:07:26.341 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{aea8c36 com.android.bluetoothmidiservice/10110} BLOCKED
+06-29 09:07:26.341 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{45a5737 com.android.storagemanager.auto_generated_rro_product__/10052} BLOCKED
+06-29 09:07:26.341 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{c9414a4 com.google.android.cellbroadcastreceiver/10184} BLOCKED
+06-29 09:07:26.341 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{42ef20d com.android.phone.auto_generated_rro_product__/10077} BLOCKED
+06-29 09:07:26.341 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{8cb35c2 com.android.systemui.emulation.pixel_9_pro_fold/10071} BLOCKED
+06-29 09:07:26.341 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{ef32fd3 android.auto_generated_rro_product__/10084} BLOCKED
+06-29 09:07:26.341 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{64fd710 com.google.android.inputmethod.latin/10160} BLOCKED
+06-29 09:07:26.341 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{9e5a209 android.auto_generated_rro_vendor__/10087} BLOCKED
+06-29 09:07:26.341 I/AppsFilter(  606): interaction: PackageSetting{85886b8 com.davidsanchez.vivopromotor/10209} -> PackageSetting{a1aec0e com.google.android.apps.restore/10136} BLOCKED
+06-29 09:07:26.399 I/cr_WVCFactoryProvider(14966): Loaded version=124.0.6367.219 minSdkVersion=29 isBundle=false multiprocess=true packageId=2
+06-29 09:07:26.442 D/nativeloader(14966): Load /data/app/~~yClXnQa4hdVDkyJWRXFWBw==/com.google.android.trichromelibrary_636771938-_BJo-GHdYL90m5dt3tWK4A==/TrichromeLibrary.apk!/lib/x86_64/libmonochrome_64.so using ns clns-9 from class loader (caller=/data/app/~~EwdBiA3jMeMfa-v-YEDETw==/com.google.android.webview-oZUXtQCay5eo9LHmTzosTA==/WebViewGoogle.apk): ok
+06-29 09:07:26.451 D/nativeloader(14966): Load /system/lib64/libwebviewchromium_plat_support.so using ns clns-9 from class loader (caller=/data/app/~~EwdBiA3jMeMfa-v-YEDETw==/com.google.android.webview-oZUXtQCay5eo9LHmTzosTA==/WebViewGoogle.apk): ok
+06-29 09:07:26.468 E/chromium(14966): [0629/090726.466371:ERROR:variations_seed_loader.cc(37)] Seed missing signature.
+06-29 09:07:26.468 I/chromium(14966): [0629/090726.468689:INFO:variations_seed_loader.cc(66)] Failed to open file for reading.: No such file or directory (2)
+06-29 09:07:26.482 I/cr_LibraryLoader(14966): Successfully loaded native library
+06-29 09:07:26.483 I/cr_CachingUmaRecorder(14966): Flushed 6 samples from 6 histograms, 0 samples were dropped.
+06-29 09:07:26.498 I/cr_CombinedPProvider(14966): #registerProvider() provider:WV.V7@876938b isPolicyCacheEnabled:false policyProvidersSize:0
+06-29 09:07:26.502 I/cr_PolicyProvider(14966): #setManagerAndSource() 0
+06-29 09:07:26.525 V/GrammaticalInflectionUtils(  606): AttributionSource: android.content.AttributionSource@8657a119 does not have READ_SYSTEM_GRAMMATICAL_GENDER permission.
+06-29 09:07:26.537 I/cr_CombinedPProvider(14966): #linkNativeInternal() 1
+06-29 09:07:26.538 D/Zygote  (  885): Forked child process 14992
+06-29 09:07:26.538 I/cr_AppResProvider(14966): #getApplicationRestrictionsFromUserManager() Bundle[EMPTY_PARCEL]
+06-29 09:07:26.538 I/cr_PolicyProvider(14966): #notifySettingsAvailable() 0
+06-29 09:07:26.538 I/cr_CombinedPProvider(14966): #onSettingsAvailable() 0
+06-29 09:07:26.538 I/cr_CombinedPProvider(14966): #flushPolicies()
+06-29 09:07:26.550 I/ocessService0:0(14992): Using CollectorTypeCMC GC.
+06-29 09:07:26.552 W/ocessService0:0(14992): Unexpected CPU variant for x86: x86_64.
+06-29 09:07:26.552 W/ocessService0:0(14992): Known variants: atom, sandybridge, silvermont, goldmont, goldmont-plus, goldmont-without-sha-xsaves, tremont, kabylake, default
+06-29 09:07:26.558 E/ocessService0:0(14992): Not starting debugger since process cannot load the jdwp agent.
+06-29 09:07:26.565 D/nativeloader(14992): Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+06-29 09:07:26.567 I/ActivityManager(  606): Start proc 14992:com.google.android.webview:sandboxed_process0:org.chromium.content.app.SandboxedProcessService0:0/u0i18 for  {com.davidsanchez.vivopromotor/org.chromium.content.app.SandboxedProcessService0:0}
+06-29 09:07:26.583 D/CompatChangeReporter(14992): Compat change id reported: 242716250; UID 99018; state: ENABLED
+06-29 09:07:26.597 D/ApplicationLoaders(14992): Returning zygote-cached class loader: /system_ext/framework/androidx.window.extensions.jar
+06-29 09:07:26.607 W/chromium(14966): [WARNING:dns_config_service_android.cc(81)] Failed to read DnsConfig.
+06-29 09:07:26.607 I/LoadedApk(14992): No resource references to update in package com.google.android.trichromelibrary
+06-29 09:07:26.608 I/cr_WebViewApkApp(14992): Launched version=124.0.6367.219 minSdkVersion=29 isBundle=false processName=com.google.android.webview:sandboxed_process0:org.chromium.content.app.SandboxedProcessService0:0
+06-29 09:07:26.622 I/cr_ChildProcessService(14992): Creating new ChildProcessService pid=14992
+06-29 09:07:26.668 D/CompatChangeReporter(  606): Compat change id reported: 261072174; UID 10162; state: ENABLED
+06-29 09:07:26.674 D/ActivityManager(  606): sync unfroze 14727 com.google.android.webview:webview_service for 6
+06-29 09:07:26.675 W/IPCThreadState(  606): Sending oneway calls to frozen process.
+06-29 09:07:26.690 D/ActivityThread(14727): Package [com.davidsanchez.vivopromotor] reported as REPLACED, but missing application info. Assuming REMOVED.
+06-29 09:07:26.690 D/ActivityThread(14727): Package [com.davidsanchez.vivopromotor] reported as REPLACED, but missing application info. Assuming REMOVED.
+06-29 09:07:26.737 I/webview_service(14727): Background concurrent mark compact GC freed 2633KB AllocSpace bytes, 8(288KB) LOS objects, 49% free, 1929KB/3859KB, paused 5.950ms,2.778ms total 64.974ms
+06-29 09:07:26.866 D/Capacitor(14966): Starting BridgeActivity
+06-29 09:07:26.981 D/Capacitor(14966): Registering plugin instance: CapacitorCookies
+06-29 09:07:27.001 D/Capacitor(14966): Registering plugin instance: WebView
+06-29 09:07:27.007 D/Capacitor(14966): Registering plugin instance: CapacitorHttp
+06-29 09:07:27.012 D/Capacitor(14966): Registering plugin instance: SystemBars
+06-29 09:07:27.072 W/Capacitor(14966): Unable to read file at path public/plugins
+06-29 09:07:27.090 D/Capacitor(14966): Loading app at https://localhost
+06-29 09:07:27.137 I/EGL_emulation(14966): Opening libGLESv1_CM_emulation.so
+06-29 09:07:27.143 W/cr_media(14966): BLUETOOTH_CONNECT permission is missing.
+06-29 09:07:27.144 W/cr_media(14966): registerBluetoothIntentsIfNeeded: Requires BLUETOOTH permission
+06-29 09:07:27.148 I/cr_LibraryLoader(14992): Successfully loaded native library
+06-29 09:07:27.148 I/cr_CachingUmaRecorder(14992): Flushed 2 samples from 2 histograms, 0 samples were dropped.
+06-29 09:07:27.150 I/EGL_emulation(14966): Opening libGLESv2_emulation.so
+06-29 09:07:27.234 W/SystemServiceRegistry(14992): No service published for: uimode
+06-29 09:07:27.250 W/chromium(14992): [WARNING:runtime_features.cc(694)] SharedStorage for M118+ cannot be enabled in this configuration. Use --enable-features=SharedStorageAPI,SharedStorageAPIM118 in addition.
+06-29 09:07:27.250 W/chromium(14992): [WARNING:runtime_features.cc(730)] AttributionReportingCrossAppWeb cannot be enabled in this configuration. Use --enable-features=ConversionMeasurement,AttributionReportingCrossAppWeb in addition.
+06-29 09:07:27.307 I/FontLog ( 4041): (REDACTED) Received query %s, URI %s
+06-29 09:07:27.308 I/FontLog ( 4041): (REDACTED) Query [%s] resolved to %s
+06-29 09:07:27.310 I/FontLog ( 4041): (REDACTED) Font PFD returned from cache for %s
+06-29 09:07:27.310 I/FontLog ( 4041): (REDACTED) Fetch %s end status %s
+06-29 09:07:27.312 I/FontLog ( 4041): (REDACTED) Pulling font file for id = %d, cache size = %d
+06-29 09:07:27.322 I/FontLog ( 4041): (REDACTED) Received query %s, URI %s
+06-29 09:07:27.322 I/FontLog ( 4041): (REDACTED) Query [%s] resolved to %s
+06-29 09:07:27.324 I/FontLog ( 4041): (REDACTED) Fetch %s end status %s
+06-29 09:07:27.329 I/FontLog ( 4041): (REDACTED) Pulling font file for id = %d, cache size = %d
+06-29 09:07:27.337 I/FontLog ( 4041): (REDACTED) Received query %s, URI %s
+06-29 09:07:27.337 I/FontLog ( 4041): (REDACTED) Query [%s] resolved to %s
+06-29 09:07:27.339 I/FontLog ( 4041): (REDACTED) Font PFD returned from cache for %s
+06-29 09:07:27.339 I/FontLog ( 4041): (REDACTED) Fetch %s end status %s
+06-29 09:07:27.342 I/FontLog ( 4041): (REDACTED) Pulling font file for id = %d, cache size = %d
+06-29 09:07:27.352 I/FontLog ( 4041): (REDACTED) Received query %s, URI %s
+06-29 09:07:27.352 I/FontLog ( 4041): (REDACTED) Query [%s] resolved to %s
+06-29 09:07:27.354 I/FontLog ( 4041): (REDACTED) Font PFD returned from cache for %s
+06-29 09:07:27.354 I/FontLog ( 4041): (REDACTED) Fetch %s end status %s
+06-29 09:07:27.357 I/FontLog ( 4041): (REDACTED) Pulling font file for id = %d, cache size = %d
+06-29 09:07:27.363 W/FontLog ( 4041): Error updating last accessed time for {Noto COLR Emoji Compat, wdth 100.0, wght 400, ital 0.0, bestEffort false}, isVf false}. [CONTEXT service_id=132 ]
+06-29 09:07:27.363 W/FontLog ( 4041): java.lang.IllegalStateException: Cannot perform this operation because the connection pool has been closed.
+06-29 09:07:27.363 W/FontLog ( 4041): 	at android.database.sqlite.SQLiteConnectionPool.throwIfClosedLocked(SQLiteConnectionPool.java:1103)
+06-29 09:07:27.363 W/FontLog ( 4041): 	at android.database.sqlite.SQLiteConnectionPool.waitForConnection(SQLiteConnectionPool.java:716)
+06-29 09:07:27.363 W/FontLog ( 4041): 	at android.database.sqlite.SQLiteConnectionPool.acquireConnection(SQLiteConnectionPool.java:399)
+06-29 09:07:27.363 W/FontLog ( 4041): 	at android.database.sqlite.SQLiteSession.acquireConnection(SQLiteSession.java:920)
+06-29 09:07:27.363 W/FontLog ( 4041): 	at android.database.sqlite.SQLiteSession.executeForChangedRowCount(SQLiteSession.java:778)
+06-29 09:07:27.363 W/FontLog ( 4041): 	at android.database.sqlite.SQLiteStatement.executeUpdateDelete(SQLiteStatement.java:67)
+06-29 09:07:27.363 W/FontLog ( 4041): 	at android.database.sqlite.SQLiteDatabase.executeSql(SQLiteDatabase.java:2207)
+06-29 09:07:27.363 W/FontLog ( 4041): 	at android.database.sqlite.SQLiteDatabase.execSQL(SQLiteDatabase.java:2183)
+06-29 09:07:27.363 W/FontLog ( 4041): 	at ccbr.run(:com.google.android.gms@262031038@26.20.31 (260800-919905943):57)
+06-29 09:07:27.363 W/FontLog ( 4041): 	at bkql.c(:com.google.android.gms@262031038@26.20.31 (260800-919905943):50)
+06-29 09:07:27.363 W/FontLog ( 4041): 	at bkql.run(:com.google.android.gms@262031038@26.20.31 (260800-919905943):66)
+06-29 09:07:27.363 W/FontLog ( 4041): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+06-29 09:07:27.363 W/FontLog ( 4041): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+06-29 09:07:27.363 W/FontLog ( 4041): 	at bkwd.run(:com.google.android.gms@262031038@26.20.31 (260800-919905943):8)
+06-29 09:07:27.363 W/FontLog ( 4041): 	at java.lang.Thread.run(Thread.java:1012)
+06-29 09:07:27.371 D/Capacitor(14966): App started
+06-29 09:07:27.379 D/Capacitor(14966): App resumed
+06-29 09:07:27.394 W/HWUI    (14966): Unknown dataspace 0
+06-29 09:07:27.404 W/WindowManager(  606): Failed looking up window session=Session{6f35ec0 14966:u0a10209} callers=com.android.server.wm.WindowManagerService.windowForClientLocked:6311 com.android.server.wm.Session.updateRequestedVisibleTypes:755 android.view.IWindowSession$Stub.onTransact:1078 
+06-29 09:07:27.404 W/WindowManager(  606): Failed looking up window session=Session{6f35ec0 14966:u0a10209} callers=com.android.server.wm.WindowManagerService.windowForClientLocked:6311 com.android.server.wm.Session.updateRequestedVisibleTypes:755 android.view.IWindowSession$Stub.onTransact:1078 
+06-29 09:07:27.428 D/Capacitor(14966): Handling local request: https://localhost/
+06-29 09:07:27.541 D/CoreBackPreview(  606): Window{e6b259f u0 com.davidsanchez.vivopromotor/com.davidsanchez.vivopromotor.MainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@46eb48f, mPriority=0, mIsAnimationCallback=false}
+06-29 09:07:27.586 W/HWUI    (14966): Failed to choose config with EGL_SWAP_BEHAVIOR_PRESERVED, retrying without...
+06-29 09:07:27.587 W/HWUI    (14966): Failed to initialize 101010-2 format, error = EGL_SUCCESS
+06-29 09:07:27.671 I/hwservicemanager(  174): getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device VINTF manifest.
+06-29 09:07:27.672 I/Gralloc4(14966): mapper 4.x is not supported
+06-29 09:07:27.825 W/ziparchive(  606): Unable to open '/data/app/~~xaozyjyzwxGLbKnhdyVOow==/com.davidsanchez.vivopromotor-hRHsGI7sH3t2JToCfgH99A==/base.dm': No such file or directory
+06-29 09:07:27.831 I/ActivityTaskManager(  606): Displayed com.davidsanchez.vivopromotor/.MainActivity for user 0: +2s787ms
+06-29 09:07:27.856 D/Capacitor(14966): Handling local request: https://localhost/assets/index-D4BpUWb6.js
+06-29 09:07:27.870 D/Capacitor(14966): Handling local request: https://localhost/assets/index-DShXQ2FW.css
+06-29 09:07:27.969 I/BpBinder(  468): onLastStrongRef automatically unlinking death recipients: 
+06-29 09:07:27.975 I/ImeTracker(  606): com.davidsanchez.vivopromotor:2365ac46: onRequestHide at ORIGIN_SERVER reason HIDE_UNSPECIFIED_WINDOW fromUser false
+06-29 09:07:27.975 I/ImeTracker(  606): com.davidsanchez.vivopromotor:2365ac46: onCancelled at PHASE_SERVER_SHOULD_HIDE
+06-29 09:07:28.003 I/FontLog ( 4041): (REDACTED) Received query %s, URI %s
+06-29 09:07:28.003 I/FontLog ( 4041): (REDACTED) Query [%s] resolved to %s
+06-29 09:07:28.007 I/FontLog ( 4041): (REDACTED) Fetch %s end status %s
+06-29 09:07:28.009 I/GoogleInputMethodService( 3036): GoogleInputMethodService.onFinishInput():3157 
+06-29 09:07:28.022 I/GoogleInputMethodService( 3036): GoogleInputMethodService.updateDeviceLockedStatus():2248 repeatCheckTimes = 0, locked = false
+06-29 09:07:28.022 I/FontLog ( 4041): (REDACTED) Pulling font file for id = %d, cache size = %d
+06-29 09:07:28.022 I/GoogleInputMethodService( 3036): GoogleInputMethodService.onStartInput():1986 onStartInput(EditorInfo{EditorInfo{packageName=com.davidsanchez.vivopromotor, inputType=0, inputTypeString=NULL, enableLearning=false, autoCorrection=false, autoComplete=false, imeOptions=12000000, privateImeOptions=null, actionName=UNSPECIFIED, actionLabel=null, initialSelStart=-1, initialSelEnd=-1, initialCapsMode=0, label=null, fieldId=0, fieldName=null, extras=null, hintText=null, hintLocales=[]}}, false)
+06-29 09:07:28.023 I/GoogleInputMethodService( 3036): GoogleInputMethodService.updateDeviceLockedStatus():2248 repeatCheckTimes = 1, locked = false
+06-29 09:07:28.024 I/AndroidIME( 3036): InputBundleManager.loadActiveInputBundleId():450 loadActiveInputBundleId: und-Latn-x-password, password
+06-29 09:07:28.025 W/PackageConfigPersister(  606): App-specific configuration not found for packageName: com.davidsanchez.vivopromotor and userId: 0
+06-29 09:07:28.033 I/FontLog ( 4041): (REDACTED) Pulling font file for id = %d, cache size = %d
+06-29 09:07:28.095 D/BaseDepthController( 1067): setSurface:
+06-29 09:07:28.095 D/BaseDepthController( 1067): 	mWaitingOnSurfaceValidity: false
+06-29 09:07:28.095 D/BaseDepthController( 1067): 	mSurface: null
+06-29 09:07:28.096 D/BaseDepthController( 1067): mSurface is null and mCurrentBlur is: 0
+06-29 09:07:28.097 D/StateManager( 1067): goToState - fromState: Normal, toState: Normal, partial trace:
+06-29 09:07:28.097 D/StateManager( 1067): 	at com.android.launcher3.statemanager.StateManager.moveToRestState(go/retraceme 2855a437b73635ce9cad76b9289087e631bbb67fc90008a0da13d343a00e5041:4)
+06-29 09:07:28.097 D/StateManager( 1067): 	at com.android.launcher3.statemanager.StateManager.moveToRestState(go/retraceme 2855a437b73635ce9cad76b9289087e631bbb67fc90008a0da13d343a00e5041:1)
+06-29 09:07:28.097 D/StateManager( 1067): 	at com.android.launcher3.statemanager.StatefulActivity.onStop(go/retraceme 2855a437b73635ce9cad76b9289087e631bbb67fc90008a0da13d343a00e5041:34)
+06-29 09:07:28.098 D/StatsLog( 1067): LAUNCHER_ONSTOP
+06-29 09:07:28.100 D/StatsLog( 1067): LAUNCHER_GOOGLE_SEARCH_RESTORE_LIST_SIZE_AFTER_ACTIVITY_RESTART
+06-29 09:07:28.106 D/OneSearchSuggestProvider( 1067): Shut down the binder channel
+06-29 09:07:28.111 I/IPCThreadState( 1067): oneway function results for code 2 on binder at 0x7d8fd3445810 will be dropped but finished with status UNKNOWN_TRANSACTION
+06-29 09:07:28.244 W/WindowOnBackDispatcher(  846): sendCancelIfRunning: isInProgress=false callback=android.view.ViewRootImpl$$ExternalSyntheticLambda11@eb2a6e
+06-29 09:07:28.247 D/CoreBackPreview(  606): Window{76b5664 u0 Splash Screen com.davidsanchez.vivopromotor EXITING}: Setting back callback null
+06-29 09:07:28.249 W/InputManager-JNI(  606): Input channel object '76b5664 Splash Screen com.davidsanchez.vivopromotor (client)' was disposed without first being removed with the input manager!
+06-29 09:07:28.307 W/InteractionJankMonitor(14966): Initializing without READ_DEVICE_CONFIG permission. enabled=false, interval=1, missedFrameThreshold=3, frameTimeThreshold=64, package=com.davidsanchez.vivopromotor
+06-29 09:07:28.581 E/TaskPersister(  606): File error accessing recents directory (directory doesn't exist?).
+06-29 09:07:28.720 I/chromium(14992): [INFO:document_style_environment_variables.cc(104)] E2E_Used SafeAreaInsetBottom
+06-29 09:07:28.888 I/chromium(14992): [INFO:document_style_environment_variables.cc(104)] E2E_Used SafeAreaInsetBottom
+06-29 09:07:28.927 D/Capacitor(14966): Handling local request: https://localhost/favicon.ico
+06-29 09:07:28.979 D/Capacitor(14966): Handling local request: https://localhost/assets/devices/official/vivoY04_verde_jade.png
+06-29 09:07:28.980 I/chromium(14992): [INFO:document_style_environment_variables.cc(104)] E2E_Used SafeAreaInsetBottom
+06-29 09:07:29.006 D/Capacitor(14966): Handling local request: https://localhost/assets/devices/official/vivoy21d_negrto_jade.png
+06-29 09:07:29.011 D/Capacitor(14966): Handling local request: https://localhost/assets/devices/official/vivoY31d_gris_estelar.png
+06-29 09:07:29.013 D/Capacitor(14966): Handling local request: https://localhost/assets/devices/official/vivoy29_black_exxpresso.png
+06-29 09:07:29.016 D/Capacitor(14966): Handling local request: https://localhost/assets/devices/official/vivov60lite_negroelegante.png
+06-29 09:07:29.022 D/Capacitor(14966): Handling local request: https://localhost/assets/devices/official/Vivov50lite_negromistico.png
+06-29 09:07:29.091 D/EGL_emulation(14966): app_time_stats: avg=427.58ms min=98.67ms max=1080.89ms count=3
+06-29 09:07:29.910 I/Choreographer(14966): Skipped 40 frames!  The application may be doing too much work on its main thread.
+06-29 09:07:29.911 I/HWUI    (14966): Davey! duration=717ms; Flags=0, FrameTimelineVsyncId=10135740, IntendedVsync=48599456811432, Vsync=48599456811432, InputEventId=0, HandleInputStart=48599459955100, AnimationStart=48599460066100, PerformTraversalsStart=48599470265500, DrawStart=48599470518700, FrameDeadline=48599490144764, FrameInterval=48599459917700, FrameStartTime=16666666, SyncQueued=48599471408100, SyncStart=48599473052700, IssueDrawCommandsStart=48599473106100, SwapBuffers=48600155809700, FrameCompleted=48600175817700, DequeueBufferDuration=75200, QueueBufferDuration=1019400, GpuCompleted=48600175817700, SwapBuffersCompleted=48600159935000, DisplayPresentTime=280628868218657, CommandSubmissionCompleted=48600155809700, 
+06-29 09:07:29.911 W/BatteryExternalStatsWorker(  606): error reading Bluetooth stats: 11
+06-29 09:07:29.943 D/TelephonyManager(  606): requestModemActivityInfo: Sending result to app: ModemActivityInfo{ mTimestamp=48600213 mSleepTimeMs=0 mIdleTimeMs=48600081 mActivityStatsTechSpecificInfo=[{mRat=UNKNOWN,mFrequencyRange=UNKNOWN,mTxTimeMs[]=[0, 0, 0, 0, 0],mRxTimeMs=0}]}
+06-29 09:07:29.955 I/chromium(14992): [INFO:document_style_environment_variables.cc(104)] E2E_Used SafeAreaInsetBottom
+06-29 09:07:30.103 I/HWUI    (14966): Davey! duration=868ms; Flags=0, FrameTimelineVsyncId=10135755, IntendedVsync=48599506811430, Vsync=48600173478070, InputEventId=0, HandleInputStart=48600191151300, AnimationStart=48600191245800, PerformTraversalsStart=48600200517300, DrawStart=48600202309900, FrameDeadline=48600223478068, FrameInterval=48600189437900, FrameStartTime=16666666, SyncQueued=48600203183900, SyncStart=48600203553800, IssueDrawCommandsStart=48600203827000, SwapBuffers=48600365866500, FrameCompleted=48600375713800, DequeueBufferDuration=38200, QueueBufferDuration=545600, GpuCompleted=48600375713800, SwapBuffersCompleted=48600367392000, DisplayPresentTime=0, CommandSubmissionCompleted=48600365866500, 
+06-29 09:07:30.107 D/EGL_emulation(14966): app_time_stats: avg=107.99ms min=5.54ms max=686.90ms count=9
+06-29 09:07:30.426 D/ActivityManager(  606): freezing 1744 com.google.android.permissioncontroller
+06-29 09:07:30.431 D/InetDiagMessage(  606): Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+06-29 09:07:30.432 D/InetDiagMessage(  606): Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+06-29 09:07:30.432 D/InetDiagMessage(  606): Destroyed live tcp sockets for uids={10188} in 3ms
+06-29 09:07:30.520 I/wpa_supplicant(  832): wlan0: CTRL-EVENT-BEACON-LOSS 
+06-29 09:07:30.653 I/ez.vivopromotor(14966): Compiler allocated 5174KB to compile void android.view.ViewRootImpl.performTraversals()
+06-29 09:07:30.926 D/ProfileInstaller(14966): Installing profile for com.davidsanchez.vivopromotor
+06-29 09:07:31.368 D/EGL_emulation(14966): app_time_stats: avg=179.89ms min=47.00ms max=498.31ms count=7
+06-29 09:07:31.836 D/NetworkStatsCollection(  606): Augmented network usage by 199968358 bytes
+06-29 09:07:31.843 D/NetworkStatsCollection(  606): Augmented network usage by 199968358 bytes
+06-29 09:07:31.848 D/NetworkStatsCollection(  606): Augmented network usage by 199968358 bytes
+06-29 09:07:31.858 D/NetworkStatsCollection(  606): Augmented network usage by 199968358 bytes
+06-29 09:07:31.860 D/NetworkStatsCollection(  606): Augmented network usage by 199968358 bytes
+06-29 09:07:31.864 D/NetworkStatsCollection(  606): Augmented network usage by 199968358 bytes
+06-29 09:07:31.870 D/NetworkStatsCollection(  606): Augmented network usage by 199968358 bytes
+06-29 09:07:31.873 D/NetworkStatsCollection(  606): Augmented network usage by 199968358 bytes
+06-29 09:07:31.878 D/NetworkStatsCollection(  606): Augmented network usage by 199968358 bytes
+06-29 09:07:31.882 D/NetworkStatsCollection(  606): Augmented network usage by 199968358 bytes
+06-29 09:07:32.942 D/InetDiagMessage(  606): Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+06-29 09:07:32.942 D/InetDiagMessage(  606): Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+06-29 09:07:32.942 D/InetDiagMessage(  606): Destroyed live tcp sockets for uids={10162} in 1ms
+06-29 09:07:32.943 D/InetDiagMessage(  606): Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+06-29 09:07:32.943 D/InetDiagMessage(  606): Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+06-29 09:07:32.943 D/InetDiagMessage(  606): Destroyed live tcp sockets for uids={20162} in 0ms
+06-29 09:07:33.245 W/IPCThreadState(  606): Sending oneway calls to frozen process.
+06-29 09:07:33.245 W/IPCThreadState(  606): Sending oneway calls to frozen process.
+06-29 09:07:33.248 W/IPCThreadState(  606): Sending oneway calls to frozen process.
+06-29 09:07:33.248 W/IPCThreadState(  606): Sending oneway calls to frozen process.
+06-29 09:07:33.248 W/IPCThreadState(  606): Sending oneway calls to frozen process.
+06-29 09:07:33.248 W/IPCThreadState(  606): Sending oneway calls to frozen process.
+06-29 09:07:33.250 W/IPCThreadState(  606): Sending oneway calls to frozen process.
+06-29 09:07:33.251 W/IPCThreadState(  606): Sending oneway calls to frozen process.
+06-29 09:07:33.251 W/IPCThreadState(  606): Sending oneway calls to frozen process.
+06-29 09:07:33.251 W/IPCThreadState(  606): Sending oneway calls to frozen process.
+06-29 09:07:33.251 W/IPCThreadState(  606): Sending oneway calls to frozen process.
+06-29 09:07:33.251 W/IPCThreadState(  606): Sending oneway calls to frozen process.
+06-29 09:07:33.251 W/IPCThreadState(  606): Sending oneway calls to frozen process.
+06-29 09:07:33.251 W/IPCThreadState(  606): Sending oneway calls to frozen process.
+06-29 09:07:33.251 W/IPCThreadState(  606): Sending oneway calls to frozen process.
+06-29 09:07:33.256 I/BugleRcsEngine( 1503): Connected state: [1], networkType: [WIFI] [CONTEXT thread_id=55 ]
+06-29 09:07:33.256 I/BugleRcsEngine( 1503): handleMessage processing message:[NOTIFY_UPTIME_IGNORE_STATE_CHANGED] with [non-null]:RcsEngineImpl reference [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[b3cfd2cb-28b4]>Handler" thread_id=63 ]
+06-29 09:07:33.259 I/NullBinder( 4041): NullBinder for android.net.action.RECOMMEND_NETWORKS triggering remote TransactionTooLargeException due to Service without Chimera impl, calling uid: 1000, calling pid: 0
+06-29 09:07:33.259 W/.gms.persistent( 4041): Large reply transaction of 1056768 bytes, interface descriptor , code 1
+06-29 09:07:33.259 D/ConnectivityService(  606): NetReassign [no changes] [c 0] [a 2] [i 1]
+06-29 09:07:33.261 I/NearbyMediums( 4041): Wifi changed new SSID: "AndroidWifi"
+06-29 09:07:33.262 I/NearbyMediums( 4041): WifiLanConnectivityInfo is not changed, skip notify.
+06-29 09:07:33.270 D/ActivityManager(  606): sync unfroze 3996 com.google.android.apps.messaging for 7
+06-29 09:07:33.284 I/BugleRcsEngine( 1503): No RCS Configuration was found in Bugle for simID: redacted-pii:sim_id[chars:20,last3:897] [CONTEXT log_prefix="ProvisioningEngineDataRetriever" thread_id=63 ]
+06-29 09:07:33.755 D/EGL_emulation(  846): app_time_stats: avg=928.06ms min=5.08ms max=8266.16ms count=9
+06-29 09:07:33.756 I/NearbySharing( 4041): Network state changed: NetworkState(isRestricted=false, isOnline=true, isCongested=false, isMetered=false, isWifiConnected=true)
+06-29 09:07:36.262 W/IPCThreadState(  606): Sending oneway calls to frozen process.
+06-29 09:07:36.263 W/IPCThreadState(  606): Sending oneway calls to frozen process.
+06-29 09:07:36.267 I/BugleRcsEngine( 1503): handleMessage processing message:[NOTIFY_UPTIME_IGNORE_STATE_CHANGED] with [non-null]:RcsEngineImpl reference [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[b3cfd2cb-28b4]>Handler" thread_id=63 ]
+06-29 09:07:36.267 I/BugleRcsEngine( 1503): Connected state: [1], networkType: [WIFI] [CONTEXT thread_id=55 ]
+06-29 09:07:36.270 W/IPCThreadState(  606): Sending oneway calls to frozen process.
+06-29 09:07:36.270 W/IPCThreadState(  606): Sending oneway calls to frozen process.
+06-29 09:07:36.271 W/IPCThreadState(  606): Sending oneway calls to frozen process.
+06-29 09:07:36.274 W/IPCThreadState(  606): Sending oneway calls to frozen process.
+06-29 09:07:36.274 W/IPCThreadState(  606): Sending oneway calls to frozen process.
+06-29 09:07:36.275 W/IPCThreadState(  606): Sending oneway calls to frozen process.
+06-29 09:07:36.275 W/IPCThreadState(  606): Sending oneway calls to frozen process.
+06-29 09:07:36.275 W/IPCThreadState(  606): Sending oneway calls to frozen process.
+06-29 09:07:36.275 W/IPCThreadState(  606): Sending oneway calls to frozen process.
+06-29 09:07:36.275 W/IPCThreadState(  606): Sending oneway calls to frozen process.
+06-29 09:07:36.278 I/NullBinder( 4041): NullBinder for android.net.action.RECOMMEND_NETWORKS triggering remote TransactionTooLargeException due to Service without Chimera impl, calling uid: 1000, calling pid: 0
+06-29 09:07:36.278 W/.gms.persistent( 4041): Large reply transaction of 1056768 bytes, interface descriptor , code 1
+06-29 09:07:36.278 D/ConnectivityService(  606): NetReassign [no changes] [c 0] [a 1] [i 1]
+06-29 09:07:36.281 I/NearbyMediums( 4041): Wifi changed new SSID: "AndroidWifi"
+06-29 09:07:36.282 I/NearbyMediums( 4041): WifiLanConnectivityInfo is not changed, skip notify.
+06-29 09:07:36.284 I/BugleRcsEngine( 1503): No RCS Configuration was found in Bugle for simID: redacted-pii:sim_id[chars:20,last3:897] [CONTEXT log_prefix="ProvisioningEngineDataRetriever" thread_id=63 ]
+06-29 09:07:36.770 I/NearbySharing( 4041): Network state changed: NetworkState(isRestricted=false, isOnline=true, isCongested=false, isMetered=false, isWifiConnected=true)
+06-29 09:07:37.945 D/ActivityManager(  606): freezing 14727 com.google.android.webview:webview_service
+06-29 09:07:37.947 D/InetDiagMessage(  606): Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+06-29 09:07:37.948 D/InetDiagMessage(  606): Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+06-29 09:07:37.948 D/InetDiagMessage(  606): Destroyed live tcp sockets for uids={10162} in 1ms
+06-29 09:07:38.125 D/ActivityManager(  606): freezing 14528 com.google.android.googlequicksearchbox:search
+06-29 09:07:38.178 I/FusedLocation( 4041): (REDACTED) location delivery to %s blocked - too close
+06-29 09:07:38.180 I/FusedLocation( 4041): (REDACTED) location delivery to %s blocked - too close
+06-29 09:07:38.180 I/FusedLocation( 4041): (REDACTED) location delivery to %s blocked - too close
+06-29 09:07:38.189 D/BoundBrokerSvc( 4471): onBind: Intent { act=com.google.android.gms.auth.service.START pkg=com.google.android.gms }
+06-29 09:07:38.189 D/BoundBrokerSvc( 4471): Loading bound service for intent: Intent { act=com.google.android.gms.auth.service.START pkg=com.google.android.gms }
+06-29 09:07:38.217 W/GLSUser ( 4041): [DeviceKeyStore] Cannot load key: Device key file not found.
+06-29 09:07:38.233 D/ActivityManager(  606): sync unfroze 4240 com.google.android.gms.unstable for 6
+06-29 09:07:38.238 D/ActivityThread( 4240): Package [com.davidsanchez.vivopromotor] reported as REPLACED, but missing application info. Assuming REMOVED.
+06-29 09:07:38.256 D/ActivityThread( 4240): Package [com.davidsanchez.vivopromotor] reported as REPLACED, but missing application info. Assuming REMOVED.
+06-29 09:07:38.256 D/ActivityThread( 4240): Package [com.davidsanchez.vivopromotor] reported as REPLACED, but missing application info. Assuming REMOVED.
+06-29 09:07:38.257 D/ActivityThread( 4240): Package [com.davidsanchez.vivopromotor] reported as REPLACED, but missing application info. Assuming REMOVED.
+06-29 09:07:38.357 D/FileUtils(  606): Rounded bytes from 4110757888 to 8000000000
+06-29 09:07:38.377 W/libc    ( 4240): Access denied finding property "persist.adb.tls_server.enable"
+06-29 09:07:38.377 W/libc    ( 4240): Access denied finding property "service.adb.tls.port"
+06-29 09:07:38.372 W/binder:4240_F( 4240): type=1400 audit(0.0:4277): avc:  denied  { read } for  name="u:object_r:system_adbd_prop:s0" dev="tmpfs" ino=314 scontext=u:r:gmscore_app:s0:c512,c768 tcontext=u:object_r:system_adbd_prop:s0 tclass=file permissive=0 app=com.google.android.gms
+06-29 09:07:38.384 D/TrafficStats( 4240): tagSocket(104) with statsTag=0x1809, statsUid=-1
+06-29 09:07:38.376 W/binder:4240_F( 4240): type=1400 audit(0.0:4278): avc:  denied  { read } for  name="u:object_r:adbd_prop:s0" dev="tmpfs" ino=59 scontext=u:r:gmscore_app:s0:c512,c768 tcontext=u:object_r:adbd_prop:s0 tclass=file permissive=0 app=com.google.android.gms
+06-29 09:07:38.440 W/GmsUrlRequestImpl( 4041): [https://android.googleapis.com/auth/devicekey] Content-Type header is overwritten.
+06-29 09:07:38.531 D/TrafficStats( 4041): tagSocket(163) with statsTag=0x4000401, statsUid=10144
+06-29 09:07:38.711 I/wpa_supplicant(  832): wlan0: CTRL-EVENT-BEACON-LOSS 
+06-29 09:07:39.163 W/GLSUser ( 4041): [AppCertManager] Exception while requesting key: 
+06-29 09:07:39.163 W/GLSUser ( 4041): java.util.concurrent.ExecutionException: dbio: Parsing Exception
+06-29 09:07:39.163 W/GLSUser ( 4041): 	at hmli.j(:com.google.android.gms@262031038@26.20.31 (260800-919905943):21)
+06-29 09:07:39.163 W/GLSUser ( 4041): 	at hmlr.t(:com.google.android.gms@262031038@26.20.31 (260800-919905943):73)
+06-29 09:07:39.163 W/GLSUser ( 4041): 	at amzi.b(:com.google.android.gms@262031038@26.20.31 (260800-919905943):435)
+06-29 09:07:39.163 W/GLSUser ( 4041): 	at amzg.a(:com.google.android.gms@262031038@26.20.31 (260800-919905943):67)
+06-29 09:07:39.163 W/GLSUser ( 4041): 	at amzg.dispatchTransaction(:com.google.android.gms@262031038@26.20.31 (260800-919905943):16)
+06-29 09:07:39.163 W/GLSUser ( 4041): 	at ccie.a(:com.google.android.gms@262031038@26.20.31 (260800-919905943):64)
+06-29 09:07:39.163 W/GLSUser ( 4041): 	at aaek.onTransact(:com.google.android.gms@262031038@26.20.31 (260800-919905943):23)
+06-29 09:07:39.163 W/GLSUser ( 4041): 	at android.os.Binder.transact(Binder.java:1345)
+06-29 09:07:39.163 W/GLSUser ( 4041): 	at cqtt.onTransact(:com.google.android.gms@262031038@26.20.31 (260800-919905943):12)
+06-29 09:07:39.163 W/GLSUser ( 4041): 	at android.os.Binder.transact(Binder.java:1345)
+06-29 09:07:39.163 W/GLSUser ( 4041): 	at ccis.onTransact(:com.google.android.gms@262031038@26.20.31 (260800-919905943):169)
+06-29 09:07:39.163 W/GLSUser ( 4041): 	at android.os.Binder.execTransactInternal(Binder.java:1505)
+06-29 09:07:39.163 W/GLSUser ( 4041): 	at android.os.Binder.execTransact(Binder.java:1444)
+06-29 09:07:39.163 W/GLSUser ( 4041): Caused by: dbio: Parsing Exception
+06-29 09:07:39.163 W/GLSUser ( 4041): 	at dbjt.ku(:com.google.android.gms@262031038@26.20.31 (260800-919905943):15)
+06-29 09:07:39.163 W/GLSUser ( 4041): 	at hmob.run(:com.google.android.gms@262031038@26.20.31 (260800-919905943):56)
+06-29 09:07:39.163 W/GLSUser ( 4041): 	at bkql.c(:com.google.android.gms@262031038@26.20.31 (260800-919905943):50)
+06-29 09:07:39.163 W/GLSUser ( 4041): 	at bkql.run(:com.google.android.gms@262031038@26.20.31 (260800-919905943):85)
+06-29 09:07:39.163 W/GLSUser ( 4041): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+06-29 09:07:39.163 W/GLSUser ( 4041): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+06-29 09:07:39.163 W/GLSUser ( 4041): 	at bkwd.run(:com.google.android.gms@262031038@26.20.31 (260800-919905943):8)
+06-29 09:07:39.163 W/GLSUser ( 4041): 	at java.lang.Thread.run(Thread.java:1012)
+06-29 09:07:39.163 W/GLSUser ( 4041): Caused by: japy: Protocol message end-group tag did not match expected tag.
+06-29 09:07:39.163 W/GLSUser ( 4041): 	at jaru.a(:com.google.android.gms@262031038@26.20.31 (260800-919905943):57)
+06-29 09:07:39.163 W/GLSUser ( 4041): 	at jaqs.l(:com.google.android.gms@262031038@26.20.31 (260800-919905943):60)
+06-29 09:07:39.163 W/GLSUser ( 4041): 	at jaou.s(:com.google.android.gms@262031038@26.20.31 (260800-919905943):26)
+06-29 09:07:39.163 W/GLSUser ( 4041): 	at jamq.f(:com.google.android.gms@262031038@26.20.31 (260800-919905943):7)
+06-29 09:07:39.163 W/GLSUser ( 4041): 	at jamq.c(:com.google.android.gms@262031038@26.20.31 (260800-919905943):1)
+06-29 09:07:39.163 W/GLSUser ( 4041): 	at jamq.o(:com.google.android.gms@262031038@26.20.31 (260800-919905943):1)
+06-29 09:07:39.163 W/GLSUser ( 4041): 	at dbjs.a(:com.google.android.gms@262031038@26.20.31 (260800-919905943):15)
+06-29 09:07:39.163 W/GLSUser ( 4041): 	at dbjx.call(:com.google.android.gms@262031038@26.20.31 (260800-919905943):8)
+06-29 09:07:39.163 W/GLSUser ( 4041): 	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+06-29 09:07:39.163 W/GLSUser ( 4041): 	at bkql.c(:com.google.android.gms@262031038@26.20.31 (260800-919905943):50)
+06-29 09:07:39.163 W/GLSUser ( 4041): 	at bkql.run(:com.google.android.gms@262031038@26.20.31 (260800-919905943):66)
+06-29 09:07:39.163 W/GLSUser ( 4041): 	... 4 more
+06-29 09:07:39.164 W/GLSUser ( 4041): [DeviceKeyStore] Cannot load key: Device key file not found.
+06-29 09:07:39.222 D/TrafficStats( 4041): tagSocket(167) with statsTag=0xc00060d, statsUid=10144
+06-29 09:07:39.320 W/ProcessStats(  606): Tracking association SourceState{adeef73 com.google.android.gms.persistent/10144 BTop #13301} whose proc state 2 is better than process ProcessState{e270657 com.google.android.gms.unstable/10144 pkg=com.google.android.gms} proc state 14 (7 skipped)
+06-29 09:07:39.803 I/cn_CronetUrlRequestContext( 4041): destroyNativeStreamLocked org.chromium.net.impl.CronetBidirectionalStream@61ec230
+06-29 09:07:39.805 W/GmsWeatherProviderContr( 4041): Failed to fetch weather tile
+06-29 09:07:39.805 W/GmsWeatherProviderContr( 4041): jxhm: INVALID_ARGUMENT: Application credential header not valid. Please fix the client to pass a valid application credential header.
+06-29 09:07:39.805 W/GmsWeatherProviderContr( 4041): 	at gtmz.b(:com.google.android.gms@262031038@26.20.31 (260800-919905943):51)
+06-29 09:07:39.805 W/GmsWeatherProviderContr( 4041): 	at gupf.g(:com.google.android.gms@262031038@26.20.31 (260800-919905943):15)
+06-29 09:07:39.805 W/GmsWeatherProviderContr( 4041): 	at gupd.run(:com.google.android.gms@262031038@26.20.31 (260800-919905943):44)
+06-29 09:07:39.805 W/GmsWeatherProviderContr( 4041): 	at bkql.c(:com.google.android.gms@262031038@26.20.31 (260800-919905943):50)
+06-29 09:07:39.805 W/GmsWeatherProviderContr( 4041): 	at bkql.run(:com.google.android.gms@262031038@26.20.31 (260800-919905943):66)
+06-29 09:07:39.805 W/GmsWeatherProviderContr( 4041): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+06-29 09:07:39.805 W/GmsWeatherProviderContr( 4041): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+06-29 09:07:39.805 W/GmsWeatherProviderContr( 4041): 	at bkwd.run(:com.google.android.gms@262031038@26.20.31 (260800-919905943):8)
+06-29 09:07:39.805 W/GmsWeatherProviderContr( 4041): 	at java.lang.Thread.run(Thread.java:1012)
+06-29 09:07:44.046 I/ez.vivopromotor(14966): Background concurrent mark compact GC freed 5352KB AllocSpace bytes, 32(1088KB) LOS objects, 49% free, 4128KB/8256KB, paused 1.651ms,4.439ms total 174.927ms
+06-29 09:07:44.052 W/ez.vivopromotor(14966): ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~EwdBiA3jMeMfa-v-YEDETw==/com.google.android.webview-oZUXtQCay5eo9LHmTzosTA==/WebViewGoogle.apk' with 2 weak references
