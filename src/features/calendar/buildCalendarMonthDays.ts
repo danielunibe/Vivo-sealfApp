@@ -32,7 +32,10 @@ type BuildMonthParams = {
   goal: number;
   phoneModels?: PhoneModel[];
   appTodayStr: string;
+  /** Límite inferior navegable / registrable. */
   earliestIso: string;
+  /** Primer día con venta; antes de esto no se marca como "falta". */
+  firstSaleIso?: string | null;
 };
 
 export function buildCalendarMonthDays({
@@ -44,6 +47,7 @@ export function buildCalendarMonthDays({
   phoneModels,
   appTodayStr,
   earliestIso,
+  firstSaleIso = null,
 }: BuildMonthParams): CalendarMonthDay[] {
   const catalogModels = phoneModels ?? getPhoneModels();
   const list: CalendarMonthDay[] = [];
@@ -63,11 +67,12 @@ export function buildCalendarMonthDays({
   for (let d = 1; d <= daysInMonth; d++) {
     const dayStr = String(d);
     const dayIso = `${monthPrefix}-${String(d).padStart(2, '0')}`;
-    const isBeforeFirstRecord = dayIso < earliestIso;
+    const isBeforeHistoryFloor = dayIso < earliestIso;
+    const isBeforeFirstRecord = Boolean(firstSaleIso && dayIso < firstSaleIso);
     const isAfterToday = isCurrentMonth ? d > parseInt(currentDayStr, 10) : false;
-    const isSelectable = !isBeforeFirstRecord && !isAfterToday;
+    const isSelectable = !isBeforeHistoryFloor && !isAfterToday;
 
-    if (isBeforeFirstRecord) {
+    if (isBeforeHistoryFloor) {
       list.push({
         id: dayStr,
         day: dayStr,
@@ -127,6 +132,9 @@ export function buildCalendarMonthDays({
       state = 'logrado';
     } else if (salesCount > 0) {
       state = 'parcial';
+    } else if (isBeforeFirstRecord || !firstSaleIso) {
+      // Antes del primer registro (o sin ventas aún): revisable/cargable, sin marcar falta.
+      state = 'pendiente';
     } else {
       state = 'falta';
     }

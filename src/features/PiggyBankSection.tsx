@@ -4,7 +4,7 @@ import { SaleRecord, PhoneModel } from '../types';
 import { getSales, getSavingsGoal, getDailyGoal, saveSaleWithInventory, replaceSaleWithInventory, deleteSale, buildSaleRecord, canRegisterSaleStock } from '../lib/storage';
 import { emitSaleConfirmed, onSalesUpdated, onSettingsUpdated, onInventoryUpdated, onAppDayChanged } from '../lib/events';
 import { toast } from '../lib/toast';
-import { getAppToday, toLocalDateKey } from '../lib/date';
+import { getAppToday, getEarliestSelectableDateKey } from '../lib/date';
 import { getNowForSaleRecording, buildSaleRecordedAtForDate, normalizeSaleRecordTimestamps } from '../lib/saleTimestamps';
 import { getPhoneModelHeroImage } from '../lib/deviceImages';
 import {
@@ -86,9 +86,10 @@ export default function PiggyBankSection() {
   const dailyGoal = getDailyGoal();
   const todayProgressPercent = dailyGoal > 0 ? Math.min((todayPieces / dailyGoal) * 100, 100) : 100;
   const appTodayStr = React.useMemo(() => getAppToday(), [todayVersion]);
-  const earliestIso = sales.length > 0
-    ? toLocalDateKey(new Date(Math.min(...sales.map((sale) => new Date(`${sale.date}T12:00:00`).getTime()))))
-    : appTodayStr;
+  const earliestIso = React.useMemo(
+    () => getEarliestSelectableDateKey(sales, appTodayStr),
+    [sales, appTodayStr],
+  );
   
   const handleOpenAddMode = () => {
     setSelectedDeviceIndex(0);
@@ -154,7 +155,7 @@ export default function PiggyBankSection() {
     }
 
     if (selectedDate < earliestIso || selectedDate > appTodayStr) {
-      toast('La fecha debe estar entre tu primer registro y hoy', 'error');
+      toast('La fecha debe estar entre el límite de historial y hoy', 'error');
       return;
     }
 

@@ -52,6 +52,50 @@ export const parseLocalDateKey = (dateKey: string): Date => {
   return new Date(`${dateKey}T12:00:00`);
 };
 
+/** Meses hacia atrás navegables para revisar o cargar ventas fuera de fecha. */
+export const CALENDAR_HISTORY_LOOKBACK_MONTHS = 24;
+
+export const getFirstSaleDateKey = (sales: Array<{ date: string }>): string | null => {
+  if (sales.length === 0) return null;
+  let earliest = sales[0].date;
+  for (let i = 1; i < sales.length; i += 1) {
+    if (sales[i].date < earliest) earliest = sales[i].date;
+  }
+  return earliest;
+};
+
+/** Límite inferior del historial (hoy menos N meses). */
+export const getCalendarHistoryFloor = (
+  appToday: string = getAppToday(),
+  lookbackMonths: number = CALENDAR_HISTORY_LOOKBACK_MONTHS,
+): string => {
+  const today = parseLocalDateKey(appToday);
+  const floor = new Date(
+    today.getFullYear(),
+    today.getMonth() - lookbackMonths,
+    today.getDate(),
+    12,
+    0,
+    0,
+  );
+  return toLocalDateKey(floor);
+};
+
+/**
+ * Fecha más antigua seleccionable para revisar o registrar ventas.
+ * Permite ir atrás del primer registro (hasta el piso de historial)
+ * y, si hay ventas más viejas que el piso, no las oculta.
+ */
+export const getEarliestSelectableDateKey = (
+  sales: Array<{ date: string }>,
+  appToday: string = getAppToday(),
+): string => {
+  const floor = getCalendarHistoryFloor(appToday);
+  const firstSale = getFirstSaleDateKey(sales);
+  if (!firstSale) return floor;
+  return firstSale < floor ? firstSale : floor;
+};
+
 export const getEndOfAppDay = (): number => {
   const dateKey = getAppToday();
   const date = parseLocalDateKey(dateKey);

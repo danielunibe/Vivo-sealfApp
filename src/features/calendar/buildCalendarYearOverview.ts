@@ -25,6 +25,7 @@ type BuildYearParams = {
   phoneModels: PhoneModel[];
   appTodayStr: string;
   earliestIso: string;
+  firstSaleIso?: string | null;
 };
 
 export function buildCalendarYearOverview({
@@ -35,6 +36,7 @@ export function buildCalendarYearOverview({
   phoneModels,
   appTodayStr,
   earliestIso,
+  firstSaleIso = null,
 }: BuildYearParams): { months: YearOverviewMonth[]; counts: YearStateCounts } {
   const counts: YearStateCounts = {
     superado: 0,
@@ -54,6 +56,7 @@ export function buildCalendarYearOverview({
       phoneModels,
       appTodayStr,
       earliestIso,
+      firstSaleIso,
     });
 
     const dots = monthDays

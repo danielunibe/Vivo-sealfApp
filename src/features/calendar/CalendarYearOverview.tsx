@@ -15,6 +15,7 @@ interface CalendarYearOverviewProps {
   phoneModels: PhoneModel[];
   appTodayStr: string;
   earliestIso: string;
+  firstSaleIso?: string | null;
   focusedDayIso: string;
   onClose: () => void;
   onSelectDay: (dateIso: string) => void;
@@ -28,6 +29,7 @@ export function CalendarYearOverview({
   phoneModels,
   appTodayStr,
   earliestIso,
+  firstSaleIso = null,
   focusedDayIso,
   onClose,
   onSelectDay,
@@ -54,12 +56,14 @@ export function CalendarYearOverview({
       phoneModels,
       appTodayStr,
       earliestIso,
+      firstSaleIso,
     }),
-    [viewYear, sales, challenges, goal, phoneModels, appTodayStr, earliestIso],
+    [viewYear, sales, challenges, goal, phoneModels, appTodayStr, earliestIso, firstSaleIso],
   );
 
   const totalTracked = (Object.values(counts) as number[]).reduce((sum, value) => sum + value, 0);
-  const firstRecordLabel = earliestDate.toLocaleDateString('es-MX', {
+  const historyFromDate = parseLocalDateKey(firstSaleIso || earliestIso);
+  const firstRecordLabel = historyFromDate.toLocaleDateString('es-MX', {
     day: 'numeric',
     month: 'long',
     year: 'numeric',

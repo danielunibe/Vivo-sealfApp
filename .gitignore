@@ -28,3 +28,9 @@ target/
 *.pdb
 *.log
 *.user
+
+# Local sync / rebuild leftovers
+_android_backup/
+_remote_Vivo-sealfApp_main/
+_sync_keep/
+android_incomplete_*/

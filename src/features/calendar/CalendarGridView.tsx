@@ -31,6 +31,7 @@ interface CalendarGridViewProps {
     soldDevices: CalendarDayDevice[];
     hasCompletedChallenge?: boolean;
     hasActiveChallenge?: boolean;
+    isSelectable?: boolean;
   }>;
   dayState: string;
   focusedDayIso: string;
@@ -358,7 +359,9 @@ export const CalendarGridView = React.memo(function CalendarGridView({
             const isPaddingCell = item.state === 'vacio' && !item.day;
             const soldDevices = Array.isArray(item.soldDevices) ? item.soldDevices : [];
             const isFocusedDay = item.dateIso === focusedDayIso && !isPaddingCell;
-            const isBeforeFirstRecord = Boolean(item.dateIso && item.dateIso < earliestIso);
+            const isBeforeHistoryFloor = Boolean(item.dateIso && item.dateIso < earliestIso);
+            const isAfterToday = Boolean(item.dateIso && item.dateIso > appTodayStr);
+            const isDayLocked = isBeforeHistoryFloor || isAfterToday || item.isSelectable === false;
             const hasSales = item.salesCount > 0;
 
             const dayStyle = isPaddingCell
@@ -375,7 +378,7 @@ export const CalendarGridView = React.memo(function CalendarGridView({
                 className={`relative w-full aspect-square rounded-xl sm:rounded-2xl ${dayStyle.cls} ${
                   isPaddingCell
                     ? 'pointer-events-none'
-                    : isBeforeFirstRecord
+                    : isDayLocked
                       ? 'pointer-events-none opacity-85'
                       : 'cursor-pointer active:scale-95 transition-all duration-100'
                 } ${isFocusedDay ? 'z-10 ring-2 ring-[#343A43]/25 ring-offset-1 ring-offset-transparent' : ''}`}
@@ -383,7 +386,7 @@ export const CalendarGridView = React.memo(function CalendarGridView({
                   ...dayStyle.css
                 }}
                 onClick={() => {
-                  if (!item.dateIso || isBeforeFirstRecord) return;
+                  if (!item.dateIso || isDayLocked) return;
                   onSelectDay(item.dateIso);
                   onShowAgenda();
                 }}

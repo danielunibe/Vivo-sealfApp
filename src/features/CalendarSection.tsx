@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'motion/react';
 import { Sparkles } from 'lucide-react';
 import { SaleRecord, PhoneModel } from '../types';
 import { getSales, saveSaleWithInventory, replaceSaleWithInventory, getDailyGoal, deleteSale, getChallenges, getAppSettings, buildSaleRecord, canRegisterSaleStock } from '../lib/storage';
-import { getAppToday, toLocalDateKey, parseLocalDateKey } from '../lib/date';
+import { getAppToday, toLocalDateKey, parseLocalDateKey, getEarliestSelectableDateKey, getFirstSaleDateKey } from '../lib/date';
 import { getNowForSaleRecording, buildSaleRecordedAtForDate, normalizeSaleRecordTimestamps, getSaleDayKey } from '../lib/saleTimestamps';
 import { getPhoneModelCalendarImage } from '../lib/deviceImages';
 import {
@@ -25,11 +25,6 @@ import { CalendarFormMode } from './calendar/CalendarFormMode';
 import { CalendarAgendaMode } from './calendar/CalendarAgendaMode';
 import { CalendarGridView } from './calendar/CalendarGridView';
 import { CalendarYearOverview } from './calendar/CalendarYearOverview';
-
-const MONTH_NAMES = [
-  'Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio',
-  'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'
-];
 
 const shiftDateKey = (dateKey: string, deltaDays: number) => {
   const date = parseLocalDateKey(dateKey);
@@ -118,30 +113,20 @@ export default function CalendarSection() {
 
   const currentMonth = currentDateObj.getMonth();
   const currentYear = currentDateObj.getFullYear();
-  const currentMonthLabel = MONTH_NAMES[currentMonth];
   
   // Día operativo actual del dispositivo (sincronizado con reloj local/red).
   const appTodayStr = React.useMemo(() => getAppToday(), [todayVersion, settingsVersion]);
   const todaySimulated = new Date(`${appTodayStr}T12:00:00`);
-  const isCurrentMonth = currentYear === todaySimulated.getFullYear() && currentMonth === todaySimulated.getMonth();
 
-  // Find the earliest sale
-  let earliestDate = todaySimulated;
-  if (sales.length > 0) {
-    const dates = sales.map(s => new Date(s.date + 'T12:00:00').getTime());
-    earliestDate = new Date(Math.min(...dates));
-  }
-  
+  const earliestIso = React.useMemo(
+    () => getEarliestSelectableDateKey(sales, appTodayStr),
+    [sales, appTodayStr],
+  );
+  const firstSaleIso = React.useMemo(() => getFirstSaleDateKey(sales), [sales]);
+  const earliestDate = parseLocalDateKey(earliestIso);
+
   const hasPrevMonth = currentYear > earliestDate.getFullYear() || (currentYear === earliestDate.getFullYear() && currentMonth > earliestDate.getMonth());
   const hasNextMonth = currentYear < todaySimulated.getFullYear() || (currentYear === todaySimulated.getFullYear() && currentMonth < todaySimulated.getMonth());
-
-  const monthPart = String(currentMonth + 1).padStart(2, '0');
-  const daysInViewMonth = new Date(currentYear, currentMonth + 1, 0).getDate();
-  const monthStartIso = `${currentYear}-${monthPart}-01`;
-  const monthEndIso = `${currentYear}-${monthPart}-${String(daysInViewMonth).padStart(2, '0')}`;
-  const monthDayUpperIso = isCurrentMonth
-    ? (appTodayStr < monthEndIso ? appTodayStr : monthEndIso)
-    : monthEndIso;
 
   const handlePrevMonth = () => {
     if (!hasPrevMonth) return;
@@ -150,7 +135,8 @@ export default function CalendarSection() {
     setCurrentDateObj(new Date(nextYear, nextMonth, 12, 12));
     const lastDay = new Date(nextYear, nextMonth + 1, 0).getDate();
     const prevMonthPart = String(nextMonth + 1).padStart(2, '0');
-    setFocusedDayIso(`${nextYear}-${prevMonthPart}-${String(lastDay).padStart(2, '0')}`);
+    const candidate = `${nextYear}-${prevMonthPart}-${String(lastDay).padStart(2, '0')}`;
+    setFocusedDayIso(candidate < earliestIso ? earliestIso : candidate);
   };
   const handleNextMonth = () => {
     if (!hasNextMonth) return;
@@ -165,7 +151,6 @@ export default function CalendarSection() {
     }
   };
 
-  const earliestIso = toLocalDateKey(earliestDate);
   const canPrevDay = focusedDayIso > earliestIso;
   const canNextDay = focusedDayIso < appTodayStr;
 
@@ -186,7 +171,7 @@ export default function CalendarSection() {
   };
 
   const handleSelectCalendarDay = (dateIso: string) => {
-    if (!dateIso) return;
+    if (!dateIso || dateIso < earliestIso || dateIso > appTodayStr) return;
     setFocusedDayIso(dateIso);
     setSelectedFilterIso(dateIso);
   };
@@ -201,7 +186,7 @@ export default function CalendarSection() {
     }
 
     if (selectedDate < earliestIso || selectedDate > appTodayStr) {
-      toast('La fecha debe estar entre tu primer registro y hoy', 'error');
+      toast('La fecha debe estar entre el límite de historial y hoy', 'error');
       return;
     }
 
@@ -344,8 +329,9 @@ export default function CalendarSection() {
       phoneModels: models,
       appTodayStr,
       earliestIso,
+      firstSaleIso,
     }),
-    [currentYear, currentMonth, sales, challenges, goal, models, appTodayStr, earliestIso],
+    [currentYear, currentMonth, sales, challenges, goal, models, appTodayStr, earliestIso, firstSaleIso],
   );
 
   const focusedDayData = calendarDays.find((day) => day.dateIso === focusedDayIso);
@@ -540,7 +526,14 @@ export default function CalendarSection() {
               setEditingSaleId(null);
               setSelectedDeviceIndex(0);
               setSelectedColor(getModelVariantColors(models[0])[0] || '');
-              setSelectedDate(getAppToday());
+              const preferredDate = selectedFilterIso || focusedDayIso || getAppToday();
+              const safeDate =
+                preferredDate < earliestIso
+                  ? earliestIso
+                  : preferredDate > appTodayStr
+                    ? appTodayStr
+                    : preferredDate;
+              setSelectedDate(safeDate);
               setIsFormMode(true);
             }}
             onEditSale={handleEditSale}
@@ -590,6 +583,7 @@ export default function CalendarSection() {
         phoneModels={models}
         appTodayStr={appTodayStr}
         earliestIso={earliestIso}
+        firstSaleIso={firstSaleIso}
         focusedDayIso={focusedDayIso}
         onClose={() => setShowYearOverview(false)}
         onSelectDay={handleYearOverviewSelect}
